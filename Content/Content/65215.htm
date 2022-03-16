@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Pricing (Analytics)|Interest Rate Options|Cap/Floor Pricing|Barrier Caps and Floors">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Double Barrier Options</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Double Barrier Options</h1>
+                                        <p class="bodytext">At-expiry, double barrier options are priced similarly to single barrier options, by forming a replicating portfolio that will yield exactly the same cash flow as the barrier option in all possible states. The value of the barrier option is determined by summing the known prices for the portfolio component option (Vanilla cap/floor and European digital options).</p>
+                                        <p class="bodytext">This section shows the composition of the various replicating portfolios and proves that they yield the same results for two types of double barrier option.</p>
+                                        <ul>
+                                            <li value="1"><a href="#Replicat" class="MCXref xref" xrefformat="{paratext}">Replicating Portfolios for At-Expiry Double Barrier Options</a>
+                                            </li>
+                                            <li value="2"><a href="#Proof" class="MCXref xref" xrefformat="{paratext}">Proof for Down &amp; In / Up &amp; In Cap</a>
+                                            </li>
+                                            <li value="3"><a href="#Proof2" class="MCXref xref" xrefformat="{paratext}">Proof for Down &amp; Out / Up &amp; Out Floor</a>
+                                            </li>
+                                        </ul>
+                                        <h2><a name="Replicat"></a>Replicating Portfolios for At-Expiry Double Barrier Options</h2>
+                                        <p class="bodytext">This topic shows the combinations of digital options and Vanilla caps and floors that replicate the payoff structure for the different types of double barrier option. The sum of the values in each combination can therefore can be used to value the barrier option at any time prior to maturity.</p>
+                                        <p class="bodytext">In some cases a restriction applies between the option's barrier levels (<em class="emphasis">LB</em> and <em class="emphasis">UB</em>) and Exercise price (<em class="emphasis">X</em>), to either ensure that a payoff is feasible or to ensure that the barrier option is distinct from an equivalent Vanilla cap or floor.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><em class="emphasis">R</em><sub class="subscript">T</sub> = Reference Rate at maturity.</p>
+                                        <h3>Down &amp; In / Up &amp; In Cap</h3>
+                                        <p class="bodytext">The Replicating Portfolio consists of:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">A Put Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0], where <em class="emphasis">UB</em> &gt; <em class="emphasis">LB</em> &gt; <em class="emphasis">X</em></li></ul></li>
+                                            <li class="listnumber1" value="2">A Vanilla Floor option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = - (max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]), where flow is negative for a sale</li></ul></li>
+                                            <li class="listnumber1" value="3">A Vanilla Floor option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">X</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]</li></ul></li>
+                                            <li class="listnumber1" value="4">A Vanilla Cap option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]</li></ul></li>
+                                            <li class="listnumber1" value="5">A Call Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0]</li></ul></li>
+                                        </ol>
+                                        <h3>Down &amp; In / Up &amp; Out Cap*</h3>
+                                        <p class="bodytext">[Same as SINGLE Barrier Down &amp; In Cap - see <em class="emphasis">NOTE</em> and <em class="emphasis">Example</em> below]</p>
+                                        <h3>Down &amp; Out / Up &amp; In Cap*</h3>
+                                        <p class="bodytext">[Same as SINGLE Barrier Up &amp; In Cap - see <em class="emphasis">NOTE]</em></p>
+                                        <h3>Down &amp; Out / Up &amp; Out Cap</h3>
+                                        <p class="bodytext">The Replicating Portfolio consists of:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">A Vanilla Cap option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">LB</em>,0]), where <em class="emphasis">UB</em> &gt; <em class="emphasis">LB</em> &gt; <em class="emphasis">X</em></li></ul></li>
+                                            <li class="listnumber1" value="2">A Call Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0]</li></ul></li>
+                                            <li class="listnumber1" value="3">A Vanilla Cap option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = -max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0], where flow is negative for a sale</li></ul></li>
+                                            <li class="listnumber1" value="4">A Call Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = -max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0], where flow is negative for a sale</li></ul></li>
+                                        </ol>
+                                        <h3>Down &amp; In / Up &amp; In Floor</h3>
+                                        <p class="bodytext">The Replicating Portfolio consists of:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">A Put Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0], where <em class="emphasis">X</em> &gt; <em class="emphasis">UB</em> &gt; <em class="emphasis">LB</em></li></ul></li>
+                                            <li class="listnumber1" value="2">A Vanilla Floor option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]</li></ul></li>
+                                            <li class="listnumber1" value="3">A Call Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0]</li></ul></li>
+                                            <li class="listnumber1" value="4">A Vanilla Cap option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = -max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0], where flow is negative for a sale</li></ul></li>
+                                            <li class="listnumber1" value="5">A Vanilla Cap option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">X</em></li><li class="listbullet1" value="3">Payoff = -max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">X</em>,0]</li></ul></li>
+                                        </ol>
+                                        <h3>Down &amp; In / Up &amp; Out Floor*</h3>
+                                        <p class="bodytext">[Same as SINGLE Barrier Down &amp; In Floor - see <em class="emphasis">NOTE</em>]</p>
+                                        <h3>Down &amp; Out / Up &amp; In Floor</h3>
+                                        <p class="bodytext">[Same as SINGLE Barrier Up &amp; In Floor - see <em class="emphasis">NOTE</em>]]</p>
+                                        <h3>Down &amp; Out / Up &amp; Out Floor</h3>
+                                        <p class="note-level-1-body"> <span class="notechar">NOTE</span>: Unlike a Down &amp; In / Up &amp; In Cap, the replicating portfolio is not just a combination of the components used to replicate a Down &amp; Out single barrier floor and those for an Up &amp; Out single barrier floor. Rather, the portfolio consists of a long and short position in an Up &amp; Out floor, one struck at the upper boundary <em class="emphasis">UB</em> and the other struck at the lower boundary level <em class="emphasis">LB</em>.</p>
+                                        <p class="bodytext">The Replicating Portfolio consists of:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">A Put Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0], where <em class="emphasis">X</em> &gt; <em class="emphasis">UB</em> &gt; <em class="emphasis">LB</em></li></ul></li>
+                                            <li class="listnumber1" value="2">A Vanilla Floor option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Long</li><li class="listbullet1" value="2">Strike = <em class="emphasis">UB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]</li></ul></li>
+                                            <li class="listnumber1" value="3">A Put Digital option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = -max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0], where flow is negative for a sale</li></ul></li>
+                                            <li class="listnumber1" value="4">A Vanilla Floor option with:<ul class="listbullet1"><li class="listbullet1" value="1">Position = Short</li><li class="listbullet1" value="2">Strike = <em class="emphasis">LB</em></li><li class="listbullet1" value="3">Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0], where flow is negative for a sale</li></ul></li>
+                                        </ol>
+                                        <p class="note-level-1-body"><strong class="boldcharstyle">*NOTE:</strong> Four at-expiry options are effectively the same as the single barrier option indicated above in each case, and as shown in the example below. Similar arguments apply in the other three cases, and given this redundancy, these double barrier options are not supported.<br /><br />For details of the relevant options, see <a id="h65540" title="Replicating Portfolios for At-Expiry Single Barrier Options" href="65150.htm" target="_self" alt="Replicating Portfolios for At-Expiry Single Barrier Options">Replicating Portfolios for At-Expiry Single Barrier Options</a>.</p>
+                                        <h3>Example: Down &amp; In / Up &amp; Out Cap</h3>
+                                        <p class="bodytext">
+                                            <img id="f65240" src="Resources/Images/65240.png" class="embeddedolefiletemplate" alt="" height="201" width="323" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">This option will have a positive payoff only if the reference interest rate <em class="emphasis">R</em> falls between the lower boundary <em class="emphasis">LB</em> and the exercise price <em class="emphasis">X</em>. The upper boundary <em class="emphasis">UB</em> is irrelevant, so this option is equivalent to a Down &amp; In <em class="emphasis">Single</em> barrier cap.</p>
+                                        <h2><a name="Proof"></a>Proof for Down &amp; In / Up &amp; In Cap</h2>
+                                        <p class="bodytext">The following diagram represents the payoff (CF) for a Down &amp; In / Up &amp; In Double Barrier Cap option, where the shaded area indicates a zero payoff.</p>
+                                        <p class="bodytext">
+                                            <img id="f65245" src="Resources/Images/65245.png" class="embeddedolefiletemplate" alt="" height="201" width="339" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The reference interest rate at the maturity of each caplet can fall into one of the four zones numbered above. The payoff from the replicating portfolio exactly matches the payoff for all potential values of the reference rate at maturity <em class="emphasis">R</em><sub class="subscript">T</sub> (corresponding to the four zones in the diagram), as shown below.</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">When <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">UB</em>, Payoff = <em class="emphasis">R</em><sub class="subscript">T</sub> -<em class="emphasis">X</em>.<p class="listcontinue">The sum of the replicating portfolio elements is the same:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -(max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]) = 0</li><li class="listbullet1" value="3">Vanilla Floor option (Strike <em class="emphasis">X</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="4">Vanilla Cap option (Strike <em class="emphasis">UB</em>): Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]) = <em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em></li><li class="listbullet1" value="5">Call Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0] = <em class="emphasis">UB</em>-<em class="emphasis">X</em></li><li class="listbullet1" value="6">Net Payoff (Sum) = (<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>) + (<em class="emphasis">UB</em>-<em class="emphasis">XB</em>) = <em class="emphasis">R</em><sub class="subscript">T</sub> - <em class="emphasis">X</em></li></ul></li>
+                                            <li class="listnumber1" value="2">When <em class="emphasis">UB</em> &gt; <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">LB</em>, Payoff = 0.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -(max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]) = 0</li><li class="listbullet1" value="3">Vanilla Floor option (Strike <em class="emphasis">X</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="4">Vanilla Cap option (Strike <em class="emphasis">UB</em>): Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]) = 0</li><li class="listbullet1" value="5">Call Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="6">Net Payoff (Sum) = 0</li></ul></li>
+                                            <li class="listnumber1" value="3">When <em class="emphasis">LB</em>&gt; <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">X</em> Payoff = 0.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0] = <em class="emphasis">LB</em>-<em class="emphasis">X</em></li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -(max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]) = -(<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>)</li><li class="listbullet1" value="3">Vanilla Floor option (Strike <em class="emphasis">X</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="4">Vanilla Cap option (Strike <em class="emphasis">UB</em>): Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]) = 0</li><li class="listbullet1" value="5">Call Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="6">Net Payoff (Sum) = (<em class="emphasis">LB</em>-<em class="emphasis">X</em>) - (<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>) = <em class="emphasis">R</em><sub class="subscript">T</sub> - <em class="emphasis">X</em></li></ul></li>
+                                            <li class="listnumber1" value="4">When <em class="emphasis">R</em><sub class="subscript">T</sub> &lt; <em class="emphasis">X</em>, Payoff = zero.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0] = <em class="emphasis">LB</em>-<em class="emphasis">X</em></li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -(max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]) = -(<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>)</li><li class="listbullet1" value="3">Vanilla Floor option (Strike <em class="emphasis">X</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub></li><li class="listbullet1" value="4">Vanilla Cap option (Strike <em class="emphasis">UB</em>): Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]) = 0</li><li class="listbullet1" value="5">Call Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="6">Net Payoff (Sum) = (<em class="emphasis">LB</em>-<em class="emphasis">X</em>) - (<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>) + <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub> = 0</li></ul></li>
+                                        </ol>
+                                        <h2><a name="Proof2"></a>Proof for Down &amp; Out / Up &amp; Out Floor</h2>
+                                        <p class="bodytext">The following diagram represents the payoff (CF) for a Down &amp; Out / Up &amp; Out Double Barrier Floor option, where the shaded areas indicate a zero payoff.</p>
+                                        <p class="bodytext">
+                                            <img id="f65282" src="Resources/Images/65282.png" class="embeddedolefiletemplate" alt="" height="201" width="343" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The reference interest rate at the maturity of each caplet can fall into one of the four zones numbered above. The payoff from the replicating portfolio exactly matches the payoff for all potential values of the reference rate at maturity <em class="emphasis">R</em><sub class="subscript">T</sub> (corresponding to the four zones in the diagram), as shown below.</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">When <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">X</em>, Payoff = 0.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0] = 0</li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="3">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0] = 0</li><li class="listbullet1" value="4">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="5">Net Payoff (Sum) = 0</li></ul></li>
+                                            <li class="listnumber1" value="2">When <em class="emphasis">UB</em> &gt; <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">UB</em>, Payoff = 0.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0] = 0</li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="3">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0] = 0</li><li class="listbullet1" value="4">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="5">Net Payoff (Sum) = 0</li></ul></li>
+                                            <li class="listnumber1" value="3">When <em class="emphasis">UB</em>&gt; <em class="emphasis">R</em><sub class="subscript">T</sub> &gt; <em class="emphasis">LB</em> Payoff = <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>.<p class="listcontinue">The sum of the replicating portfolio elements is the same:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0] = <em class="emphasis">X</em>-<em class="emphasis">UB</em></li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = <em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub></li><li class="listbullet1" value="3">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0] = 0</li><li class="listbullet1" value="4">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = 0</li><li class="listbullet1" value="5">Net Payoff (Sum) = (<em class="emphasis">X</em>-<em class="emphasis">UB</em>) + (<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>) = <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub></li></ul></li>
+                                            <li class="listnumber1" value="4">When <em class="emphasis">R</em><sub class="subscript">T</sub> &lt; <em class="emphasis">LB</em>, Payoff = zero.<p class="listcontinue">The sum of the replicating portfolio elements is also zero:</p><ul class="listbullet1"><li class="listbullet1" value="1">Put Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">UB</em>,0] = <em class="emphasis">X</em>-<em class="emphasis">UB</em></li><li class="listbullet1" value="2">Vanilla Floor option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = <em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub></li><li class="listbullet1" value="3">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">X</em>-<em class="emphasis">LB</em>,0] = -(<em class="emphasis">X</em>-<em class="emphasis">LB</em>)</li><li class="listbullet1" value="4">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = -(<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>)</li><li class="listbullet1" value="5">Net Payoff (Sum) = (<em class="emphasis">X</em>-<em class="emphasis">UB</em>) + (<em class="emphasis">UB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>) - (<em class="emphasis">X</em>-<em class="emphasis">LB</em>) - (<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>)= 0</li><li class="listbullet1" value="6">Put Digital option (Strike <em class="emphasis">LB</em>): Payoff = max[<em class="emphasis">LB</em>-<em class="emphasis">X</em>,0] = <em class="emphasis">LB</em>-<em class="emphasis">X</em></li><li class="listbullet1" value="7">Vanilla Floor option (Strike <em class="emphasis">LB</em>): Payoff = -(max[<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0]) = -(<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>)</li><li class="listbullet1" value="8">Vanilla Floor option (Strike <em class="emphasis">X</em>): Payoff = max[<em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>,0] = <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub></li><li class="listbullet1" value="9">Vanilla Cap option (Strike <em class="emphasis">UB</em>): Payoff = (max[<em class="emphasis">R</em><sub class="subscript">T</sub>-<em class="emphasis">UB</em>,0]) = 0</li><li class="listbullet1" value="10">Call Digital option (Strike <em class="emphasis">UB</em>): Payoff = max[<em class="emphasis">UB</em>-<em class="emphasis">X</em>,0] = 0</li><li class="listbullet1" value="11">Net Payoff (Sum) = (<em class="emphasis">LB</em>-<em class="emphasis">X</em>) - (<em class="emphasis">LB</em>-<em class="emphasis">R</em><sub class="subscript">T</sub>) + <em class="emphasis">X</em>-<em class="emphasis">R</em><sub class="subscript">T</sub> = 0</li></ul></li>
+                                        </ol>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

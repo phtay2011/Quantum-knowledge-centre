@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Release History|Version 6.7.0|System and General Enhancements">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Command Line support for all defined Query filter parameters</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Command Line support for all defined Query filter parameters</h1>
+                                        <p class="bodytext">Queries with additional filters defined can now have the value of those filters overwritten on the command line (in addition to the default parameters).</p>
+                                        <p class="bodytext">AGCommandLineSupport executes the query with the filter property values specified.</p>
+                                        <h2 class="h2internal">Implementation</h2>
+                                        <p class="bodytext">The AGCommandLineSupport program has been modified as follows.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">The value of all filters specified for a query can now be overwritten using the command line.</li>
+                                            <li class="listbullet1" value="2">Filters that have not been added to the query or are marked as invisible cannot be overwritten on the command line.</li>
+                                            <li class="listbullet1" value="3">Setting the value on the command line will be in the format of <em class="emphasis">name=value</em> where <em class="emphasis">name</em> is the descriptive name (with spaces removed) of the filter as specified in the Quantum API for the required module. Refer to the API documentation for more information.</li>
+                                            <li class="listbullet1" value="4">When a filter value is overwritten, the same operator as defined in the query will be used (<em class="emphasis">equal to</em>, <em class="emphasis">less than</em>, and so on).</li>
+                                            <li class="listbullet1" value="5">When a list operator is used (<em class="emphasis">one of</em>), multiple values can be specified using a comma separator.</li>
+                                            <li class="listbullet1" value="6">When the <em class="emphasis">between</em> operator is used, the two values can be specified using a comma separator.</li>
+                                            <li class="listbullet1" value="7">If the query's filter parameters are not specified or their names do not match any in the command line, then the default values of the filter parameters will apply.</li>
+                                        </ul>
+                                        <p class="bodytext">In addition, the export of report results (for example to PDF) now shows the <em class="emphasis">actual</em> filter values for the report run (previously only the query's saved filter values were shown).</p>
+                                        <h2 class="h2internal">Examples</h2>
+                                        <p class="bodytext">(Filter parameters highlighted in bold)</p>
+                                        <h3 class="h4internal">Message Log</h3>
+                                        <p class="bodytext">Query <strong class="boldcharstyle">CommandLineTest</strong> is created and saved with the following filters and default values:</p>
+                                        <p class="bodytextindent"><strong class="boldcharstyle">Type</strong> one of = "FUNCTIONAL"<br /><strong class="boldcharstyle">Date Message Logged</strong> equal to = "Today"<br /><strong class="boldcharstyle">Long User Name</strong> equal to = "Supervisor"&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[  This is an invisible parameter. ]<br /><strong class="boldcharstyle">Module</strong> one of = "MSGENQ"<br /><strong class="boldcharstyle">Time</strong> between = "", ""<br /><strong class="boldcharstyle">Message Severity</strong> greater than = "1"</p>
+                                        <p class="bodytext">The following command line overrides the values in the saved filters when the query is run (<em class="emphasis">except for</em><strong class="boldcharstyle">LONGUSERNAME</strong>, which is an invisible parameter that cannot be overwritten - that is, <strong class="boldcharstyle">Supervisor</strong> always applies):</p>
+                                        <p class="couriercode">AGCommandLineSupport MSGENQ SITE=RPACK USERNAME=baseline PASSWORD=baseline QUERY="CommandLineTest" VIEWNAME="Default" FILETYPE="PDF" DIRECTORY="C:\Projects\AQT\trunk\Site\RPACK\CommandLine" FILENAME="MYREPORT" STARTDATE="2017-11-10" <strong class="boldcharstyle">TYPE</strong>="FUNCTIONAL,SYSTEM" <strong class="boldcharstyle">DATEMESSAGELOGGED</strong>="Today" <strong class="boldcharstyle">LONGUSERNAME</strong>= "Baseline Tests Logon ID" <strong class="boldcharstyle">MODULE</strong>="MSGENQ,ACRLENQ" <strong class="boldcharstyle">TIME</strong>="10:00,11:00"</p>
+                                        <h3 class="h4internal">Audit</h3>
+                                        <p class="bodytext">Query <strong class="boldcharstyle">CommandLineTest</strong> is created and saved with the following filters and default values:</p>
+                                        <p class="bodytextindent"><strong class="boldcharstyle">Action Date</strong> between = "Yesterday, Today"</p>
+                                        <p class="bodytext">The following command lines override the values in the saved filters when the query is run:</p>
+                                        <p class="couriercode">AGCommandLineSupport AUDENQ SITE=RPACK USERNAME=baseline PASSWORD=baseline QUERY="CommandLineTest" VIEWNAME="Default" FILETYPE="PDF" DIRECTORY="C:\Projects\AQT\trunk\Site\RPACK\CommandLine" FILENAME="MYREPORT" STARTDATE="10-Nov-2017" ENDDATE="Today" TABLENAME="ALL" <strong class="boldcharstyle">ACTIONDATE</strong>="28-FEB-2017,28-FEB-2018"</p>
+                                        <h3 class="h4internal">Transactions By Action</h3>
+                                        <p class="bodytext">Query <strong class="boldcharstyle">CommandLineTest</strong> is created and saved with the following filters and default values:</p>
+                                        <p class="bodytextindent"><strong class="boldcharstyle">Customized?</strong> equal to = "NO"</p>
+                                        <p class="bodytext">The following command lines override the values in the saved filters when the query is run:</p>
+                                        <p class="couriercode">AGCommandLineSupport TRNSACTN SITE=RPACK USERNAME=baseline PASSWORD=baseline QUERY="CommandLineTest" VIEWNAME="Default" FILETYPE="PDF" DIRECTORY="C:\Projects\AQT\trunk\Site\RPACK\CommandLine" FILENAME="MYREPORT" STARTDATE="10-Nov-2017" ENDDATE="Today" <strong class="boldcharstyle">CUSTOMIZED?</strong>="YES"</p>
+                                        <h2 class="h2internal">History</h2>
+                                        <p class="bodytext">Previously:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">from Release 6.6.0 - only the query's <em class="emphasis">default</em> filter parameters were supported by the AGCommandLineSupport program,</li>
+                                            <li class="listbullet1" value="2">prior to Release 6.6.0 - <em class="emphasis">no</em> filter parameters were supported, and</li>
+                                            <li class="listbullet1" value="3">the export of report results showed only the query's saved filter values.</li>
+                                        </ul>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
