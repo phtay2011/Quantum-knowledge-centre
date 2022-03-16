@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Analytics Revaluations|Analytics Consistent Pricing Models|Hull and White (HW) model">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Building HW trees - constant Timestep</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Building HW trees - constant Timestep</h1>
+                                        <p class="bodytext">The following brief description of the lattice construction process is based on Hull and White (1994), Hull and White (1996), Hull (2000), and Brigo and Mercurio (2001). Although the method was first applied to the HW model, it can also be used to build lattices that are consistent with other models.</p>
+                                        <p class="bodytext">The HW approach is based on a two-step process. The first step is to build a tree that is consistent with the modified process of:</p>
+                                        <table class="tableintopic" width="432" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="348">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155322" src="Resources/Images/155322.png" class="embeddedolefiletemplate" alt="" height="20" width="120" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="66">
+                                                    <p class="tablebodyright-aligned">(1.13)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">...where the initial value of the short rate is set to zero. In the first instance, assume that the tree uses a constant "state" step and a constant time interval. That is, the spacing between the rates at any two nodes is set equal to:</p>
+                                        <table class="tableintopic" width="432" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="348">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155323" src="Resources/Images/155323.png" class="embeddedolefiletemplate" alt="" height="24" width="93" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="66">
+                                                    <p class="tablebodyright-aligned">(1.14)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">At each timestep <img id="f155324" src="Resources/Images/155324.png" class="embeddedolefiletemplate" alt="" height="19" width="25" vspace="0" hspace="0" align="bottom" border="0" />, the trinomial process for <em class="emphasis">r</em> is symmetrical around the initial value of zero. That means that within "normal" branches of the tree, the short rate at any node is equal to <img id="f155325" src="Resources/Images/155325.png" class="embeddedolefiletemplate" alt="" height="21" width="32" vspace="0" hspace="0" align="bottom" border="0" />, where the node index <em class="emphasis">j</em> runs from -<em class="emphasis">i</em> to +<em class="emphasis">i</em>. For any given node (<em class="emphasis">i</em>,<em class="emphasis">j</em>) the rate can move from <em class="emphasis">r</em><sub class="subscript">i,j</sub> to <em class="emphasis">r</em><sub class="subscript">i,j+1</sub> or <em class="emphasis">r</em><sub class="subscript">i,j-1</sub>.</p>
+                                        <p class="bodytext">The state index <em class="emphasis">j</em> increments by 1 in the trinomial tree (rather than by 2 as in the binomial tree).</p>
+                                        <p class="bodytext">However at some nodes in the tree, the branching needs to change to account for the impact of mean reversion. At nodes towards the top of the tree (representing "high" interest rates), the branching alters to reflect the fact that rates are more likely to decline during the next period. Likewise, when rates are at "low" levels, the branching must change to reflect the increasing likelihood that rates will increase. The various branching alternatives are depicted below</p>
+                                        <p class="h5internal">Figure 2 Alternative Branching for HW Trinomial Trees</p>
+                                        <p class="bodytext">
+                                            <img id="f155221" src="Resources/Images/tspm-figure3.2.png" class="linkedgraphic-risk" alt="Linked Graphic Parent Template Risk" height="141" width="580" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">With these alternatives, a three-step HW lattice has the geometry shown in <strong class="boldcharstyle">Figure 3</strong>.</p>
+                                        <p class="h5internal">Figure 3 Trinomial Tree for Mean Reverting Models (Stage 1)</p>
+                                        <p class="bodytext">
+                                            <img id="f155222" src="Resources/Images/tspm-figure3.3.png" class="linkedgraphic-risk" alt="Linked Graphic Parent Template Risk" height="312" width="658" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">With the space step and timestep both set equal to a constant, the procedure now involves determining the probabilities for each of the three potential paths that emanate from each node. The probabilities are chosen to ensure that the expected value and volatility for the short rate reflected on the tree are consistent with the statistics implied by equation (1.13). That is, the process in equation (1.13) implies that the variable <em class="emphasis">r</em><sub class="subscript">i+1</sub> - <em class="emphasis">r</em><sub class="subscript">i</sub> is normally distributed with an expected value of <img id="f155353" src="Resources/Images/155353.png" class="embeddedolefiletemplate" alt="" height="23" width="51" vspace="0" hspace="0" align="bottom" border="0" /> and a variance equal to <img id="f155354" src="Resources/Images/155354.png" class="embeddedolefiletemplate" alt="" height="23" width="40" vspace="0" hspace="0" align="bottom" border="0" />. By adding the restriction that the probabilities must sum to 1, the solutions for the normal branching probabilities can be determined from the following three equations.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> Equation (1.16) is derived using the condition that <img id="f155355" src="Resources/Images/155355.png" class="embeddedolefiletemplate" alt="" height="32" width="177" vspace="0" hspace="0" align="bottom" border="0" />.</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155356" src="Resources/Images/155356.png" class="embeddedolefiletemplate" alt="" height="23" width="253" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.15)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155357" src="Resources/Images/155357.png" class="embeddedolefiletemplate" alt="" height="32" width="347" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.16)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155358" src="Resources/Images/155358.png" class="embeddedolefiletemplate" alt="" height="23" width="105" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.17)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">Hull and White show that the solutions to these equations are:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155359" src="Resources/Images/155359.png" class="embeddedolefiletemplate" alt="" height="40" width="139" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.18)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155360" src="Resources/Images/155360.png" class="embeddedolefiletemplate" alt="" height="37" width="100" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.19)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155361" src="Resources/Images/155361.png" class="embeddedolefiletemplate" alt="" height="40" width="140" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.20)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">...where they have used the relation <img id="f155362" src="Resources/Images/155362.png" class="embeddedolefiletemplate" alt="" height="23" width="85" vspace="0" hspace="0" align="bottom" border="0" />, and where we define <img id="f155363" src="Resources/Images/155363.png" class="embeddedolefiletemplate" alt="" height="21" width="69" vspace="0" hspace="0" align="bottom" border="0" />. In a similar manner, it can be shown that the probabilities for the branching process in <strong class="boldcharstyle">Figure 2 (b)</strong> are given by:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155364" src="Resources/Images/155364.png" class="embeddedolefiletemplate" alt="" height="40" width="147" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.21)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155365" src="Resources/Images/155365.png" class="embeddedolefiletemplate" alt="" height="37" width="157" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.22)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155366" src="Resources/Images/155366.png" class="embeddedolefiletemplate" alt="" height="40" width="140" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.23)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">Finally, if the branching is like that shown in <strong class="boldcharstyle">Figure 2 (c)</strong>, then the probabilities are computed as:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155367" src="Resources/Images/155367.png" class="embeddedolefiletemplate" alt="" height="40" width="139" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.24)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155368" src="Resources/Images/155368.png" class="embeddedolefiletemplate" alt="" height="37" width="157" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.25)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155369" src="Resources/Images/155369.png" class="embeddedolefiletemplate" alt="" height="40" width="148" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.26)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">The only remaining thing to do to complete the first stage of the tree construction is to determine at what point each of the alternative branching methods should be used. Recall that the value of the short rate at any node, <em class="emphasis">r</em><sub class="subscript">i,j</sub>, is computed as <img id="f155325_1" src="Resources/Images/155325.png" class="embeddedolefiletemplate" alt="" height="21" width="32" vspace="0" hspace="0" align="bottom" border="0" />. Thus, when <em class="emphasis">j</em> is sufficiently high, the branching will have to switch from the scheme in <strong class="boldcharstyle">Figure 2 (a)</strong> to that depicted in <strong class="boldcharstyle">Figure 2 (b)</strong>. HW have shown that the precise value of <em class="emphasis">j</em> at which the switch should occur is given by the next integer greater than -0.184/<em class="emphasis">M</em> . Similarly, at values of <em class="emphasis">j</em> lower than 0.184/<em class="emphasis">M</em>, the tree branching should switch from the standard scheme to the upward sloping scheme shown in <strong class="boldcharstyle">Figure 2 (c)</strong>.</p>
+                                        <p class="bodytext">The second stage in the tree construction is similar to the approach used in the BDT tree building process. The aim is to find the step-dependent shift in the tree, <img id="f155370" src="Resources/Images/155370.png" class="embeddedolefiletemplate" alt="" height="21" width="17" vspace="0" hspace="0" align="bottom" border="0" />, so that the values of zero-coupon bonds implied by the tree are consistent with the observed zero curve. State prices are again fundamental to the calculations. Recall that the state price at the initial node ( <img id="f155371" src="Resources/Images/155371.png" class="embeddedolefiletemplate" alt="" height="24" width="29" vspace="0" hspace="0" align="bottom" border="0" />) is equal to 1, and that the original tree is built assuming a starting value for the short rate that is equal to 0. The value of <img id="f155372" src="Resources/Images/155372.png" class="embeddedolefiletemplate" alt="" height="21" width="20" vspace="0" hspace="0" align="bottom" border="0" /> is therefore the rate that will give a value for the <img id="f155373" src="Resources/Images/155373.png" class="embeddedolefiletemplate" alt="" height="21" width="20" vspace="0" hspace="0" align="bottom" border="0" />-maturity bond equal to that observed in the actual zero curve. This is simply equal to the <img id="f155373_1" src="Resources/Images/155373.png" class="embeddedolefiletemplate" alt="" height="21" width="20" vspace="0" hspace="0" align="bottom" border="0" />-maturity interest rate.</p>
+                                        <p class="bodytext">We now move to the calculation of <img id="f155374" src="Resources/Images/155374.png" class="embeddedolefiletemplate" alt="" height="21" width="19" vspace="0" hspace="0" align="bottom" border="0" />. This is based on the state prices at the first branch in the tree (<em class="emphasis">Q</em><sub class="subscript">i,j</sub>) and the known value of a zero-coupon bond that matures at time <img id="f155376" src="Resources/Images/155376.png" class="embeddedolefiletemplate" alt="" height="21" width="35" vspace="0" hspace="0" align="bottom" border="0" />. The state prices are defined as:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155377" src="Resources/Images/155377.png" class="embeddedolefiletemplate" alt="" height="89" width="415" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.27)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">The prices of the <img id="f155376_1" src="Resources/Images/155376.png" class="embeddedolefiletemplate" alt="" height="21" width="35" vspace="0" hspace="0" align="bottom" border="0" />-maturity bond seen from time <img id="f155373_2" src="Resources/Images/155373.png" class="embeddedolefiletemplate" alt="" height="21" width="20" vspace="0" hspace="0" align="bottom" border="0" /> can be written as:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155379" src="Resources/Images/155379.png" class="embeddedolefiletemplate" alt="" height="23" width="193" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.28)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155380" src="Resources/Images/155380.png" class="embeddedolefiletemplate" alt="" height="23" width="156" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.29)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155381" src="Resources/Images/155381.png" class="embeddedolefiletemplate" alt="" height="23" width="195" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.30)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">The value of the bond implied by the tree at time 0 can therefore be computed (assuming continuously compounded interest rates) as:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155382" src="Resources/Images/155382.png" class="embeddedolefiletemplate" alt="" height="24" width="487" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.31)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">All of the variables in equation (1.31) other than  <img id="f155374_1" src="Resources/Images/155374.png" class="embeddedolefiletemplate" alt="" height="21" width="19" vspace="0" hspace="0" align="bottom" border="0" /> are known, and the solution is given by:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155383" src="Resources/Images/155383.png" class="embeddedolefiletemplate" alt="" height="51" width="389" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.32)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">Calculation of <img id="f155384" src="Resources/Images/155384.png" class="embeddedolefiletemplate" alt="" height="21" width="20" vspace="0" hspace="0" align="bottom" border="0" /> proceeds in the same manner, this time based on the updated state prices for all nodes at the time  <img id="f155376_2" src="Resources/Images/155376.png" class="embeddedolefiletemplate" alt="" height="21" width="35" vspace="0" hspace="0" align="bottom" border="0" /> branch in the tree, together with the observed <img id="f155385" src="Resources/Images/155385.png" class="embeddedolefiletemplate" alt="" height="21" width="35" vspace="0" hspace="0" align="bottom" border="0" />-maturity zero-coupon bond price. The state prices are updated in a similar fashion to that used in the construction of BDT binomial trees, while the general solution for  <img id="f155370_1" src="Resources/Images/155370.png" class="embeddedolefiletemplate" alt="" height="21" width="17" vspace="0" hspace="0" align="bottom" border="0" /> is given by:</p>
+                                        <table class="tableintopic" width="438" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155386" src="Resources/Images/155386.png" class="embeddedolefiletemplate" alt="" height="69" width="320" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="60">
+                                                    <p class="tablebodyright-aligned">(1.33)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
