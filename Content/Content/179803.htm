@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Confirmation and EFT Setup and Administration|Common elements and attributes|Layout file elements and attributes">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Field structure, Layout XML Data record</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Field structure, Layout XML Data record</h1>
+                                        <p class="bodytext">In the Layout record, <strong class="boldcharstyle">Field </strong>and <strong class="boldcharstyle">FieldItem</strong> elements represent the actual message content. They provide the message structure and the linkage to the actual data.</p>
+                                        <h2>Structure</h2>
+                                        <p class="bodytextindent"><code class="monospace">&lt;Field ...&gt;</code>
+                                            <br /><code class="monospace">...</code>
+                                            <br /><code class="monospace">&lt;/Field&gt;</code>
+                                        </p>
+                                        <h2>Rules</h2>
+                                        <p class="bodytext">A <strong class="boldcharstyle">Section </strong>or a <strong class="boldcharstyle">SubSection </strong>may contain one or many Field elements.</p>
+                                        <p class="bodytext">A <strong class="boldcharstyle">Field</strong> element can contain zero, one, or many <strong class="boldcharstyle">FieldItem</strong> elements - though not directly. <strong class="boldcharstyle">FieldItem </strong>elements must be wrapped within some other nesting structure - see <a id="h179807" title="Supporting Elements, XML Layout File" href="179806.htm" target="_self">Supporting Elements</a> and <a id="h179825" title="Supporting Attributes, XML Layout File" href="179824.htm" target="_self">Supporting Attributes</a>.</p>
+                                        <h2>Attributes</h2>
+                                        <p class="bodytext">All Field structure elements have the same attributes, as described in the following table.</p>
+                                        <table class="tableintopic" width="612" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="120">
+                                                    <p class="tableheading">Attribute</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="72">
+                                                    <p class="tableheading">Required</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="72">
+                                                    <p class="tableheading">Default</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="348">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">colon</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">preserve</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines how colons are handled in multi-line text:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">collapse*</strong> - removes all leading colons of each line</li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">preserve</strong> - does not remove any colons</li>
+                                                        <li class="tablelistbullet" value="3"><strong class="boldcharstyle">remove</strong> - removes all colons inside the text</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">(Valid only with <strong class="boldcharstyle">multiLine = "yes"</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">default</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the default value for this element if it contains an empty value.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">formatType</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the formatting method to be used.</p>
+                                                    <p class="tablebodytext">For more details, see <a id="h179833" title="Character Formatting Attributes, XML Layout File" href="179824.htm#o179832" target="_self">Character Formatting Elements</a>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">hyphen</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">preserve</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines how hyphens are handled in multi-line text:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">collapse*</strong> - removes all leading hyphens of each line</li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">preserve</strong> - does not remove any hyphens</li>
+                                                        <li class="tablelistbullet" value="3"><strong class="boldcharstyle">remove</strong> - removes all hyphens inside the text</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">(Valid only with <strong class="boldcharstyle">multiLine = "yes"</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">id</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Gives unique identification of the element</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">linefeed</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">preserve</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines how line feeds are handled in multi-line text:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">preserve</strong> - does not remove any user-entered line feeds</li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">remove</strong> - removes all user-entered line feeds</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">(Valid only with <strong class="boldcharstyle">multiLine = "yes"</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">mandatory</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">no</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines whether or not the element is mandatory in the resulting message - possible values:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">yes</strong>
+                                                        </li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">no </strong>(for more details, see GlobalAttributes Element)</li>
+                                                        <li class="tablelistbullet" value="3"><strong class="boldcharstyle">not_allowed</strong>
+                                                        </li>
+                                                        <li class="tablelistbullet" value="4"><strong class="boldcharstyle">strict_conditional</strong>
+                                                            <br />Child elements are mandatory if certain conditions are True, and excluded from the final message if those conditions are False.</li>
+                                                        <li class="tablelistbullet" value="5"><strong class="boldcharstyle">loose_conditional</strong>
+                                                            <br />Child elements are mandatory if certain conditions are True, and excluded from the final message if those conditions are False.<br /><br />That is, if it contains a valid value, it is mandatory; otherwise, it will be excluded.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">map</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the mapping category to be used.</p>
+                                                    <p class="tablebodytext">For more details, see Mapping Attributes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">maxLength</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">unlimited</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the maximum number of characters; works together with <strong class="boldcharstyle">multiLine</strong> and <strong class="boldcharstyle">maxLine</strong>.</p>
+                                                    <p class="tablebodytext">For more details, see GlobalAttributes Element.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">maxLine</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">unlimited</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the maximum number of lines allowed; can be used together with <strong class="boldcharstyle">multiLine</strong>:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">If <strong class="boldcharstyle">maxLine</strong> is defined but <strong class="boldcharstyle">multiLine</strong> is not, <strong class="boldcharstyle">multiLine</strong> will be assumed to be <strong class="boldcharstyle">yes</strong>.</li>
+                                                        <li class="tablelistbullet" value="2">If <strong class="boldcharstyle">multiLine</strong> is defined as <strong class="boldcharstyle">yes</strong>, but <strong class="boldcharstyle">maxLine</strong> does not appear, then <strong class="boldcharstyle">maxLine</strong> will be set to <strong class="boldcharstyle">unlimited</strong>.</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">For more details, see GlobalAttributes Element.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">multiLine</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">yes, no</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines whether or not the element may contain values across multiple lines; works together with <strong class="boldcharstyle">maxLine</strong> and <strong class="boldcharstyle">maxLength</strong>.</p>
+                                                    <p class="tablebodytext">For more details, see GlobalAttributes Element.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">name</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">User-definable description of the element (optional)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">nillable</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">no</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines whether or not the element is allowed to contain an empty string as its value (see GlobalAttributes Element)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">prefix</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">User-definable code, tag, or identification that can be used elsewhere</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">priorityPrefix</strong>
+                                                    </p>
+                                                    <p>&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">User-definable code, tag, or identification that can be used in a priorityGroup. Similar to prefix.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">processMethod</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines any additional processing method - possible values: <strong class="boldcharstyle">count, repeat, repeat_asc, repeat_desc</strong></p>
+                                                    <p class="tablebodytext">For more details, see processMethod Attributes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">space</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">preserve</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines how white space is handled in the element:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">collapse</strong> - removes all leading and trailing spaces and replaces multiple spaces within text with one single space.</li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">preserve</strong> - does not remove any spaces.</li>
+                                                        <li class="tablelistbullet" value="3"><strong class="boldcharstyle">remove</strong> - removes all space inside the text.</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">For more details, see GlobalAttributes Element.</p>
+                                                    <p class="note-level-1-body"> Where spaces are required to fill an entire field, the special attribute <strong class="alertsonly-bold">xml:space="preserve"</strong> must be used.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">truncate</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">no</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines whether or not excess characters will continue on a new line or will be truncated; can be used together with <strong class="boldcharstyle">maxLength</strong>,with possible values of either <strong class="boldcharstyle">yes</strong> or <strong class="boldcharstyle">no</strong>.</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">If <strong class="boldcharstyle">maxLength</strong> is defined but <strong class="boldcharstyle">truncate</strong> is not, truncate will be assumed to be <strong class="boldcharstyle">no</strong>.</li>
+                                                        <li class="tablelistbullet" value="2">If <strong class="boldcharstyle">truncate</strong> is defined as <strong class="boldcharstyle">yes</strong>, but <strong class="boldcharstyle">maxLength</strong> does not appear, then <strong class="boldcharstyle">maxLength</strong> will be set to <strong class="boldcharstyle">unlimited</strong>.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">validationID</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines the associated warning or error message for the element</p>
+                                                    <p class="tablebodytext">For more details, see Validation Attributes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="120">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">xpath</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="348">
+                                                    <p class="tablebodytext">Defines an <strong class="boldcharstyle">xpath</strong> expression that links to where the data can be found in the data source document.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">*TIP:</strong> With the hyphen and colon attributes' <strong class="alertsonly-bold">collapse</strong> setting, removal is <em class="emphasis">after</em> the field content has been split into lines (according to the <strong class="alertsonly-bold">maxlength</strong> setting).</p>
+                                        <h2>Examples</h2>
+                                        <h3>A Confirmation example</h3>
+                                        <table class="tableintopic" width="510" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="510">
+                                                    <p class="tablebodytext"><code class="monospace">&lt;Field id="15A" prefix="15A" mandatory="yes" nillable="yes"/&gt;</code>
+                                                        <br /><code class="monospace">&lt;Field name="Custom Text"&gt;Hello World&lt;/Field&gt;</code>
+                                                        <br /><code class="monospace">&lt;Field id="77D" prefix="77D" name="Additional Conditions"</code>
+                                                        <br /><code class="monospace">&#160;&#160;mandatory="conditional" validationID="BW0005"&gt;</code>
+                                                        <br /><code class="monospace">&lt;/Field&gt;</code>
+                                                        <br /><code class="monospace">&lt;Field id="30F" prefix="30F" mandatory="yes" processMethod="repeat"</code>
+                                                        <br /><code class="monospace">&#160;&#160;formatType="DATE_YYYYMMDD"</code>
+                                                        <br /><code class="monospace">&#160;&#160;&#160;&#160;xpath="//deal/cashflows/cashflow[@context='pay']/date"/&gt;</code>
+                                                        <br /><code class="monospace">&lt;/Field&gt;</code>
+                                                        <br /><code class="monospace">&lt;FieldItem mandatory="yes" map="Day Count Fraction"</code>
+                                                        <br /><code class="monospace">&#160;&#160;xpath="/confirmation/action/deal/swapdeal/receive/couponDaysBasis"/&gt;</code>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3>A worked example</h3>
+                                        <p class="bodytext">The following example produces "<strong class="boldcharstyle">3Months</strong>":</p>
+                                        <p class="bodytextindent">
+                                            <img src="Resources/Images/117212.png" class="Online" alt="" height="47" width="360" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The following example produces "<strong class="boldcharstyle"> 3 Months</strong>":</p>
+                                        <p class="bodytextindent">
+                                            <img src="Resources/Images/117213.png" class="Online" alt="" height="52" width="379" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The following example produces: "<strong class="boldcharstyle">3 Months</strong>":</p>
+                                        <p class="bodytextindent">
+                                            <img src="Resources/Images/117214.png" class="Online" alt="" height="48" width="367" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The following example produces:</p>
+                                        <p class="bodytextindent"><strong class="boldcharstyle">:57D:ABCDBANK</strong>
+                                            <br /><strong class="boldcharstyle">EXTERNA</strong>
+                                            <br /><strong class="boldcharstyle">L NAME P</strong>
+                                        </p>
+                                        <p>
+                                            <img src="Resources/Images/117215.png" class="Online" alt="" height="62" width="498" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The following example produces:</p>
+                                        <p class="bodytextindent"><strong class="boldcharstyle">:57D:ABCDBANK EXTERN</strong>
+                                            <br /><strong class="boldcharstyle">AL NAME POSTAL </strong>
+                                            <br /><strong class="boldcharstyle">ADDRESS ASIA PA</strong>
+                                        </p>
+                                        <p class="bodytext">
+                                            <img src="Resources/Images/117216.png" class="Online" alt="" height="62" width="394" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The following example produces:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listalpha1" value="1">With the <strong class="boldcharstyle">truncate</strong> attribute set to <strong class="boldcharstyle">yes</strong>:<p class="listcontinue"><strong class="boldcharstyle">:72:/ROC/COUNTERPARTY DELIVERY NARRATIV</strong><br /><strong class="boldcharstyle">//SOME MORE INFO</strong><br /><strong class="boldcharstyle">/INV/INVOICE</strong></p></li>
+                                            <li class="listalpha1" value="2">With the <strong class="boldcharstyle">truncate</strong> attribute set to <strong class="boldcharstyle">no</strong>:<p class="listcontinue"><strong class="boldcharstyle">:72:/ROC/COUNTERPARTY DELIVERY NARRATIV</strong><br /><strong class="boldcharstyle">E</strong><br /><strong class="boldcharstyle">//SOME MORE INFO</strong><br /><strong class="boldcharstyle">/INV/INVOICE INFO</strong></p></li>
+                                        </ul>
+                                        <p class="bodytext">
+                                            <img src="Resources/Images/119502.gif" class="Online" alt="" height="158" width="576" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

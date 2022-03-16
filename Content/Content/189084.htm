@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Underlying Methods and Conventions|Inter-Company Transactions in Quantum">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>How Inter-Company Transactions Work in Quantum</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>How Inter-Company Transactions Work in Quantum</h1>
+                                        <p class="bodytext">An Inter<em class="emphasis">-</em>Company transaction is created when a deal fulfills the Bank Account and Inter<em class="emphasis">-</em>Company Defaulting structure, as defined using the process summarized in <a id="h91721" title="Setting Up for Inter-Company Transactions" href="189072.htm" target="_self">Setting up for Inter-Company Transactions</a>.</p>
+                                        <p>
+                                        </p><a name="o189085"></a>
+                                        <h5>Transaction Elements and Entries</h5>
+                                        <p class="bodytext">An Inter<em class="emphasis">-</em>Company transaction consists of a cash flow and deal element. The entries created for each element are described in the following table.</p>
+                                        <table class="tableintopic" width="590" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="87">
+                                                    <p class="tableheading">Element</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="128">
+                                                    <p class="tableheading">Entry</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="228">
+                                                    <p class="tableheading">Account</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="148">
+                                                    <p class="tableheading">General Ledger / Account owner</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="87">
+                                                    <p class="tablebodytext">Cash Flow</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="128">
+                                                    <p class="tablebodytext">General Ledger</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="228">
+                                                    <p class="tablebodytext">Underlying transaction G/L account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="148">
+                                                    <p class="tablebodytext">Cash Flow</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="128">
+                                                    <p class="tablebodytext">Contra</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="228">
+                                                    <p class="tablebodytext">Inter<em class="emphasis">-</em>Company account<strong class="boldcharstyle">*</strong></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="148">
+                                                    <p class="tablebodytext">Cash Flow</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="87">
+                                                    <p class="tablebodytext">Deal</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="128">
+                                                    <p class="tablebodytext">General Ledger</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="228">
+                                                    <p class="tablebodytext">Underlying transaction G/L account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="148">
+                                                    <p class="tablebodytext">Deal</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="128">
+                                                    <p class="tablebodytext">Contra</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="228">
+                                                    <p class="tablebodytext">Inter<em class="emphasis">-</em>Company account<strong class="boldcharstyle">*</strong></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="148">
+                                                    <p class="tablebodytext">Deal</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><strong class="boldcharstyle">*NOTE:</strong> The inter<em class="emphasis">-</em>company account refers to either the inter<em class="emphasis">-</em>company bank account or inter<em class="emphasis">-</em>company G/L account, depending on the underlying transaction.</p>
+                                        <p class="bodytext">If an Inter<em class="emphasis">-</em>Company Defaulting Rule exists for both bank accounts and General Ledger accounts, and the selection criteria for those defaults are identical, then Quantum uses the inter<em class="emphasis">-</em>company bank account default.</p>
+                                        <p class="bodytext">If an Inter<em class="emphasis">-</em>Company Defaulting Rule does not exist, then Quantum either:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">posts the entries to a suspense account, if suspense account posting is available; or</li>
+                                            <li class="listbullet1" value="2">displays a message that suspense account posting is unavailable. In this instance, the deal is not saved until the inter<em class="emphasis">-</em>company default is defined.</li>
+                                        </ul>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE:</span> Suspense account posting is enabled by selecting <strong class="alertsonly-bold">Allow postings to suspense account</strong> in the the <a id="h165792" title="General Ledger" href="165789.htm" target="_self">General Ledger Properties page</a>.</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">See also:</strong><a id="h189110" title="Entities and Inter-Company Bank Account Defaults" href="189106.htm" target="_self">Entities and Inter-Company Bank Account Defaults</a>
+                                        </p><a name="o189086"></a>
+                                        <h5 id="t189086" class="heading5">Determining when Entries are Created for which Elements</h5>
+                                        <p class="bodytext">Whether an entry is created for both the cashflow and deal elements depends on whether the cashflow and deal entities are posting entities. The following table describes when entries are created.</p>
+                                        <table class="tableintopic" width="590" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">If the Deal entity is …</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="192">
+                                                    <p class="tableheading">and the Cashflow entity is …</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="254">
+                                                    <p class="tableheading">entries are created for this element …</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="254">
+                                                    <p class="tablebodytext">Both</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">Non Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="254">
+                                                    <p class="tablebodytext">Deal</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Non Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="254">
+                                                    <p class="tablebodytext">Cashflow (see note below)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Non Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">Non Posting</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="254">
+                                                    <p class="tablebodytext">None</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><strong class="boldcharstyle">NOTE: </strong>Cashflow entries are created for Money Market deals only. General ledger entries are not created for any other deal types.</p><a name="o189087"></a>
+                                        <h5 id="t189087" class="heading5">Example</h5>
+                                        <p class="bodytext">The following example illustrates the entries created for a deal recorded in DEM (currency), where the cashflow is paid by another entity. Both the deal and cashflow entity are posting entities, and the transaction relates to inter<em class="emphasis">-</em>company general ledger defaults.</p>
+                                        <table class="tableintopic" width="552" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="48">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">P/L Interest Expense</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="48">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="48">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="48">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="192">
+                                                    <p class="tablebodytext">Bank Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                        </p><a name="o189088"></a>
+                                        <h5 id="t189088" class="heading5">Transaction Entry Examples</h5>
+                                        <p class="bodytext">The following examples illustrate transactions posted under various scenarios.</p>
+                                        <h3 class="h4internal">Both Deal and Cashflow Entities Post</h3>
+                                        <p class="bodytext">The following example illustrates the entries created for a deal recorded in DEM (currency), where the cashflow is paid by another entity. Both the deal and cashflow entity are posting entities.</p>
+                                        <table class="tableintopic" width="498" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">P/L Interest Expense</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">Bank Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h4internal">The Deal Entity Only Posts</h3>
+                                        <p class="bodytext">The following example illustrates the entries created for a deal recorded in DEM (currency), where the cashflow is paid by another entity. The deal entity only is a posting entity.</p>
+                                        <table class="tableintopic" width="498" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="30">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">P/L Interest Expense</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="30">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h4internal">The Cashflow Entity Only Posts</h3>
+                                        <p class="bodytext">The following example illustrates the entries created for a deal recorded in DEM (currency), where the cashflow is paid by another entity. The cashflow entity only is a posting entity.</p>
+                                        <table class="tableintopic" width="498" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="37">
+                                                    <p class="tablebodytext">Dr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="35">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">B/S Inter Company Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">30/06/00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="78">
+                                                    <p class="tablebodytext">GLOwner2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="42">
+                                                    <p class="tablebodytext">DEM</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="37">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="35">
+                                                    <p class="tablebodytext">Cr</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="186">
+                                                    <p class="tablebodytext">Bank Account</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="54">
+                                                    <p class="tablebodytext">100.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Dealing (Quantum)|Requests|FX Requests">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Replicating FX Requests into Analytics</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Replicating FX Requests into Analytics</h1>
+                                        <p class="bodytext">Quantum FX Requests are replicated into Analytics for pricing and reporting purposes, including (but not limited to):</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Request vs Actual deals at various points in time,</li>
+                                            <li class="listbullet1" value="2">which Requests have been filled over a period including type and volume,</li>
+                                            <li class="listbullet1" value="3">outstanding Requests,</li>
+                                            <li class="listbullet1" value="4">breaking Request volumes down by region and entity, and</li>
+                                            <li class="listbullet1" value="5">aggregating Requests by key properties - for example, Currency, Entity, and so on.</li>
+                                        </ul>
+                                        <p class="note-level-1-body"> FX Requests are replicated to Analytics by default, unless the <strong class="alertsonly-bold">BLOCKREQUESTS</strong> custom setting is set to <strong class="alertsonly-bold">YES</strong> for the Analytics server. See the <strong class="alertsonly-bold">Installation Instructions</strong> for more information.<br />Once an FX request has been filled then the resultant FX deal should flow from Quantum to Analytics, regardless of whether you set <strong class="alertsonly-bold">BLOCKREQUESTS</strong> to <strong class="alertsonly-bold">YES</strong> or <strong class="alertsonly-bold">NO</strong>.</p>
+                                        <h3 class="h4internal">Analytics Instruments</h3>
+                                        <p class="bodytext">Quantum FX Instruments with <strong class="boldcharstyle">Type</strong> set to <strong class="boldcharstyle">OUTRIGHT</strong> or <strong class="boldcharstyle">SPOT &amp; FORWARD</strong> have an <strong class="boldcharstyle">Allow requests</strong> option. Such Instruments will be replicated into Analytics as FX Forward Instruments that display the applicable <strong class="boldcharstyle">Allow requests</strong> option setting in read-only mode.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> The <strong class="alertsonly-bold">Allow requests</strong> option is not applicable to FX <em class="emphasis">Par</em> Forward Instruments.</p>
+                                        <h3 class="h4internal">Analytics Pricing</h3>
+                                        <p class="bodytext">Quantum FX Deal Requests will be replicated into Analytics as <a id="h187236" title="FX Deal Requests (Replicated from Quantum)" href="187226.htm" target="_self">FX Forward Deals</a> with their <strong class="boldcharstyle">Deal Type</strong> set to <strong class="boldcharstyle">Request</strong>. They are viewable on the FX Forward Pricing page<strong class="boldcharstyle">*</strong>, with <strong class="boldcharstyle">Instrument</strong> set to the replicated Quantum FX Instrument and the read-only <strong class="boldcharstyle">Deal Type</strong> field showing <strong class="boldcharstyle">Request</strong>. If required, the matching Deal Request Rule record will be used to populate missing field values required in Analytics (see <em class="emphasis">Deal Request Defaulting Rules</em> below).</p>
+                                        <p class="bodytext">While FX Requests cannot be saved, edited, changed, or filled in Analytics, you can use the <strong class="boldcharstyle">Copy for Calculation</strong> function to create a new, editable FX Forward deal with <strong class="boldcharstyle">Deal Type</strong> set to <strong class="boldcharstyle">What If</strong> (in line with previous functionality), with properties on the Deal tab set to blank or zero and all the functionality of a standard <strong class="boldcharstyle">What If</strong> deal.</p>
+                                        <p class="bodytext">Any editing or deletion of an existing FX Request in Quantum will flow through the Replication process and update that FX Request in Analytics.</p>
+                                        <p class="bodytext">When an FX Deal Request is <em class="emphasis">filled</em> in Quantum (either by creating a new FX Deal linked to the Request or by linking an existing FX Deal to the Request), the results will be replicated in Analytics as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">the FX Request will be linked to the FX Deal at a database level and via a visible tag <strong class="boldcharstyle">Filled by </strong><em class="emphasis">Dealid</em> (where <em class="emphasis">Dealid</em> is the FX Deal's ID),</li>
+                                            <li class="listbullet1" value="2">the linked FX Deal details will be replicated (created if a new deal, updated if an existing one), and</li>
+                                            <li class="listbullet1" value="3">the linked FX Deal will be linked to the FX Request at a database level and via a visible tag <strong class="boldcharstyle">Fills request </strong><em class="emphasis">Reqid</em> (where <em class="emphasis">Reqid</em> is the FX Request's ID).</li>
+                                        </ul>
+                                        <p class="bodytext">When a filled FX Request or filling FX Deal is edited or deleted in Quantum, the results are also replicated in Analytics as follows.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">When a filled FX Request is edited using the <strong class="boldcharstyle">Reset</strong> menu function, the link between the FX Request and the FX Deal will be cleared and no linkage will remain at the database level.</li>
+                                            <li class="listbullet1" value="2">When a filled FX Request is deleted using the <strong class="boldcharstyle">Delete</strong> menu function, the FX Request will be tagged as <strong class="boldcharstyle">Deleted</strong>, the link across both the FX Deal and FX Request will be cleared, and no linkage will remain at the database level on either deal.</li>
+                                            <li class="listbullet1" value="3">When a filling FX Deal is edited using the <strong class="boldcharstyle">Reset</strong> menu function, the FX Deal will be updated but the linkage to the FX Request will remain in place.</li>
+                                            <li class="listbullet1" value="4">When a filling FX Deal is deleted, the FX Deal will be tagged as <strong class="boldcharstyle">Deleted</strong>, the link across both the FX Request and FX Deal will be cleared, and no linkage will remain at the database level on either deal.</li>
+                                        </ul>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">*TIP:</strong> Unlike in Quantum, there is not a separate Pricing page for FX Requests in Analytics.</p>
+                                        <h3 class="h4internal">Analytics Deal Request Defaulting Rules</h3>
+                                        <p class="bodytext">The Analytics <a id="h187235" title="Deal Request Rules (Analytics)" href="187233.htm" target="_self">Deal Request Rules</a> page is accessible via the Analytics perspective's UTILITY menu. Use this page to create and maintain defaulting Rule records that will be used by the Replication process to supply any missing field values that, while required in Analytics Pricing, are optional in Quantum Requests.</p>
+                                        <p class="bodytext">The applicable fields are <strong class="boldcharstyle">Counterparty</strong>, <strong class="boldcharstyle">Entity</strong>, <strong class="boldcharstyle">Dealer</strong>, <strong class="boldcharstyle">Spot Rate</strong>, <strong class="boldcharstyle">Contract Rate</strong>, and <strong class="boldcharstyle">Forward Points</strong>.</p>
+                                        <p class="bodytext">Where such values are missing from FX Deal Requests replicated into Analytics, the Replication process will use the closest-matching FX Deal Request Rule record to supply the applicable values.</p>
+                                        <p class="bodytext">Each Rule record contains two sets of lookup fields, as follows.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Matching Criteria:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">Instrument</strong> - select an FX Forward Instrument, Instrument Group, or <strong class="boldcharstyle">ALL</strong>;</li><li class="listbullet1" value="2"><strong class="boldcharstyle">Buy Currency</strong> - select a Currency, Currency Group, or <strong class="boldcharstyle">ALL</strong>; and</li><li class="listbullet1" value="3"><strong class="boldcharstyle">Sell Currency</strong> - select a Currency, Currency Group, or <strong class="boldcharstyle">ALL</strong>.</li></ul></li>
+                                            <li class="listbullet1" value="2">Settings:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">Entity</strong> - select a specific Entity or <strong class="boldcharstyle">Request Entity*</strong>,</li><li class="listbullet1" value="2"><strong class="boldcharstyle">Counterparty</strong> - select a specific Counterparty or <strong class="boldcharstyle">Request Counterparty*</strong>, and</li><li class="listbullet1" value="3"><strong class="boldcharstyle">Dealer</strong> - select a specific Dealer or <strong class="boldcharstyle">Request Dealer*</strong>.</li></ul></li>
+                                        </ul>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">*TIP:</strong> The default values (<strong class="alertsonly-bold">Request Entity</strong>, <strong class="alertsonly-bold">Request Counterparty</strong>, and <strong class="alertsonly-bold">Request Dealer</strong>) are provided as seed data in the Analytics database.</p>
+                                        <p class="bodytext">A seed or "cover-all" rule is provided so that the system can find at least one rule record to cover every replicated request. It is recommended that you <em class="emphasis">DO NOT</em> delete that entry, which has the following settings:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Instrument</strong> is <strong class="boldcharstyle">ALL</strong>,</li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">Currency</strong> is <strong class="boldcharstyle">ALL</strong>,</li>
+                                            <li class="listbullet1" value="3"><strong class="boldcharstyle">Entity</strong> is <strong class="boldcharstyle">Request Entity</strong>,</li>
+                                            <li class="listbullet1" value="4"><strong class="boldcharstyle">Counterparty</strong> is <strong class="boldcharstyle">Request Counterparty</strong>, and</li>
+                                            <li class="listbullet1" value="5"><strong class="boldcharstyle">Dealer</strong> is <strong class="boldcharstyle">Request Dealer</strong>.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Analytics Deal Analyze</h3>
+                                        <p class="bodytext">In Analytics Deal Analyze, an FX Request can be retrieved via the Browse button or by entering the Analytics FX Forward deal number or deal identifier for the replicated Quantum Request.</p>
+                                        <p class="bodytext">The deal request can be valued using the <strong class="boldcharstyle">Calculate</strong> button, as for any other FX Forward deal.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIPS:</span>
+                                        </p>
+                                        <ul class="tip-level-1-bullet">
+                                            <li class="tip-level-1-bullet" value="1">You can filter the browse list by <strong class="alertsonly-bold">Type</strong> to include (or exclude) Requests.</li>
+                                            <li class="tip-level-1-bullet" value="2">Where a Rate has not been specified on the deal, an error message is displayed stating that the system cannot value the deal without a Rate.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Analytics Reporting</h3>
+                                        <p class="bodytext">An FX request entered inQuantum and replicated into Analytics will not have any Bank Accounts associated with the Buy or Sell amounts in the schedule. Therefore Analytics Position, Cash Flow, and VaR reports with an incorporated Balance definition (type: <strong class="boldcharstyle">Bank Balance</strong> or <strong class="boldcharstyle">Entity</strong>) will not have their balances impacted by any FX Deal Requests.</p>
+                                        <p class="bodytext">Across all report types:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">the new <strong class="boldcharstyle">Allow Request</strong> setting in FX instruments is available as a Database Column through the <strong class="boldcharstyle">Instrument</strong> folder and can be output to a report,</li>
+                                            <li class="listbullet1" value="2">the new <strong class="boldcharstyle">Request</strong> deal type in FX Requests can be output through the existing <strong class="boldcharstyle">Deal Type</strong> Database Column,</li>
+                                            <li class="listbullet1" value="3">the <strong class="boldcharstyle">Request Counterparty</strong>, <strong class="boldcharstyle">Request Entity</strong>, and <strong class="boldcharstyle">Request Dealer</strong> default settings that can be specified during the Replication process (from Deal Request Defaulting Rules) are available via the respective <strong class="boldcharstyle">Group By</strong> columns,</li>
+                                            <li class="listbullet1" value="4">all other FX Request information can be reported on as per any standard FX Forward deal,</li>
+                                            <li class="listbullet1" value="5">the Query Filter Definition allows <strong class="boldcharstyle">Requests</strong> to be included or excluded from reports via the <strong class="boldcharstyle">Deal Type</strong> filter,</li>
+                                            <li class="listbullet1" value="6">where an FX Request has an amount specified for only one leg, only that leg will be output in the report (see <em class="emphasis">Note</em> below),</li>
+                                            <li class="listbullet1" value="7">where an FX Request <em class="emphasis">has been filled</em> inQuantum, the linked FX Deal Id, date of linkage, and type of linkage can be extracted through the Database Columns and output, and</li>
+                                            <li class="listbullet1" value="8">for an FX Deal <em class="emphasis">filling a Request</em>, the linked FX Request Deal Id, date of linkage, and type of linkage can be extracted through the Database Columns and output.</li>
+                                        </ul>
+                                        <p class="note-level-1-body"> An FX Request entered inQuantum may specify a Buy OR Sell Amount only, and no Contract Rate. When such an FX Request is replicated into Analytics, the system cannot price the deal in the Pricing screen nor in Deal Analyze, and Position and Cash Flow reports can only report on the deal leg that has an amount specified.</p>
+                                        <h3 class="h4internal">Exclusions and Conditions</h3>
+                                        <p class="bodytext">FX Requests:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">cannot be entered directly into Analytics via the Pricing page, Quantum Deal Import page, or Scheduler Deal Import Task Provider, and</li>
+                                            <li class="listbullet1" value="2">cannot be <em class="emphasis">filled</em> in Analytics.</li>
+                                        </ul>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

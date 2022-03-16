@@ -1,0 +1,28 @@
+﻿@* Just for testing emit the Request Details *@
+@using SunGard.AvantGard.Quantum.Client.Core
+@using SunGard.AvantGard.Quantum.External.Data
+@model SunGard.AvantGard.Web.Help.HelpRequestModel
+@{
+   Layout = null;
+}
+   <div>
+      @if (ViewBag.HtmlContent == null)
+      {
+         <h1>@DisplayNames.Help.ToLocalizedDisplayName()</h1>
+         <h3>@DisplayNames.Area.ToLocalizedDisplayName(): @Model.Area</h3>
+         <h3>@DisplayNames.Page.ToLocalizedDisplayName(): @Model.Page</h3>
+         <h3>@DisplayNames.Field.ToLocalizedDisplayName(): @Model.Field</h3>
+         <h3>@DisplayNames.Ancestors.ToLocalizedDisplayName()</h3>
+         if (Model.Ancestors != null)
+         {
+            foreach (var id in Model.Ancestors)
+            {
+               <h4 style="padding-left: 18px">@id</h4>
+            }
+         }
+      }
+      else
+      {
+         @Html.Raw(ViewBag.HtmlContent)
+      }
+   </div>

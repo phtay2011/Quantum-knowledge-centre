@@ -1,0 +1,848 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+p
+{
+	font-size: 10pt;
+	orphans: 3;
+	widows: 3;
+	font-family: Arial;
+	margin: 1.12em 0 1.12em 0;
+	mc-hyphenate: never;
+}
+
+p.BodyText	/*Keep*/
+{
+	font-size: 10pt;
+	margin-bottom: 6px;
+}
+
+ol,
+ul,
+li
+{
+	/*margin: 0 0 0 0;for li in blank project, this is 8px - 8px  For ul in blank projct this is 1.12em 0 - 40px*/
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+li
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	mc-hyphenate: never;
+}
+
+ul
+{
+	margin: 1.12em 0 0 40px;
+	mc-hyphenate: never;
+}
+
+h1
+{
+	page-break-after: avoid;
+	margin-bottom: 12pt;
+	font-weight: bold;
+	color: #0081A3;
+	margin-top: 36pt;
+	mc-heading-level: 1;
+	font-family: Arial;
+	font-size: 30pt;
+	mc-hyphenate: never;
+}
+
+h2
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	color: #0081A3;
+	margin-bottom: 6pt;
+	mc-heading-level: 2;
+	font-family: Arial;
+	font-size: 18pt;
+	margin-top: 20pt;
+	mc-hyphenate: never;
+}
+
+h3
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	color: #0081A3;
+	page-break-inside: avoid;
+	margin-top: 10pt;
+	margin-bottom: 6pt;
+	mc-heading-level: 3;
+	font-family: Arial;
+	font-size: 14pt;
+}
+
+h4
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	color: #0081A3;
+	font-size: 13pt;
+	mc-heading-level: 0;
+	/*removes from toc*/
+	font-family: Arial;
+	margin: 1.12em 0;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+	mc-heading-level: 0;
+	font-family: Arial;
+	/*removes from toc*/
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+	mc-heading-level: 0;
+	font-family: Arial;
+	/*removes from toc*/
+}
+
+pre
+{
+	font: courier;
+	font-size: 10pt;
+	mc-hyphenate: never;
+}
+
+td	/*where is this used? Consider using a table stylesheet.*/
+{
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+th	/*see the atble styles folder*/
+{
+	
+}
+
+/*Images*/
+
+img	/*Basic information about this selector. Useful to take images originally from online help and set them at 100% in the PDF*/
+{
+	mc-thumbnail-max-height: inherit;
+	mc-thumbnail-max-width: inherit;
+	height: auto;
+	max-width: 100%;
+	page-break-before: avoid;
+	border: 1px solid #256074;
+}
+
+img.Print100	/*PDF 100%. Use for wide images*/
+{
+	max-width: 100%;
+	page-break-before: avoid;
+	margin-top: 2pt;
+}
+
+img.Print80	/*PDF 80%. Use for medium sized dialog boxes*/
+{
+	max-width: 80%;
+	page-break-before: avoid;
+	margin-top: 2pt;
+}
+
+img.Print60	/*PDF 60%. Use for small dialog boxes in PDF*/
+{
+	page-break-before: avoid;
+	margin-top: 2pt;
+	max-width: 60%;
+}
+
+img.FISFooter
+{
+	/*margin-right: auto;*/
+	width: 2.8cm;
+	border: none 2px transparent;
+}
+
+/*All sorts of classes*/
+
+.boldcharstyle	/*Use im emergencies with selector = strong for the name of fields. Will eventually be redacted.*/
+{
+	font-weight: bold;
+	color: #004F5D;
+}
+
+p.QMCode	/*unknown*/
+{
+	color: blue;
+	margin-left: 17pt;
+}
+
+p.couriercode
+{
+	font-family: "Lucida Console", Courier, monospace;
+	margin-left: 0.5cm;
+}
+
+p.FISFooterTextLeft	/*pagelayout*/
+{
+	font-size: 9pt;
+	margin-top: 0.3cm;
+	margin-left: 0.3cm;
+	color: #8a8a8d;
+}
+
+p.FISFooterTextRight	/*pagelayout*/
+{
+	color: #8a8a8d;
+	text-align: right;
+	font-size: 9pt;
+	margin-top: 0.3cm;
+}
+
+p.FISHeaderTextRight	/*pagelayout*/
+{
+	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 1.8cm;
+	margin-top: 0.5cm;
+}
+
+p.FISHeaderTextLeft	/*pagelayout*/
+{
+	color: ffffff;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 1.8cm;
+	margin-top: 0.5cm;
+}
+
+p.SuperTitle	/*frontpage*/
+{
+	margin-left: 9pt;
+	color: #FFFFFF;
+	font-size: 1pt;
+}
+
+p.Title	/*frontpage*/
+{
+	margin-bottom: 15pt;
+	color: #004E59;
+	font-size: 16pt;
+}
+
+p.Version	/*frontpage*/
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	color: #FFFFFF;
+	letter-spacing: 1pt;
+	font-size: 21pt;
+}
+
+p.Byline	/*frontpage*/
+{
+	margin-bottom: 12pt;
+	color: #8DC63F;
+	font-size: 14pt;
+}
+
+p.PrefaceHeadingOnly	/*preface*/
+{
+	page-break-after: avoid;
+	margin-bottom: 6pt;
+	font-weight: bold;
+	color: #0081A3;
+	margin-top: 36pt;
+	font-size: 30pt;
+	page-break-before: always;
+	mc-heading-level: 0;
+}
+
+p.PrefaceHeadings	/*preface*/
+{
+	font-weight: bold;
+	font-size: 10pt;
+	margin-bottom: 6pt;
+}
+
+p.chapternumber
+/*charcoal*/
+/*p.TOCTitle	I think the Contents page now uses the PrefaceHeadingOnly heading, which doesn't show in TOC, so remove this eventually*/
+{
+	page-break-after: avoid;
+	color: #595959;
+	margin-top: 16pt;
+	margin-bottom: 6pt;
+	font-weight: normal;
+	font-size: 18pt;
+}
+
+p.BreakNesting	/*red to redact... later in 2020, get rid of*/
+{
+	orphans: 2;
+	widows: 2;
+	background-color: red;
+	font-size: 20pt;
+}
+
+/*TOC*/
+
+MadCap|tocProxy
+{
+	border-top-color: #595959;
+	padding-left: 20px;
+	margin-right: 40px;
+}
+
+p.TOC1
+{
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-right: 0;
+}
+
+p.TOC2	/*charcoal grey*/
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	margin-left: 14pt;
+	color: #595959;
+	font-size: 12pt;
+}
+
+p.TOC3
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	margin-left: 28pt;
+	color: #595959;
+	font-size: 11pt;
+}
+
+p.TOC4
+{
+	mc-hidden: unhidden;
+	margin-left: 42pt;
+}
+
+p.H4Internal
+{
+	font-weight: bold;
+	margin-top: 10pt;
+	margin-bottom: 6pt;
+	color: black;
+	font-size: 10pt;
+	page-break-inside: avoid;
+}
+
+p.SuperHeading
+{
+	margin-top: 12pt;
+	font-variant: small-caps;
+	letter-spacing: 4pt;
+	font-size: 14pt;
+}
+
+/*Lists*/
+
+p.ListBullet
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+	padding-left: 0px;
+	list-style-type: disc;
+}
+
+li.ListBullet
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+}
+
+p.listnumber	/*used in DB install*/
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+	padding-left: 0px;
+	list-style-type: number;
+}
+
+li.listnumber	/*used in DB install*/
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+}
+
+ul.ul_1	/*replace any of these with ul*/
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 17pt;
+	background-color: green;
+}
+
+ul.ul_2	/*replace any of these with ul*/
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 42pt;
+	background-color: green;
+}
+
+ul.ul_3	/*replace any of these with ul*/
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 121pt;
+	background-color: green;
+}
+
+ul.ul_4	/*replace any of these with ul*/
+{
+	padding-left: 0px;
+	list-style-type: square;
+	margin-left: 14pt;
+	background-color: green;
+}
+
+div.div_1	/*if you see this style, problem solve to replace*/
+{
+	background-color: green;
+}
+
+div.div_2	/*if you see this style, problem solve to replace*/
+{
+	background-color: green;
+}
+
+/*Spans and chars*/
+
+span.Emphasis
+{
+	font-style: italic;
+}
+
+span.Buttons	/*use for buttons such as OK, Save and custom buttons*/
+{
+	font-weight: bold;
+}
+
+span.field	/*Use for the name of fields*/
+{
+	font-weight: bold;
+	color: #004F5D;
+}
+
+span.HotSpot
+{
+	font-style: italic;
+	color: black;
+	font-size: 10pt;
+	text-decoration: none;
+}
+
+span.Hyperlink
+{
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+span.Monospace
+{
+	font-size: 10pt;
+	font-family: monospace;
+}
+
+/*Originally a.######.jumptemplate used as hyperlinks within authorit. Unused in Flare. 
+Since the links to the QKC are not working, in 2020 I've made it look NOT like a link for PDFs such as Overview*/
+
+a.jumptemplate
+{
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+a.Hyperlink
+{
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+MadCap|xref.PageNumberOnly
+{
+	mc-format: '{page}';
+}
+
+/*Tables - should be using a table stylesheet - work to sot out these styles by end of 2020*/
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+
+p.TableHeading
+{
+	page-break-after: avoid;
+	margin-bottom: 12pt;
+	font-weight: bold;
+	color: #0081A3;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	font-size: 10pt;
+}
+
+p.TableHeadingCentred
+{
+	page-break-after: avoid;
+	margin-bottom: 12pt;
+	font-weight: bold;
+	color: #0081A3;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	font-size: 10pt;
+	text-align: center;
+}
+
+p.TableBodyText
+{
+	font-size: 10pt;
+	orphans: 2;
+	widows: 2;
+	margin-bottom: 3pt;
+}
+
+p.TableBodyCentred
+{
+	orphans: 2;
+	widows: 2;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	text-align: center;
+}
+
+p.TableListBullet
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+}
+
+li.TableListBullet
+{
+	font-size: 10pt;
+	margin-bottom: 3pt;
+}
+
+p.TableNote
+{
+	page-break-inside: avoid;
+	background-color: #E6E6E6;
+	margin-top: 6pt;
+}
+
+p.TableBodyRight-aligned
+{
+	font-size: 10pt;
+	orphans: 2;
+	widows: 2;
+	margin-bottom: 3pt;
+	text-align: right;
+}
+
+/*Notes, tips, cautions*/
+
+.notechar
+{
+	color: #4D848E;
+	font-weight: bold;
+}
+
+.cautionchar
+{
+	color: #4d2000;
+	font-weight: bold;
+}
+
+.tipchar
+{
+	color: #775408;
+	font-weight: bold;
+}
+
+.note-level-1-body	/*First sentence of a note*/
+{
+	page-break-inside: avoid;
+	background-color: #e1fcff;
+	border: 1px solid #e1fcff;
+	border-left: 5px solid #4D848E;
+	padding: 0.5em 0 0.5em 0.5em;
+	margin: 0 0 0 0;
+}
+
+.note-level-1-body_1,
+.note-level-2-body,
+.note-level-3-body	/*replace all of these if you find them in a pdf with note-level-1-body. Also replace any bullets to be level 1 as well*/
+{
+	background-color: green;
+	page-break-inside: avoid;
+	padding: 6px 0 6px 0;
+	margin: 0 0 0 0;
+}
+
+.note-level-1-bullet,
+.note-level-2-bullet,
+.note-level-3-bullet	/*Bullets within a note. L2 and L3 cope with author0it styles.*/
+{
+	page-break-inside: avoid;
+	color: #48423C;
+	background-color: #e1fcff;
+	border-left: 5px solid #4D848E;
+	list-style-position: inherit;
+	padding: 0.5em 0 0.5em 40px;
+	margin: 0 0 0 0;
+}
+
+.tip-level-1-body	/*First sentence of a tip*/
+{
+	page-break-inside: avoid;
+	background-color: #FDFDDA;
+	border: 1px solid #FDFDBE;
+	border-left: 5px solid #996c0b;
+	padding: 0.5em 0 0.5em 0.5em;
+	margin: 0 0 0 0;
+}
+
+.tip-level-1-body_1,
+.tip-level-2-body,
+.tip-level-3-body	/*replace all of these if you find them in a pdf with note-level-1-body. Also update any bullets to be level 1 as well*/
+{
+	background-color: green;
+	page-break-inside: avoid;
+	padding: 6px 0 6px 0;
+	margin: 0 0 0 0;
+}
+
+.tip-level-1-bullet,
+.tip-level-2-bullet,
+.tip-level-3-bullet	/*Bullets within a tip. L2 and L3 cope with author0it styles.*/
+{
+	page-break-inside: avoid;
+	color: #48423C;
+	background-color: #FDFDDA;
+	border-left: 5px solid #996c0b;
+	list-style-position: inherit;
+	padding: 0.5em 0 0.5em 40px;
+	margin: 0 0 0 0;
+}
+
+.caution-level-1-body	/*First sentence in a caution*/
+{
+	page-break-inside: avoid;
+	background-color: #ffe7d6;
+	border: 1px solid #ffe7d6;
+	border-left: 5px solid #ffa666;
+	padding: 0.5em 0 0.5em 0.5em;
+	margin: 0 0 0 0;
+}
+
+.caution-level-2-body,
+.caution-level-3-body	/*replace all of these if you find them in a pdf with note-level-1-body. Also update any bullets to be level 1 as well*/
+{
+	background-color: green;
+	page-break-inside: avoid;
+	padding: 6px 0 6px 0;
+	margin: 0 0 0 0;
+}
+
+.caution-level-1-bullet,
+.caution-level-2-bullet,
+.caution-level-3-bullet	/* Bullets within a caution. L2 and L3 cope with author0it styles.*/
+{
+	page-break-inside: avoid;
+	background-color: #ffe7d6;
+	border-left: 5px solid #ffa666;
+	list-style-position: inherit;
+	padding: 0.5em 0 0.5em 40px;
+	margin: 0 0 0 0;
+}
+
+/*Other*/
+
+p.writerscomm	/*Uses condition AWritersComment - excluded*/
+{
+	color: #F79646;
+	mc-conditions: 'Conditions.AWritersComm';
+}
+
+p.urllink-htmlonly10cm
+{
+	mc-conditions: 'Conditions.ScreenOnly';
+}
+
+p.urllink-wordonly10cm
+{
+	mc-conditions: 'Conditions.PrintOnly';
+}
+
+p.reuse
+{
+	font-size: 10pt;
+	margin-top: 0pt;
+	color: #8DC63F;
+	font-weight: bold;
+}
+
+p.BodyTextIndent
+{
+	margin-bottom: 6pt;
+	font-size: 10pt;
+	margin-left: 17pt;
+}
+
+p.PrefaceTextOnly
+{
+	color: #000000;
+	font-size: 9pt;
+	margin-bottom: 6pt;
+}
+
+p.Redacted
+{
+	color: #b22222;
+	background: #fa8072;
+}
+
+p.HeadingProcedure	/*redact this style*/
+{
+	background-color: red;
+}
+
+p.procedureheading	/*same as online */
+{
+	font-family: "Arial", verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 17.5333px;
+	color: #004F5D;
+	margin-top: 0.9em;
+	margin-bottom: 0.4em;
+}
+
+/*Minitocproxy print*/
+
+p.MiniTOCTitle
+{
+	page-break-after: avoid;
+	font-weight: bold;
+	font-size: 16pt;
+	background-color: #004F59;
+	margin-top: 6pt;
+	margin-bottom: 3pt;
+	color: #FFFFFF;
+}
+
+p.MiniTOCItem
+{
+	font-size: 10pt;
+	text-indent: 18pt;
+	background-color: #CCCCCC;
+	color: #595959;
+}
+
+MadCap|miniTocProxy
+{
+	padding-left: 0;
+	padding-top: 0.3em;
+	mc-toc-depth: 2;
+	border-bottom: solid 1px #cccccc;
+	border-top: solid 1px #cccccc;
+	padding-right: 1em;
+	margin: 0.2em 12em 3em 0em;
+}
+
+p.MiniTOC1
+{
+	font-weight: normal;
+	mc-leader-offset: 10pt;
+	margin: 0.3em 0 0.3em 1em;
+	color: #000000;
+}
+
+p.MiniTOC2
+{
+	margin: 0 0 0.3em 2em;
+	color: #595959;
+}
+
+/*Especially for the Open Source Document*/
+
+div.LicenceTidyUpStyle
+{
+	font-size: 10pt;
+	font-family: monospace;
+	font: courier;
+}
+
+/*popups?, expanding body? hotspot? What sre these used for in print?*/
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+.caution-level-1-bullet
+{
+	padding: 0.5em 0 0.5em 40px;
+	margin: -0.8em 0 0 0;
+}
+
+.tip-level-1-bullet
+{
+	margin: -0.8em 0 0 0;
+}
+
+.note-level-1-bullet
+{
+	margin: -0.8em 0 0 0;
+}
+
+p.InThisChapter
+{
+	font-weight: bold;
+	color: #000000;
+	margin-left: 0.2em;
+}
+
+ol
+{
+	mc-hyphenate: never;
+}
+

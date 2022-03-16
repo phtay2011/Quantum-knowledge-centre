@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Quantum Revaluations and Pricing">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Interest Rate valuation methods </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Interest Rate valuation methods </h1>
+                                        <p class="bodytext">The following interest rate valuation methods are available for deals whose revaluations are based on interest rates - for example, Money Market, Securities, Interest Rate Swap, and Cross Currency Swap deals.</p>
+                                        <h3 class="h4internal">Bills</h3>
+                                        <p class="bodytext">This method ignores any unknown floating cash flows and so assumes that the floating side is like a Discounted Bill.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">For fixed rates, the individual cash flows will be discounted from the cash flow date to the revaluation date.</li>
+                                            <li class="listbullet1" value="2">For floating rates, this method will discount (using the <a id="h48278" title="Quantum Zero Curve" href="171918.htm" target="_self">Quantum Zero Curve</a>) only the known cash flow from the previous rate fixing and apply the principal discount from the same known cash flow date.<p class="listcontinue">Where a transaction incorporates margins, these are treated as known cash flows and are therefore also discounted from the cash flow date to the revaluation date.</p></li>
+                                        </ul>
+                                        <p class="note-level-1-body"> In-arrears Interest Rate Swaps do not support the <strong class="alertsonly-bold">Bills</strong> revaluations methodology.</p>
+                                        <h3 class="h4internal">No</h3>
+                                        <p class="bodytext">Select <strong class="boldcharstyle">NO</strong> if you do not require revaluation.</p>
+                                        <h3 class="h4internal">Projected</h3>
+                                        <p class="bodytext">This method essentially projects the value of floating cash flows based upon Discount Factors obtained from the <a id="h48278_2" title="Quantum Zero Curve" href="171918.htm" target="_self">Quantum Zero Curve</a>.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">For fixed rates, the individual cash flows will be discounted from the cash flow date to the revaluation date.</li>
+                                            <li class="listbullet1" value="2">For floating rates, this method will project all future floating cash flows based upon the Quantum Zero Curve and discount the principal from the actual principal maturity date.<p class="listcontinue">For In-arrears Interest Rate Swap deal legs (floating rates, Yield Periodic formula only), the valuation requires that a convexity adjustment is made to the forward rate used for each period, which requires volatility for each period's forward rate. These volatilities can be calculated from an IRO Volatility curve by interpreting the IRO volatilities intervals corresponding to the rate reset periods of the swap.</p><p class="listcontinue">The formula to calculate the adjusted forward rate is:</p><p class="listcontinue"><img id="f152391" src="Resources/Images/152391.png" class="embeddedolefiletemplate" alt="" height="168" width="413" vspace="0" hspace="0" align="bottom" border="0" /></p></li>
+                                        </ul>
+                                        <h3 class="h4internal">Bills Net</h3>
+                                        <p class="bodytext">This method is as for the Bills method described above, <em class="emphasis">except that</em> any gains are posted <em class="emphasis">net</em> of Withholding Tax.</p>
+                                        <h3 class="h4internal">Projected Net</h3>
+                                        <p class="bodytext">This method is as for the Projected method described above, <em class="emphasis">except that</em> any gains are posted <em class="emphasis">net</em> of Withholding Tax.</p>
+                                        <h3 class="h4internal">Imported</h3>
+                                        <p class="bodytext">Use this method to revalue a deal using an imported revaluation method other than those already provided in Quantum.</p>
+                                        <h3 class="h4internal">Imported Separate</h3>
+                                        <p class="bodytext">This method is as for the Imported method described above, <em class="emphasis">except that</em> it indicates when two separate values are imported for the deal - for example the Pay and Receive leg values of an Interest Rate Swap.</p>
+                                        <p class="bodytext">See also:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Imported Market Values</li>
+                                            <li class="listbullet1" value="2">Deals that can use imported market values</li>
+                                        </ul>
+                                        <h2 class="h2internal">Methods also valid for Money Market Securities</h2>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE:</span> These valuation methods are not usually appropriate for customized deals, so the system will normally switch to the <strong class="alertsonly-bold">Bills</strong> method to revalue customized deals.</p>
+                                        <h3 class="h4internal">Market</h3>
+                                        <p class="bodytext">The amount is calculated by marking the securities transaction to market value.</p>
+                                        <p class="bodytext">You can override this by selecting <strong class="boldcharstyle">Retain Revals on Customization</strong> in the Other Details tab in System Defaults.</p>
+                                        <h3 class="h4internal">Market Cum</h3>
+                                        <p class="bodytext">The gain or loss is posted on revaluation. The gain or loss is calculated by marking the Securities deals to market value as if they are cum dividend, irrespective of whether each security is cum or ex dividend.</p>
+                                        <p class="bodytext">Securities purchased Ex dividend are valued as Ex dividend while still in their first Ex dividend period.</p>
+                                        <h3 class="h4internal">FRN-Coupon</h3>
+                                        <p class="bodytext">(With FRN instruments only)</p>
+                                        <p class="bodytext">An adaptation of the <strong class="boldcharstyle">Market</strong> method, differing in the way the Swap rate is applied, as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">The <strong class="boldcharstyle">Short Rate</strong> (used to discount the next coupon) is taken from the rate record identified by the associated <strong class="boldcharstyle">Interest Rate</strong> and <strong class="boldcharstyle">Rate Type</strong> settings( immediately below this one) at the date of the coupon. This is the same as the Short Rate used for the Market method.</li>
+                                            <li class="listbullet1" value="2">The <strong class="boldcharstyle">Swap Rate</strong> (used to discount the remaining future cashflows) is taken from the rate record identified by the <strong class="boldcharstyle">Par Rate Name for Zero Curve</strong> field, at the Maturity Date of the deal. Unlike the <strong class="boldcharstyle">Market</strong> method, this rate is not converted to a Discount Factor.</li>
+                                        </ul>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

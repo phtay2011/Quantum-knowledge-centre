@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Processing|Back Office|Settlements (Processing)|Settlements Processing Functions">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Counterparty Instructions function (Stock Flow) </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Counterparty Instructions function (Stock Flow) </h1>
+                                        <p class="bodytext">(Quick menu function on a stock flow item)</p>
+                                        <p class="bodytext">For a stock flow, the Counterparty ("their") delivery instructions are those concerning the stock account you are delivering Securities stock into or receiving stock from - that is, the Counterparty Stock account.</p>
+                                        <p class="bodytext">You can view and possibly change these instructions from the Settlements page results grid by clicking a linked value in the appropriate <strong class="boldcharstyle">Stock</strong> grid row and selecting <strong class="boldcharstyle">Counterparty Instructions</strong> from the Quick menu. A separate Counterparty Instructions window opens for the purpose, displaying details from the Counterparty Stock account record.</p>
+                                        <p class="bodytext">You can also access Counterparty Instructions from the  <a id="h168562" title="Settlement Approval page" href="straightthroughprocessing_settlementapproval.htm" target="_self">Settlement (Approval) page</a> in the Processing menu in the same way, but for viewing purposes only.</p>
+                                        <p class="note-level-1-body">
+                                        </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">You cannot change Counterparty Instructions for linked flows (cash and stock) that have a <strong class="alertsonly-bold">Payment Sent</strong> status of <strong class="alertsonly-bold">YES</strong> (Deliver/Receive against Payment).</li>
+                                            <li class="note-level-1-bullet" value="2">To change instruction data, you require <strong class="alertsonly-bold">Modify SSI</strong> permission for the Counterparty Delivery Instruction Change module (Module Security tab, User or User Group page).</li>
+                                            <li class="note-level-1-bullet" value="3">To only <em class="emphasis">view</em> the instructions, the <strong class="alertsonly-bold">Inquire</strong> permission for the Counterparty Delivery Instruction Change module is sufficient.</li>
+                                            <li class="note-level-1-bullet" value="4">Changing the instructions for any flow can change the Approval requirements, because <strong class="alertsonly-bold">Payment Instructions</strong> is one of the <a id="h185557" title="Matching Criteria, Settlement Approval Rules" href="185555.htm" target="_self">Matching Criteria for Settlement Approval Rules</a>.</li>
+                                            <li class="note-level-1-bullet" value="5">Other restrictions may apply, as for cash flows. See the <em class="emphasis">Restrictions</em> subsection under <a id="h190710" title="Changing Counterparty Instructions" href="190707.htm" target="_self">Changing Counterparty Instructions</a>.</li>
+                                        </ul>
+                                        <p class="bodytext">The default instructions are those defined:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">for Stock Account Transfers - on the Custodian Details tab on the <a id="h167805" title="Counterparty Stock Account - Back Office" href="167800.htm" target="_self">Counterparty Stock Account</a> page, or</li>
+                                            <li class="listbullet1" value="2">for other types of stock flow - according to the applicable <a id="h69093" title="Cp SAc - Defaults, Rules" href="165913.htm" target="_self">Counterparty Stock Account Defaulting Rule</a>.</li>
+                                        </ul>
+                                        <h2 class="h2internal">Header area</h2>
+                                        <h3 class="h4internal">Amount</h3>
+                                        <p class="bodytext">Read<em class="emphasis">-</em>only; the currency and amount of the stock flow.</p>
+                                        <h3 class="h4internal">Beneficiary Name</h3>
+                                        <p class="bodytext">Read only; the deal counterparty the stock is being delivered to, or received from.</p>
+                                        <h3 class="h4internal">Account Number</h3>
+                                        <p class="bodytext">The Counterparty Stock account number. To change, select from the drop-down list of Counterparty Stock Accounts in the currency of the stock flow.</p>
+                                        <p class="bodytext">This list may or may not be limited to stock accounts for the deal counterparty, depending on the setting of the system-wide option <strong class="boldcharstyle">Display bank accounts for all counterparties</strong> (under <em class="emphasis">Bank Accounts</em> on the Operational Settings page).</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> Select another Counterparty's stock account to allow for settlement to an intermediary stock account.</p>
+                                        <p class="bodytext">If you do change the Account Number:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">a warning message alerts you that it may be necessary to select an alternative <strong class="boldcharstyle">SWIFT MT Format</strong> Template in <a id="h29580" title="Our Instructions function (Cash Flow)" href="168488.htm" target="_self">Our Instructions</a>, and</li>
+                                            <li class="listbullet1" value="2">if the instructions are for a Stock Account Transfer, your change will be reflected on the Settlement Details tab for that <a id="h167882" title="Stock Transfer" href="167711.htm" target="_self">Stock Transfer</a> transaction - either in the <strong class="boldcharstyle">Source</strong> or <strong class="boldcharstyle">Destination</strong> area, depending on whether the stock flow is incoming or outgoing, respectively.</li>
+                                        </ul>
+                                        <h3 class="h4internal">SWIFT DSS</h3>
+                                        <p class="bodytext">An optional unique identifier for the Counterparty's custodian; defaults to that defined for the default Counterparty Stock account (see <em class="emphasis">Custodian Details </em>below).</p>
+                                        <h3 class="h4internal">Account Name</h3>
+                                        <p class="bodytext">Read-only; the Counterparty Stock account name.</p>
+                                        <h2 class="h2internal">Custodian Details</h2>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> These details relate to the custodian holding the counterparty stock account.</p>
+                                        <h3 class="h4internal">Custodian</h3>
+                                        <p class="bodytext">Read-only; the name of the custodian.</p>
+                                        <p class="bodytext">If specifying an Intermediary Bank, this field is mandatory. However, with the SWIFT payment method AND provided a <strong class="boldcharstyle">BIC</strong> code is present, <strong class="boldcharstyle">N/A</strong> is valid.</p>
+                                        <h3 class="h4internal">BIC</h3>
+                                        <p class="bodytext">Read-only; the Bank Identification Code for the custodian.</p>
+                                        <h3 class="h4internal">SWIFT DSS</h3>
+                                        <p class="bodytext">Read-only; the DSS (Data Source Scheme) code value that will be output in the stock flow message when:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">the Payment Method for the corresponding cash flows is <strong class="boldcharstyle">SWIFT</strong>,</li>
+                                            <li class="listbullet1" value="2">the custodian stock account has a Unique Identifier value that applies for this code, and</li>
+                                            <li class="listbullet1" value="3">the custodian stock account's specified <a id="h180398" title="SWIFT Format Templates for Stock Flows" href="179613.htm" target="_self">SWIFT MT Format Template</a> indicates that this DSS code and the Unique Identifier are to be output.</li>
+                                        </ul>
+                                        <p class="bodytext">For example: <strong class="boldcharstyle">ECLR </strong>for Euroclear.</p>
+                                        <h3 class="h4internal">Account Number</h3>
+                                        <p class="bodytext">Read-only; the account number that the custodian has with the Intermediary.</p>
+                                        <p class="bodytext">Required for Counterparties who do not (or cannot) hold an account directly with the custodian (the Delivery Agent), and therefore must go though an Intermediary.</p>
+                                        <h3 class="h4internal">Bank Name</h3>
+                                        <p class="bodytext">Read-only; the name of the bank where the specified custodian account is held.</p>
+                                        <h3 class="h4internal">Address</h3>
+                                        <p class="bodytext">Read-only; the postal address of the custodian.</p>
+                                        <h2 class="h2internal">Payment Category</h2>
+                                        <p class="bodytext">Mandatory; the EFT output option for the selected Counterparty and the applicable payment method. Select <strong class="boldcharstyle">Standard Settlement Instruction</strong> or <strong class="boldcharstyle">EFT Not Required</strong> to specify whether or not to pass the stock flow on for EFT Processing, respectively.</p>
+                                        <h3 class="h4internal">Overseas Bank</h3>
+                                        <p class="bodytext">Not applicable to a stock flow.</p>
+                                        <h2 class="h2internal">Clearing Fields area</h2>
+                                        <h3 class="h4internal">Clearing code values</h3>
+                                        <p class="bodytext">Any Clearing codes specified for the <a id="h167805_2" title="Counterparty Stock Account - Back Office" href="167800.htm" target="_self">Counterparty Stock Account</a> record appear here as read-only values, for information purposes only, each labeled with the name of the Clearing code, as specified on the Custodian's Stock account.</p>
+                                        <h3 class="h4internal">Delivery Narrative</h3>
+                                        <p class="bodytext">Read-only; as specified on the <a id="h167805_3" title="Counterparty Stock Account - Back Office" href="167800.htm" target="_self">Counterparty Stock Account</a> record.</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

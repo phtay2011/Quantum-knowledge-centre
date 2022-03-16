@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Confirmation and EFT Setup and Administration|EFT Setup and Administration|EFT Message Formatting">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Data Template XML Data records (EFTs)</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>About Data Template XML Data records (EFTs)</h1>
+                                        <p class="bodytext">A Data Template XMl Data record for a specific EFT message type:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">is specified in the <strong class="boldcharstyle">name</strong> attribute of the mandatory <strong class="boldcharstyle"><a id="h191897" title="DataTemplate, Layout, AtsTransformation, and Stylesheet Elements" href="116961.htm#o179768" target="_self">DataTemplate</a></strong> element in the XTC Configuration XML Data record for the applicable External Method,</li>
+                                            <li class="listbullet1" value="2">defines Quantum data that can be retrieved to build the message content,</li>
+                                            <li class="listbullet1" value="3">cannot be changed by users, and</li>
+                                            <li class="listbullet1" value="4">contains XML code.</li>
+                                        </ul>
+                                        <h2>Seed Data Template records</h2>
+                                        <p class="bodytext">Two seed Data Template XML Data records are provided:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">SeedXMLDataTemp_EFTandFlows</strong> (the default for SWIFT) - specifies all available cash flow, stock flow, and related confirmation<strong class="boldcharstyle">*</strong> data, and</li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">SeedXMLDataTemp_EFTandFlows_InclSource</strong>- as above plus details of all source database fields.</li>
+                                        </ul>
+                                        <p class="caution-level-1-body"><strong class="boldcharstyle">*CAUTION:</strong> Including Confirmation data in EFT messages impacts message output performance. This is more noticeable when a large number of EFTs are processed, and depending on how much additional confirmation data is requested in the data file. Use only when necessary and the data is not available from the EFT.<br /><br />If no Confirmation data is required, remove the <strong class="alertsonly-bold">&lt;confirmations&gt;</strong> section completely from the Data Template record.</p>
+                                        <h2>Elements and Attributes</h2>
+                                        <p class="bodytext">These are common to both Confirmations and EFTs.</p>
+                                        <p class="bodytext">See <a id="h197715" title="Data Template file elements and attributes" href="197133.htm" target="_self">Data Template XML Data record elements and attributes</a>.</p><a name="o179772"></a>
+                                        <h2>General Structure</h2>
+                                        <p class="bodytext">For SWIFT, the Data Template record's XML code has the following general structure.</p>
+                                        <p class="bodytextindent"><code class="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+                                            <br /><code class="monospace">&lt;eft&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&lt;messageType/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;currentMessage&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;messageId/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;externalReference/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;isBatched/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/currentMessage&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;reason/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;formattedMessage/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;previousMessage/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;eftFields&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;parameterDetails&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;cashflowsTable&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;systemDate&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&lt;swiftTags&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/eftFields&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;cashflows&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/cashflows&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;flows&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/flows&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;cancellationMessageIds/&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;deliveryProfiles&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/deliveryProfiles&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;eftMessages&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/eftMessages&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;confirmations&gt;</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...</code>
+                                            <br /><code class="monospace">&#160;&#160;&#160;&#160;&lt;/confirmations&gt;</code>
+                                            <br /><code class="monospace">&lt;/eft&gt;</code>
+                                        </p>
+                                        <p class="bodytext">Where:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">messageType</strong> is the SWIFT Message Type;</li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">currentMessage</strong> contains:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">messageId</strong> - the unique message ID, and</li><li class="listbullet1" value="2"><strong class="boldcharstyle">externalReference</strong> - the unique external reference, typically used in Tag20;</li></ul></li>
+                                            <li class="listbullet1" value="3"><strong class="boldcharstyle">reason</strong> is the parameter selection for Payment/Receipt or Cancellation Messages only, and can be <strong class="boldcharstyle">PAYMENTS</strong>, <strong class="boldcharstyle">RECEIPTS</strong>, <strong class="boldcharstyle">BOTH</strong>, or <strong class="boldcharstyle">CANCELLATION</strong>;</li>
+                                            <li class="listbullet1" value="4"><strong class="boldcharstyle">formattedMessage</strong> is the GENEFT/SWIFTEFT output prior to any XML manipulation;</li>
+                                            <li class="listbullet1" value="5"><strong class="boldcharstyle">previousMessage</strong> is the previous message content, if any - for example, as used for cancellation;</li>
+                                            <li class="listbullet1" value="6"><strong class="boldcharstyle">eftFields</strong> contains:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">parameterDetails</strong> - all parameter details: for example value dates, run number, transaction types, and so on,</li><li class="listbullet1" value="2"><strong class="boldcharstyle">cashflowsTable</strong> - all the details from the <strong class="boldcharstyle">GENSCRIPT</strong> cashflows table - for example <strong class="boldcharstyle">adhocInsKeyField</strong>, <strong class="boldcharstyle">badelinsBankToBankKeyField</strong>, and so on,</li><li class="listbullet1" value="3"><strong class="boldcharstyle">systemDate</strong> - the System Date, and</li><li class="listbullet1" value="4"><strong class="boldcharstyle">swiftTags</strong> - all the currently supported Generic EFT scripting SWIFT Tags such as Tag22, Tag53a, and so on;</li></ul></li>
+                                            <li class="listbullet1" value="7"><strong class="boldcharstyle">cashflows</strong> contains all details related to a particular cash flow - for example, the cash flow number, deal number, cash flow date, amount, account details, transaction type, payment category, counterparty details, ordering customer details, delivery details (delivery instructions), and details of any netted cashflows (within <strong class="boldcharstyle">NetDetails</strong> elements within one <strong class="boldcharstyle">netting</strong> element);</li>
+                                            <li class="listbullet1" value="8"><strong class="boldcharstyle">flows</strong> contains all details related to a particular stock flow - for example, the flow number, deal number, linked cash flow number, flow date, amount, units, account details, transaction type, payment category, security identification details, and counterparty details;</li>
+                                            <li class="listbullet1" value="9"><strong class="boldcharstyle">confirmations*</strong> (if required) contains related Confirmation data fields. For details, see the section <a id="h81516" title="About the Data Template Files (Confirmation)" href="81057.htm" target="_self">About the Data Template Files</a> under <em class="emphasis">Confirmations</em>.<p class="caution-level-2-body"><strong class="boldcharstyle">*CAUTION:</strong> Including Confirmation data in EFT messages impacts message output performance. This is more noticeable when a large number of EFTs are processed, and depending on how much additional confirmation data is requested in the data file. Use only when necessary and the data is not available from the EFT.<br /><br />If no Confirmation data is required, remove the <strong class="alertsonly-bold">&lt;confirmations&gt;</strong> section completely from the Data Template record.</p></li>
+                                        </ul><a name="o179776"></a>
+                                        <h2>Data Template record content</h2>
+                                        <p class="bodytext">The content of the Data Template record's XML code specifies the raw data in the EFT queue, as output by an EFT Processing run.</p>
+                                        <p class="bodytext">Depending on the EFT Processing query configuration, the output may include multiple cash flows (and stock flows where applicable).</p>
+                                        <p class="bodytext">One file is output per EFT <em class="emphasis">event</em>. For example, with SWIFT:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">one data file with information about a SWIFT MT103 message based on a single or netted cash flow;</li>
+                                            <li class="listbullet1" value="2">one data file for batched cash flows (depending on EFT Processing run settings);</li>
+                                            <li class="listbullet1" value="3">one data file for an MT540 based on a single stock flow; or</li>
+                                            <li class="listbullet1" value="4">one data file for an MT543 based on a stock flow with one or more cash flows linked to it.</li>
+                                        </ul><a name="o179779"></a>
+                                        <h2>Types of EFT output</h2>
+                                        <p class="bodytext">The Data Template XML Data record's code lists the available source data that can be used to build the content specified in the Layout record. More than a thousand various data fields can potentially be used for an EFT.</p>
+                                        <p class="bodytext">Different types of EFT data files that may be produced (depending on EFT Processing run settings) are:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">single standalone cash flow - contains a single stand-alone cash flow,</li>
+                                            <li class="listbullet1" value="2">multiple cash flows - contains multiple cash flows that are either netted or need to be batched,</li>
+                                            <li class="listbullet1" value="3">same-deal cash flows - contains multiple cash flows on the same day and for the same deal number,</li>
+                                            <li class="listbullet1" value="4">single standalone stock flow - contains a single standalone stock flow,</li>
+                                            <li class="listbullet1" value="5">single stock flow with linked cash flows - contains a single stock flow with one or more associated cash flows, and</li>
+                                            <li class="listbullet1" value="6">cancelation - contains a single cancelation message.</li>
+                                        </ul>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

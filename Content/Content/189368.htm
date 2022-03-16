@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Dealing (Quantum)|Forwards &amp; Futures|Initial Margin (Futures and Exchange Traded Options)">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Initial Margin Entry Example </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Initial Margin Entry Example </h1>
+                                        <p class="bodytext">The following example shows how information about Initial and Variation Margins translates into entries on the Broker Summary statement produced by a Futures Margin query run.</p>
+                                        <h3 class="h4internal">Trial Balance as at 22 September</h3>
+                                        <table class="tableintopic" width="461" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">DR</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" colspan="2" width="255">
+                                                    <p class="tablebodytext">Broker Account (various)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">275,838.73</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="36">
+                                                    <p class="tablebodytext">DR</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" colspan="2" width="255">
+                                                    <p class="tablebodytext">Initial Margin Contra (Deal #1)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">392,464.00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" rowspan="3" width="36">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="38">
+                                                    <p class="tablebodytext">CR</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="217">
+                                                    <p class="tablebodytext">Bank Account (Opening Balance)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">209,164.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="38">
+                                                    <p class="tablebodytext">CR</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="217">
+                                                    <p class="tablebodytext">Variation Margin Gain (various)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">66,674.73</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="38">
+                                                    <p class="tablebodytext">CR</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="217">
+                                                    <p class="tablebodytext">Initial Margin (Deal # 1)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="85">
+                                                    <p class="tablebodytext">392,464.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h4internal">Margin Summary display</h3>
+                                        <table class="tableintopic" width="570" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="138">
+                                                    <p class="tableheading">Column heading</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Value</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="306">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">Opening Balance</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">209,164.00</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The opening cash balance already in the Broker account.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">VM (Futures)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">52,903.11</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The Futures Variation Margin already paid to the Broker.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">VM (Options)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">13,771.62</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The Options Variation Margin already paid to the Broker.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">Closing Balance</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">275,838.73</strong>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The closing balance of the account; the total equity (the amount already held by the Broker).</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">Initial Margin</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">(392,464.00)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The Initial Margin amount that needs to be held by the Broker on this date.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="138">
+                                                    <p class="tablebodytext">Excess/Shortage<strong class="boldcharstyle">*</strong></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">(<strong class="boldcharstyle">116,625.27</strong>)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="306">
+                                                    <p class="tablebodytext">The amount still to be added to the account - in this case a shortage to be paid to the Broker (the difference between what is required and what is already there).</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext"><strong class="boldcharstyle">* </strong>To transfer a shortage to the Broker, use a <a id="h163385" title="Cash Transfer" href="163295.htm" target="_self">Cash Transfer</a>.</p>
+                                        <p class="note-level-1-body"><span class="notechar"> NOTE:</span> The G/L entries always reflect the adjustment, regardless of whether the Initial Margin deal entry type was an Adjustment or Balance entry. The system maintains an opening balance, and adds or subtracts the actual cash flows. From this, it calculates the excess or shortage.</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

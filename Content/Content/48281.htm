@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Quantum Revaluations and Pricing|Quantum Zero Curve">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Swap section: Quadratic Bootstrap Procedure</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Swap section: Quadratic Bootstrap Procedure</h1>
+                                        <p class="bodytext">If the fixed leg of a swap with unit face value and n payments is dealt at par, then:</p>
+                                        <h3 class="h4internal">Equation 1</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47122" src="Resources/Images/47122.png" class="embeddedolefiletemplate" alt="" height="204" width="453" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Assume that the length of each payment period is constant (T<sub class="subscript">i</sub> = T,<span class="symbol">"</span>), then Equation 1 can be rewritten as:</p>
+                                        <h3 class="h4internal">Equation 2</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47099" src="Resources/Images/47099.png" class="embeddedolefiletemplate" alt="" height="88" width="188" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Again assume that if the fixed leg of a swap with unit face value and (n+1) payments is dealt at par, then:</p>
+                                        <h3 class="h4internal">Equation 3</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47098" src="Resources/Images/47098.png" class="embeddedolefiletemplate" alt="" height="88" width="261" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Similarly, for a swap with n+2 payments:</p>
+                                        <h3 class="h4internal">Equation 4</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47097" src="Resources/Images/47097.png" class="embeddedolefiletemplate" alt="" height="88" width="359" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Substituting for <img id="f47096" src="Resources/Images/47096.png" class="embeddedolefiletemplate" alt="" height="47" width="49" vspace="0" hspace="0" align="bottom" border="0" /> in Equation 4 using Equation 2 gives:</p>
+                                        <h3 class="h4internal">Equation 5</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47121" src="Resources/Images/47121.png" class="embeddedolefiletemplate" alt="" height="69" width="409" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Equation 5 in turn implies:</p>
+                                        <h3 class="h4internal">Equation 6</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47120" src="Resources/Images/47120.png" class="embeddedolefiletemplate" alt="" height="44" width="381" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">To simplify Equation 6, consider the following relationships between the discount factors for periods n, n+1, and n+2:</p>
+                                        <h3 class="h4internal">Equation 7</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47119" src="Resources/Images/47119.png" class="embeddedolefiletemplate" alt="" height="29" width="171" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <h3 class="h4internal">Equation 8</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47118" src="Resources/Images/47118.png" class="embeddedolefiletemplate" alt="" height="96" width="265" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Assuming f<sub class="subscript">n+1</sub> = f<sub class="subscript">n+2</sub>, then Equation 8 can be rewritten as:</p>
+                                        <h3 class="h4internal">Equation 9</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47114" src="Resources/Images/47114.png" class="embeddedolefiletemplate" alt="" height="29" width="172" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Finally, dividing equation 6 by Equation 9 gives:</p>
+                                        <h3 class="h4internal">Equation 10</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47113" src="Resources/Images/47113.png" class="embeddedolefiletemplate" alt="" height="116" width="547" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Note that the expression in Equation 10 is a quadratic equation of the form:</p>
+                                        <h3 class="h4internal">Equation 11</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47136" src="Resources/Images/47136.png" class="embeddedolefiletemplate" alt="" height="165" width="241" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Although there are two solutions to the quadratic equation, the solution for (1+f<sub class="subscript">n+1</sub>) is calculated using the higher root. That is:</p>
+                                        <h3 class="h4internal">Equation 12</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47105" src="Resources/Images/47105.png" class="embeddedolefiletemplate" alt="" height="44" width="275" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">Thus, standing at period i and substituting (1+f<sub class="subscript">n+1</sub>) for <em class="emphasis">x</em>, the zero rates for periods (i+1) and (i+2) are determined as:</p>
+                                        <h3 class="h4internal">Equation 13</h3>
+                                        <p class="bodytextindent">
+                                            <img id="f47104" src="Resources/Images/47104.png" class="embeddedolefiletemplate" alt="" height="88" width="271" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
