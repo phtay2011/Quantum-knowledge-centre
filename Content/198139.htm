@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Configuration and Utility|Workflow|Template">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using the Workflow Template</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Using the Workflow Template</h1>
+                                        <p class="bodytext">This section contains procedures relating to using your Workflow Template.</p>
+                                        <p class="procedureheading">To edit a template</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open Configuration &gt; Workflow &gt; Template.</li>
+                                            <li class="listnumber1" value="2">In the browse list, select the template you want to edit.</li>
+                                            <li class="listnumber1" value="3">Click the input or expression.</li>
+                                            <li class="listnumber1" value="4">Select <strong class="boldcharstyle">Edit </strong>from the grid menu.</li>
+                                            <li class="listnumber1" value="5">Edit the input's <strong class="boldcharstyle">Name</strong>, <strong class="boldcharstyle">Description</strong>, <strong class="boldcharstyle">Type</strong>, and, optionally, the expression's <strong class="boldcharstyle">Name</strong> and the mathematical <strong class="boldcharstyle">Expression</strong>.<ul class="listbullet1"><li class="listbullet1" value="1"><em class="emphasis">Inputs </em>area- You can only edit the <strong class="boldcharstyle">Type</strong> if the input is not used by an expression or by template text.</li><li class="listbullet1" value="2"><em class="emphasis">Expressions </em>area - This can be any type of expression.</li></ul></li>
+                                            <li class="listnumber1" value="6">Click <strong class="boldcharstyle">OK</strong>.</li>
+                                        </ol>
+                                        <p class="procedureheading">To delete an input or expression</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open Configuration &gt; Workflow &gt; Template.</li>
+                                            <li class="listnumber1" value="2">Click the input or unused expression.</li>
+                                            <li class="listnumber1" value="3">In the Input grid menu or <em class="emphasis">Expression </em>grid menu, select <strong class="boldcharstyle">Delete</strong>.</li>
+                                        </ol>
+                                        <p class="bodytext">The system deletes the input or unused expression with no warning. The system will not delete an expression that is in use.</p>
+                                        <p class="procedureheading">To delete a template</p>
+                                        <p class="bodytext">The system will not delete a template that is in use - that is, one specified in a Data Transfer Location record.</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open Configuration &gt; Workflow &gt; Template and select the template name.</li>
+                                            <li class="listnumber1" value="2">In the page menu, select <strong class="boldcharstyle">Delete</strong>.</li>
+                                            <li class="listnumber1" value="3">Confirm that you want to delete the template.</li>
+                                        </ol>
+                                        <p class="procedureheading">To add sample data - Bulk Replace</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open Configuration &gt; Workflow &gt; Template.</li>
+                                            <li class="listnumber1" value="2">In the page menu, select <strong class="boldcharstyle">Bulk Replace</strong>. The <em class="emphasis">Bulk Replace</em> dialog box appears.</li>
+                                            <li class="listnumber1" value="3">Paste tab-delimited text into the field, for example:<p class="listcontinue">Effective Date<span class="symbol">®</span>Action Date<span class="symbol">®</span>Component<span class="symbol">®</span>Amount</p><p class="listcontinue">2019-02-08<span class="symbol">®</span>2019-11-08<span class="symbol">®</span>INTEREST<span class="symbol">®</span>2000000.00</p><p class="listcontinue">2019-02-08<span class="symbol">®</span>2019-11-08<span class="symbol">®</span>RATE SET<span class="symbol">®</span>10.000000</p></li>
+                                            <li class="listnumber1" value="4">Click <strong class="boldcharstyle">Replace</strong> from the drop-down toggle.</li>
+                                            <li class="listnumber1" value="5">The system validates that each row has the same number of tab characters, and that the tab-delimited values of the first row are unique. You cannot have the same column name twice.</li>
+                                        </ol>
+                                        <p class="bodytext">The first row becomes the column names. Each column in the grid is text. The data in the grid is persisted with the template.</p>
+                                        <p class="procedureheading">To add sample data - Import EFT Data</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Check that the user has the required module security permissions in the User &gt; Module Security tab.</li>
+                                            <li class="listnumber1" value="2">Open Configuration &gt; Workflow &gt; Template &gt; Workflow Template module &gt; EFTs.</li>
+                                            <li class="listnumber1" value="3">If using one of the seeded workflow template pages, from the Browse list select the name. For example, <ul><li value="1"><p>FIToFICustomerCreditTransfer - pacs.008</p></li><li value="2"><p>FinancialInstitutionCreditTransfer - pacs.009</p></li></ul></li>
+                                            <li class="listnumber1" value="4">
+                                                <p>If creating your own workflow template, set up the workflow template with <span class="field">Output Format</span>= <span class="field">XML </span>and <span class="field">Purpose</span> = <span class="field">EFT</span>You can:</p>
+                                                <ul>
+                                                    <li value="1">enter sections of code  that refer to the inputs into the text box (template area);</li>
+                                                    <li value="2">set up validations, and their error messages, referring to those inputs; and</li>
+                                                    <li value="3">
+                                                        <p>set up expressions referring to those inputs.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="5">In the page menu, select <span class="field">Import EFT Data</span> to import some seeded sample data and merge with some existing EFT-related static data. </li>
+                                        </ol>
+                                        <p class="procedureheading">To control the whitespace in the Preview tab</p>
+                                        <p class="bodytext">Use the following to control the whitespace in the output:</p>
+                                        <p class="bodytext">A template line is not output when it only contains whitespace and one of:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">opening section - for example <strong class="boldcharstyle">{{/if}}</strong></li>
+                                            <li class="listbullet1" value="2">closing section - for example <strong class="boldcharstyle">{{/unless}}</strong></li>
+                                            <li class="listbullet1" value="3"><strong class="boldcharstyle">{{else}}</strong>
+                                            </li>
+                                            <li class="listbullet1" value="4"><strong class="boldcharstyle">{{~</strong> use to remove whitespace before the instruction</li>
+                                            <li class="listbullet1" value="5"><strong class="boldcharstyle">~}}</strong> use to remove whitespace after the instruction</li>
+                                            <li class="listbullet1" value="6"><strong class="boldcharstyle">~</strong> use with all of these:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">{{Input}}</strong></li><li class="listbullet1" value="2"><strong class="boldcharstyle">{{Expression}}</strong></li><li class="listbullet1" value="3"><strong class="boldcharstyle">{{each}}</strong></li></ul></li>
+                                        </ul>
+                                        <p class="bodytext">&#160;For example,</p>
+                                        <p class="couriercode">&lt;root&gt;</p>
+                                        <p class="couriercode">	{{#if door}}</p>
+                                        <p class="couriercode">		&lt;door open="</p>
+                                        <p class="couriercode">			{{~DoorIsOpen}}" /&gt;</p>
+                                        <p class="couriercode">&#160;	{{/if}}</p>
+                                        <p class="couriercode">&lt;/root&gt;</p>
+                                        <p class="bodytext">...renders as:</p>
+                                        <p class="couriercode">&lt;root&gt;</p>
+                                        <p class="couriercode">	&lt;door open="true" /&gt;</p>
+                                        <p class="couriercode">&lt;/root&gt;</p>
+                                        <p class="bodytext">Example 1: In the Template tab's text box, enter the code with as much white space (blank lines) as you need, for example:</p>
+                                        <p class="couriercode">{{#if C1}}</p>
+                                        <p class="couriercode">{{Input1}</p>
+                                        <p class="couriercode">{{/#if}}</p>
+                                        <p>
+                                        </p>
+                                        <p class="couriercode">-------------</p>
+                                        <p class="couriercode">{{#each....</p>
+                                        <p class="bodytext">Example 2: If you do not want the white space to appear in the result in the Preview tab, edit to include the tilde (~) as shown:</p>
+                                        <p class="couriercode">{{~#if C1}}</p>
+                                        <p class="couriercode">{{Input1}</p>
+                                        <p class="couriercode">{{/#if}}</p>
+                                        <p class="couriercode">-------------</p>
+                                        <p class="couriercode">{{#each....</p>
+                                        <p class="bodytext">Example 3: In the Preview tab's text box, this removes the white space (blank lines) around the output that relates to the #if.</p>
+                                        <p class="couriercode">One</p>
+                                        <p class="couriercode">----------------</p>
+                                        <p class="couriercode">...</p>
+                                        <p class="procedureheading">To set a default value for an input</p>
+                                        <p class="bodytext">If you expect to have some blank cells in the source data, then configure a default value into the appropriate row of the <em class="emphasis">Inputs </em>grid. If you then use the input in the Configuration &gt; Template &gt; Expression Builder, then you must always configure a default value for that input.</p>
+                                        <p class="bodytext">The default value when <strong class="boldcharstyle">Type</strong> is <strong class="boldcharstyle">Yes/No</strong>, <strong class="boldcharstyle">Amount</strong>, and <strong class="boldcharstyle">Number</strong> is <strong class="boldcharstyle">0</strong> (zero).</p>
+                                        <p class="procedureheading">To set up <strong class="boldcharstyle">#each</strong> statements</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open the Template tab.</li>
+                                            <li class="listnumber1" value="2">In the template's text area, set up nested <strong class="boldcharstyle">#each</strong> statements. You can nest <strong class="boldcharstyle">#each</strong> statements to any level. You can only nest the deepest <strong class="boldcharstyle">#each</strong> statement without a collection.</li>
+                                            <li class="listnumber1" value="3">In <strong class="boldcharstyle">Sort</strong>, select one or more inputs and/or expressions to set up the order of the inputs and expressions that the <strong class="boldcharstyle">#each</strong> statement is over. The default direction is ascending.</li>
+                                            <li class="listnumber1" value="4">The data appears in the template's output file and Preview tab.</li>
+                                        </ol>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: To sort in reverse order, use <code class="monospace">-1*'[Amount]</code>, or to sort on the number of days to a date in the future, use <code class="monospace">Date(2200,1,1) - [Date]</code>.</p>
+                                        <p class="procedureheading">Examples of invalid <strong class="boldcharstyle">#each</strong> statements that throw a validation </p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Invalid: nesting on the same expression </strong>
+                                            </li>
+                                        </ul>
+                                        <p class="couriercode">{{#each Expression1}}</p>
+                                        <p class="couriercode">  {{#each Expression1}}</p>
+                                        <p class="couriercode">   &lt;something&gt;{{something}}&lt;/something&gt;  </p>
+                                        <p class="couriercode">  {{/each}}</p>
+                                        <p class="couriercode"> {{/each}}</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Invalid: </strong>#each<strong class="boldcharstyle"> without a qualifier, not at the deepest level of nesting</strong></li>
+                                        </ul>
+                                        <p class="couriercode">{{#each}}</p>
+                                        <p class="couriercode">  {{#each Expression1}}</p>
+                                        <p class="couriercode">   &lt;something&gt;{{something}}&lt;/something&gt;  </p>
+                                        <p class="couriercode">  {{/each}}</p>
+                                        <p class="couriercode"> {{/each}}</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Invalid: using the same input for the nested </strong>#each </li>
+                                        </ul>
+                                        <p class="couriercode">{{#each Input1}}        </p>
+                                        <p class="couriercode">  {{#each Input1}}            </p>
+                                        <p class="couriercode">   &lt;something&gt;{{something}}&lt;/something&gt;                         </p>
+                                        <p class="couriercode">  {{/each}}    </p>
+                                        <p class="couriercode">{{/each}} <code class="monospace"></code></p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Invalid: </strong>#each<strong class="boldcharstyle"> without an input, not at the deepest level of nesting</strong></li>
+                                        </ul>
+                                        <p class="couriercode">{{#each}}        </p>
+                                        <p class="couriercode">  {{#each Input1}}            </p>
+                                        <p class="couriercode">   &lt;something&gt;{{something}}&lt;/something&gt;        </p>
+                                        <p class="couriercode">  {{/each}}    </p>
+                                        <p class="couriercode">{{/each}}</p>
+                                        <p class="procedureheading">To set up an @index keyword</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open the Template tab.</li>
+                                            <li class="listnumber1" value="2">In the template's text area, set up an <strong class="boldcharstyle">@index</strong> keyword in order to access the current index of the innermost loop it is used in.<ul class="listbullet1"><li class="listbullet1" value="1">You can use a parent path indicator (<strong class="boldcharstyle">../</strong>) to access the index number of parent each loop. For example, <strong class="boldcharstyle">@../index</strong> for the direct parent, <strong class="boldcharstyle">@../../index</strong> for the parent above that.</li><li class="listbullet1" value="2">Input and expression names cannot include @ symbol.</li></ul></li>
+                                        </ol>
+                                        <p class="bodytext"><strong class="boldcharstyle">Example Data</strong>
+                                        </p>
+                                        <table class="tableintopic" width="138" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tableheading">Input1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tableheading">Input2</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">a</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">26</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">a</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">89</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">b</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">9</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">b</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">999</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="tablebodytext">b</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="66">
+                                                    <p class="tablebodytext">8</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext"><strong class="boldcharstyle">Example 1: Template text</strong>
+                                        </p>
+                                        <p class="couriercode">{{#each input1}}</p>
+                                        <p class="couriercode">	&lt;input1&gt;{{Input1}}&lt;/input1&gt;</p>
+                                        <p class="couriercode">	{{#each Input2}}</p>
+                                        <p class="couriercode">    		&lt;index&gt;{{@index}}&lt;/index&gt;</p>
+                                        <p class="couriercode">    		&lt;outerindex&gt;{{@../index}}&lt;/outerindex&gt;</p>
+                                        <p class="couriercode">  	{{/each}}</p>
+                                        <p class="couriercode">{{/each}}</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">Example 1: Output</strong>
+                                        </p>
+                                        <p class="couriercode">&lt;input1&gt;a&lt;/input1&gt;</p>
+                                        <p class="couriercode">&lt;index&gt;1&lt;/index&gt;</p>
+                                        <p class="couriercode">&lt;outerindex&gt;1&lt;/outerindex&gt;</p>
+                                        <p class="couriercode">&lt;index&gt;2&lt;/index&gt;</p>
+                                        <p class="couriercode">&lt;outerindex&gt;1&lt;/outerindex&gt;</p>
+                                        <p class="couriercode">&lt;input1&gt;b&lt;/input1&gt;</p>
+                                        <p class="couriercode">&lt;index&gt;1&lt;/index&gt;</p>
+                                        <p class="couriercode">&lt;outerindex&gt;2&lt;/outerindex&gt;</p>
+                                        <p class="couriercode">&lt;index&gt;2&lt;/index&gt;</p>
+                                        <p class="couriercode">&lt;outerindex&gt;2&lt;/outerindex&gt;</p>
+                                        <p class="couriercode">&lt;index&gt;3&lt;/index&gt;</p>
+                                        <p class="couriercode">&lt;outerindex&gt;2&lt;/outerindex&gt;</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">Example 2: Template text </strong>
+                                        </p>
+                                        <p class="couriercode">{{#each input1}}</p>
+                                        <p class="couriercode">	{{#each}}</p>
+                                        <p class="couriercode">    		{{@../index}}.{{@index}} - {{Input1}}, {{Input2}}</p>
+                                        <p class="couriercode">  	{{/each}}</p>
+                                        <p class="couriercode">{{/each}}</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">Example 2: Output</strong>
+                                        </p>
+                                        <p class="bodytext">1.1 - a, 26</p>
+                                        <p class="bodytext">1.2 - a, 89</p>
+                                        <p class="bodytext">2.1 - b, 9</p>
+                                        <p class="bodytext">2.2 - b, 999</p>
+                                        <p class="bodytext">2.3 - b, 8</p>
+                                        <p class="procedureheading">To test whether the input, expression or source column is blank</p>
+                                        <p> Use an <strong class="boldcharstyle">#if</strong> statement to test whether the input, expression or source column is blank. When the input, expression, or source column is blank, the condition is false. Otherwise, the condition is true. This option is available when the Type = Text in the Inputs, Expressions, or Source grid.</p>
+                                        <p><strong class="boldcharstyle">Example 1</strong>
+                                        </p>
+                                        <p><strong class="boldcharstyle">For a text input or expression called Name:</strong>
+                                        </p>
+                                        <p class="couriercode">{{#if Name}}</p>
+                                        <p class="couriercode" xml:space="preserve">	&lt;name&gt;{{Name}}&lt;/name&gt;</p>
+                                        <p class="couriercode" xml:space="preserve">{{/if}}</p>
+                                        <p><strong class="boldcharstyle">Example 2</strong>
+                                        </p>
+                                        <p><strong class="boldcharstyle">For a text column called Name from a source called Counterparty:</strong>
+                                        </p>
+                                        <p class="couriercode">{{#if Counterparty.Name}}</p>
+                                        <p class="couriercode" xml:space="preserve">	&lt;counterparty&gt;{{Counterparty.Name}}&lt;/counterparty&gt;</p>
+                                        <p class="couriercode">{{/if}}</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

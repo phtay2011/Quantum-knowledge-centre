@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Accounting (Quantum)|About the Hedge Relationship module">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Hedging Cross Currency Swaps without basis spread (IFRS 9)</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Hedging Cross Currency Swaps without basis spread (IFRS 9)</h1>
+                                        <p class="bodytext">Quantum recognizes the Currency Basis spread as a separate cost of hedging and posts changes in Fair Value of the Currency Basis for the Cross Currency Swap to OCI, when the basis element is excluded from the Hedge Designation.</p>
+                                        <h2>Designated Risk: Overall Market Risk v Cross Currency Swap - Basis</h2>
+                                        <p class="bodytext">The Currency Basis Spread is a charge embedded in cross currency financial instruments that compensates for credit and liquidity risk as well as supply and demand factors.</p>
+                                        <p class="bodytext">When currency basis is designated in a hedge relationship by setting the Designated Risk to <strong class="boldcharstyle">Overall Market Risk</strong>, ineffectiveness could arise as a result of the spread being irrelevant to a single currency hedged item.</p>
+                                        <p class="bodytext">When an entity excludes the foreign currency basis spread from the hedging designation by setting the Designated Risk to <strong class="boldcharstyle">Cross Currency Swap - Basis</strong>, then the changes in the currency basis spread may be accumulated in OCI and recognized in profit and loss.</p>
+                                        <h2>Hedging procedures</h2>
+                                        <h3>Configure Analytics queries</h3>
+                                        <p class="bodytext">To Hedge Account using <strong class="boldcharstyle">CROSS CURRENCY SWAP - BASIS</strong> requires the Analytics module to be configured to supply <a id="h191929" title="Imported Market Values" href="191678.htm" target="_self">imported valuations</a> to the Hedge Accounting module. To do this, configure the following Analytics queries:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">'<strong class="boldcharstyle">ACCT</strong>' <strong class="boldcharstyle">MVI Query</strong> - Calculating a standard Cross Currency Swap Market Valuation where the cash flows are discounted using a discount curve with a Currency Basis Spread margin applied.</li>
+                                            <li class="listbullet1" value="2">'<strong class="boldcharstyle">HEDG</strong>' <strong class="boldcharstyle">MVI Query</strong> - Calculating a Cross Currency Swap Market Valuation where,<ul class="listbullet1"><li class="listbullet1" value="1">the cash flows exclude the Currency Basis spread element implied in the Cross Currency Swap Rate; and</li><li class="listbullet1" value="2">the Discount Factors exclude the Currency Basis Spread.</li></ul></li>
+                                        </ul>
+                                        <p class="bodytext">By excluding the Currency Basis Spread from the Cash Flows and Discount Factors, a near zero Market Value should be determined at Hedge Inception. Using this method of calculation, the amount accumulated in the Cost of Hedging Reserve should naturally amortize to zero over the life of the Hedge Relationship as the underlying Cash Flows are settled.</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span>
+                                        </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">The Cross Currency Deal's <strong class="alertsonly-bold">Cross Currency Basis Spread</strong> field is used to identify the Currency Basis Spread embedded in the Cross Currency Rate, and can be referenced in Analytics query definitions.</li>
+                                            <li class="note-level-1-bullet" value="2">An <a id="h191932" title="Revaluation Settings (Currency Swap Accounting Rule)" href="177694.htm" target="_self">Accounting Rule</a> that imports valuations from Analytics must be configured for the Cross Currency Swap deals in the hedge relationship.</li>
+                                        </ul>
+                                        <h3>Create the Hedge Strategy page</h3>
+                                        <p class="bodytext">Create a valid <a id="h190837" title="Hedge strategy procedures" href="164245.htm" target="_self">Hedge Strategy</a> page with the following options:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">A <strong class="boldcharstyle">Fair Value Hedge</strong> or <strong class="boldcharstyle">Cash Flow Hedge</strong> for the <strong class="boldcharstyle">Hedge Type</strong>; <strong class="boldcharstyle">CROSS CURRENCY SWAP - BASIS</strong> for the <strong class="boldcharstyle">Designated Risk</strong> (Details tab).</li>
+                                            <li class="listnumber1" value="2">If required, set a release date for the adjustment amounts (Events tab).</li>
+                                        </ol>
+                                        <h3>Create the Hedges, Hypotheticals and Exposures</h3>
+                                        <p class="bodytext">Create the following deals in Quantum according to the requirements of your hedge:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1"><strong class="boldcharstyle">Hedge</strong>: Create one or more <a id="h167420" title="Cross Currency Swap" href="167418.htm" target="_self">Cross Currency Swap</a> deals that represent the terms of the hedge.</li>
+                                            <li class="listnumber1" value="2"><strong class="boldcharstyle">Hypothetical*</strong>: Create a <a id="h167420_2" title="Cross Currency Swap" href="167418.htm" target="_self">Cross Currency Swap</a> Hypothetical deal that represents the terms of hedged exposure. Typically this will reflect the Hedge with the Pay and Receive amounts and legs swapped, but otherwise matching its terms.</li>
+                                            <li class="listnumber1" value="3">For each Hedge deal created in Step 1, create a that counteracts the purpose of the hedge (hat is, with the Pay and Receive amounts and legs swapped), but otherwise matches the terms of the hedge exactly.<p class="note-level-2-body"><strong class="boldcharstyle">*</strong> It is possible to account for the Currency Basis component of the Swap only to the extent that it relates to the hedged item.When the terms of the hedge do not match at inception, the Aligned Currency Basis is determined using a <a id="h49331" title="Business Day Convention - Payment Date" href="dealing_commodityswap_businessdayconventionpaymentdate.htm" target="_self">Hypothetical Derivative Deal</a>, which represents the risk being hedged.</p></li>
+                                            <li class="listnumber1" value="4"><strong class="boldcharstyle">Exposure</strong>: Create one or more <a id="h167611" title="Securities" href="167610.htm" target="_self">Security</a> deals to designate the risk being hedged.</li>
+                                        </ol>
+                                        <h3>Create the Hedge Relationship</h3>
+                                        <p class="bodytext">Create a <a id="h49210" title="About the Hedge Relationship module" href="164250.htm" target="_self">hedge relationship</a> with the following options:</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Select the Hedge Strategy page with <strong class="boldcharstyle">CROSS CURRENCY SWAP - BASIS</strong> as the <strong class="boldcharstyle">Designated Risk</strong>, created above.</li>
+                                            <li class="listnumber1" value="2">Select the <strong class="boldcharstyle">Maturity Date</strong>, and ensure that the <strong class="boldcharstyle">Designated Risk</strong> is set to <strong class="boldcharstyle">CROSS CURRENCY SWAP - BASIS</strong> (Deal Details tab).</li>
+                                            <li class="listnumber1" value="3">For <a id="h190903" title="Transaction vs time-period hedges (treatment under IFRS 9)" href="190899.htm" target="_self">time-period related</a> hedges, select <strong class="boldcharstyle">Amortize hedging costs (time value)</strong> (Deal Details tab).</li>
+                                            <li class="listnumber1" value="4">Add the Hedges, Hypotheticals<sup class="superscript">†</sup>, and Exposures created above to the hedge relationship (<strong class="boldcharstyle">Linked Deals</strong> tab).<p class="note-level-2-body"><sup class="superscript">†</sup> For the Hypothetical Deal, select the <strong class="alertsonly-bold">Leg</strong> when designating the deal into the hedge relationship as follows:</p><ul class="note-level-2-bullet"><li class="note-level-2-bullet" value="1">For a cash flow hedge select <strong class="alertsonly-bold">Both</strong>.</li><li class="note-level-2-bullet" value="2">For a fair value hedge this should be the leg corresponding to the Exposure.</li></ul></li>
+                                        </ol>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-depth="1" data-mc-toc="True">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

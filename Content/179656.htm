@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Importing data into Quantum|Importing Rules">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Importing Counterparty Contact Rules</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Importing Counterparty Contact Rules</h1>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: Use QXT for counterparty contact and not QID, as not all fields are supported if you import using QID.</p>
+                                        <h2 class="h2internal">QXT Format</h2>
+                                        <p class="bodytext">The Counterparty Contact importer supports the following QXT fields:</p>
+                                        <h3 class="h3internal">Header fields</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Counterparty</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Counterparty</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Name as displayed in Counterparty Setup (<strong class="boldcharstyle">ALL</strong> is not valid)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">DealerSettlement</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Dealer/Settlement</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Dealer, Settlement, Both and Other</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Currency1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Currency</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Must be a Currency (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Currency2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Currency</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Must be a Currency (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Entities</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Entity</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Associated entities (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">TransactionTypes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Transaction Type</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Two-character mnemonic (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="144">
+                                                    <p class="tablebodytext">Instruments</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="126">
+                                                    <p class="tablebodytext">Instrument Type</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Name as displayed in Instrument Setup (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext"> Will be used for <strong class="alertsonly-bold">Contract</strong> when <strong class="alertsonly-bold">Future</strong> selected</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h3internal">Details Tab</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Surname of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">FirstName</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">First name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">First name of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Honorific for primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Initials</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Initials</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Middle initial of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Position</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Position</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Position (job title) of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Phone number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Telex</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Telex</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Telex number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Fax number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Address of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">EmailAddress</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Email address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Email address of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">SendConfirmationEmail</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Confirmation email address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">To send a confirmation email or not.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h3internal">AdditionalContacts#</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Honorific for additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">FirstName</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">First Name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">First name of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Initial</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Initial</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Middle initial of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Surname of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">EmailAddress</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Email address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Email address of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">JobTitle</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Job title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Job title of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Phone number of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Fax number of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Address of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"> To update an existing row under the CC list tab, identify the row by the <strong class="alertsonly-bold">Title</strong>, <strong class="alertsonly-bold">Firstname</strong>, <strong class="alertsonly-bold">Initial</strong>, and <strong class="alertsonly-bold">Surname</strong> fields.</p>
+                                        <h2 class="h2internal">Examples - QXT</h2>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: When using these format examples, separate each line of input with a line break. Separate by pressing <strong class="alertsonly-bold">Enter</strong> at the end of each line.</p>
+                                        <h3 class="h4internal">Import records</h3>
+                                        <p class="bodytext">You can import records in QXT format.</p>
+                                        <p class="couriercode">@CounterpartyContact<br />$new<br />Name = Test QXT<br />Counterparty = ABN Singapore<br />DealerSettlement = DEALER<br />Entities = Transactor - Level 2<br />Instruments = CM FX Forward<br />TransactionTypes = FX Deals<br />Currency1 = AUD<br />Currency2 = CAD<br />Surname = Surname<br />FirstName = Name<br />Title = Mr<br />Initials = SC<br />JobTitle = Title<br />EmailAddress = email@email.com<br />$$ADD AdditionalContacts#FirstName = Kahu;Surname = Smith;EmailAddress = kahu.smith@email.com;Position = Position1;SendConfirmationEmail=true<br />$$ADD AdditionalContacts#FirstName = Alice;Surname = Smith;EmailAddress = alice.smith@email.com;Position = Position2;SendConfirmationEmail=false<br />$Save</p>
+                                        <h3 class="h4internal">Modify records</h3>
+                                        <p class="bodytext">You can modify records in QXT format.</p>
+                                        <p class="couriercode">@CounterpartyContact<br />$new<br />Name = Text QXT<br />Surname = Surname Changed<br />FirstName = Name Changed<br />$$Add AdditionalContacts#FirstName = Nick;Surname = Smith;EmailAddress = kahu.smith@email.com;Position = PositionToChange;SendConfirmationEmail=true<br />$update </p>
+                                        <h3 class="h4internal">Delete records</h3>
+                                        <p class="bodytext">You can delete records in QXT format.</p>
+                                        <p class="couriercode">@CounterpartyContact<br />$new<br />Name = Test QXT<br />$delete</p>
+                                        <h2 class="h2internal">QID Formats</h2>
+                                        <p class="bodytext">We've included QID formats here for historical reference.</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: Use QXT for counterparty contact and not QID, as not all fields are supported if you import using QID.</p>
+                                        <h3 class="h3internal">Header fields using QID</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">cparty</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Counterparty</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Name as displayed in Counterparty Setup (<strong class="boldcharstyle">ALL</strong> is not valid)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">dealersett</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Dealer/Settlement</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Dealer, Settlement, Both and Other</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ccy1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Currency</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Must be a Currency (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ccy2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Currency</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Must be a Currency (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">entities</p>
+                                                    <p>&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Entity</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Associated entities (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">trans_type</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Transaction Type</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Two-character mnemonic (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="144">
+                                                    <p class="tablebodytext">sectype</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="126">
+                                                    <p class="tablebodytext">Instrument Type</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" rowspan="2" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Name as displayed in Instrument Setup (may be <strong class="boldcharstyle">ALL</strong>)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext"> Will be used for <strong class="alertsonly-bold">Contract</strong> when <strong class="alertsonly-bold">Future</strong> selected</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">The key fields used to select a record may include fewer details than the record itself, as long as the query returns a single record.</li>
+                                            <li class="listbullet1" value="2">The modify or delete process will fail if the header fields query specified returns more than one record.</li>
+                                        </ul>
+                                        <h3 class="h3internal">Details Tab using QID</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Surname of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">other_name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">First name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">First name of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Honorific for primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">initials</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Initials</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Middle initial of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">position</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Position</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Position (job title) of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Phone number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">telex</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Telex</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Telex number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Fax number of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Address of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">mapi_name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Email address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Email address of primary Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h3internal">CC List Tab using QID</h3>
+                                        <table class="tableintopic" width="605" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="144">
+                                                    <p class="tableheading">Field</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="126">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="84">
+                                                    <p class="tableheading">Mandatory</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="251">
+                                                    <p class="tableheading">Values/Default</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssrow</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Table row number</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Numeric value</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">sstitle</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Honorific for additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssfirstname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">First Name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">First name of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssinitial</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Initial</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Middle initial of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">sssurname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Surname</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">Yes</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Surname of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssemailaddress</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Email address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Email address of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssjobtitle</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Job title</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Job title of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssphone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Phone</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Phone number of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssfax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Fax</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Fax number of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="144">
+                                                    <p class="tablebodytext">ssaddress</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="126">
+                                                    <p class="tablebodytext">Address</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="84">
+                                                    <p class="tablebodytext">No</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="251">
+                                                    <p class="tablebodytext">Address of additional Counterparty contact</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"> To update an existing row under the CC list tab, identify the row by the <strong class="alertsonly-bold">Title</strong>, <strong class="alertsonly-bold">Firstname</strong>, <strong class="alertsonly-bold">Initial</strong>, and <strong class="alertsonly-bold">Surname</strong> fields.</p>
+                                        <h2 class="h2internal">Examples - QID</h2>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: We recommend using QXT from v6.x onwards. </p>
+                                        <p>
+                                        </p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: If using these QID format examples, separate each line of input with a line break. Separate by pressing Enter at the end of each line.</p>
+                                        <p class="procedureheading">To import records using QID</p>
+                                        <p class="bodytext">(QID format - archive)</p>
+                                        <p class="bodytext">@CounterpartyContact<br />$new<br />Name = Bank A<br />Counterparty = Bank A<br />DealerSettlement = BOTH<br />Entities = ALL<br />Instruments = ALL<br />TransactionTypes = FX Deals<br />Currency1 = ALL<br />Currency2 = ALL<br />Surname = Surname<br />FirstName = Name<br />Title = Mr<br />Initials = SC<br />JobTitle = Title<br />EmailAddress = email@email.com<br />$$ADD AdditionalContacts#FirstName = Bob;Surname = Smith;EmailAddress = bob.smith@email.com;Position = Position<br />$Save</p>
+                                        <p class="procedureheading">To modify records using QID</p>
+                                        <p class="bodytext">(QID format - archive)</p>
+                                        <p class="bodytext">$new<br />Name = WTAX Counterparty<br />ShortName = WTAX1<br />ExternalName = WTAX Counterparty<br />ParentGroup = NONE<br />GroupTransactor = Transaction<br />Country = Australia<br />Location = NONE<br />Industry = NONE<br />CounterpartyType = NONE<br />CashFlowNetting = N<br />BankExternal = N<br />BankInternal = Y<br />DealExternal = Y<br />DealInternal = N<br />DebtorCre<br />itor = N<br />IssuerAcceptor = N<br />Broker = N<br />ClearingBroker = N<br />SwiftFinancialInstitution = N<br />SettlementBank = N<br />TaxAuthority = Y<br />Custodian = N<br />IssuingAndPayingAgent = N<br />StreetAddress = 100 TAXMAN Avenue,Monte Carlo<br />PostalAddress = 100 TAXMAN Avenue,Monte Carlo<br />Phone = 123 9000<br />Telex = 123 9999<br />Fax = 123 0000<br />$$ADD Investors#Code = Alberto;Title = Mr;Initials = G;Surname = Alberto;TaxNumber = 987 654 321<br />$Insert</p>
+                                        <p class="procedureheading">To delete records using QID</p>
+                                        <p class="bodytext">(QID format - archive)</p>
+                                        <p class="bodytext">EXEName=CPCONTAC<br /><br />*------------------------------------<br />*This block of fields corresponds to the header area <br />*This will select the record created in the example above<br />$DoMenu=mfNew<br />cparty=Custodian Counterparty<br />dealersett=DEALER<br />ccy=ALL<br />ccy2=ALL<br />entities=MyCorp USA, MyCorp UK<br />transtype=CO, FX,SE<br />sectype=American,American 2,American 3,Asian 1,CM FX Forward,CM FX NPV Spot<br />*------------------------------------<br /><br />*Delete the record<br />$DoMenu=mfDelete</p>
+                                        <p>
+                                        </p>
+                                        <p class="bodytext">(QID format - archive)</p>
+                                        <p class="bodytext">EXEName=CPCONTAC<br /><br />*------------------------------------<br />*This block of fields corresponds to the header area <br />$DoMenu=mfNew<br />cparty=Custodian Counterparty<br />dealersett=DEALER<br />ccy=ALL<br />ccy2=ALL<br />entities=MyCorp USA, MyCorp UK<br />transtype=CO, FX, SE<br />sectype=American,American 2,American 3,Asian 1,CM FX Forward,CM FX NPV Spot<br />*------------------------------------<br /><br /><br />*------------------------------------<br />*This block of fields corresponds to the Details tab<br />surname=Doe<br />other_name=John<br />title=Mr<br />initials=J<br />position=CEO<br />phone=555-5555-555<br />telex=555-5555-555<br />fax=555-5555-555<br />address=23 Xyz Street|Xyz|Christchurch|New Zealand<br />mapi_name=John.Doe@xyz.com<br />*------------------------------------<br /><br /><br />*------------------------------------<br />*This block of fields corresponds to the CC List tab<br />*This will add the first row of contacts<br />ssrow=1 <br />sstitle=Mr <br />ssfirstname=George<br />ssinitial=A <br />sssurname=Smith<br />ssemailaddress=george.smith@xyz.com<br />ssjobtitle=Plumber<br />ssphone=555-555-2554<br />ssfax=555-555-2555<br />ssaddress=48 Abc Street|Abc|Christchurch|New Zealand<br /><br />*This will add the second row of contacts<br />ssrow=2 <br />stitle=Mr <br />ssfirstname=Paul<br />ssinitial=B <br />sssurname=Smith<br />ssemailaddress=paul.smith@xyz.com<br />ssjobtitle=Plumber<br />ssphone=55-555-2553<br />ssfax=55-555-2555<br />ssaddress=15 Abc Street|Abc|Christchurch|New Zealand<br />$DoMenu=mfInsert<br />*------------------------------------<br /><br />$DoMenu=mfInsert</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

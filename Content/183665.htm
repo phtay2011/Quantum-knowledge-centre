@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|System Configuration|Configuration Files">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Web.AppSettings.config</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Web.AppSettings.config</h1>
+                                        <p class="bodytext">The keys available in this file enable you to control <span class="VariablesChcAGQ_S">Quantum</span>'s options.</p>
+                                        <h2>Site</h2>
+                                        <p class="bodytext">The following keys enable you to control the behavior of your site.</p>
+                                        <table cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="216">
+                                                    <p class="tableheading">Key</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="288">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Default Value</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">AllowedDashboardDomains</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">List the URLs of external websites (comma-separated) for display in <a id="h189741" class="jumpnopagenotemplate" title="Dashboard" href="189719.htm" target="_self">dashboard</a> pages.</p>
+                                                    <p class="tablenote"><span class="notechar">NOTE</span>: By default ALL external websites are blocked.<br />Use <strong class="boldcharstyle">*</strong> to allow all external websites.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">DefaultSiteName</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">The site that will be logged onto by default.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">DisableSiteSelection</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">When set to <strong class="boldcharstyle">true</strong>, the site selection drop-down field is hidden on the logon screen.</p>
+                                                    <p class="tip-level-1-body"><strong class="boldcharstyle">TIP</strong>: Use this key in combination with <code class="monospace">DefaultSiteName</code>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">EmailNotificationsEnabled</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">When set to <strong class="boldcharstyle">true</strong>, notification emails are sent to users on change events.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">true</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">EmailNotificationsEnabledList</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">(Applicable when <code class="monospace">EmailNotificationsEnabled</code> is set to <strong class="boldcharstyle">true</strong>).</p>
+                                                    <p class="tablebodytext">The following key values configure site-wide email notifications for ALL users:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">accounting</strong> - Base Currency set notification.</li>
+                                                        <li class="tablelistbullet" value="2"><strong class="boldcharstyle">approval</strong> - Security Approval notification.</li>
+                                                        <li class="tablelistbullet" value="3"><strong class="boldcharstyle">fxrequest-filled</strong> - FX Request filled notification.</li>
+                                                        <li class="tablelistbullet" value="4"><strong class="boldcharstyle">glclose</strong> - GL Close report notification.</li>
+                                                        <li class="tablelistbullet" value="5"><strong class="boldcharstyle">pricing</strong> - Analytics Pricing notifications.</li>
+                                                        <li class="tablelistbullet" value="6"><strong class="boldcharstyle">processing</strong> - Processing (or Run) notifications (including CashXplorer).</li>
+                                                        <li class="tablelistbullet" value="7"><strong class="boldcharstyle">reporting</strong> - Reporting notifications.</li>
+                                                        <li class="tablelistbullet" value="8"><strong class="boldcharstyle">resourceSecurity</strong> - Pending Resource Security notification.</li>
+                                                        <li class="tablelistbullet" value="9"><strong class="boldcharstyle">dealRejection</strong> - Deal Rejected notification.</li>
+                                                    </ul>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">*</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">EnableWebApi</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">When true, allows the user to access the <span class="VariablesProduct_Name_Quantum_Web_API">Quantum Web API</span>. </p>
+                                                    <p class="tablebodytext">&lt;add key=”EnableWebApi” value=”true” /&gt;</p>
+                                                    <p class="tablebodytext">When false, users cannot send requests to the web API. Default is "false".</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">ExternalUrl</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">The URL of your <a id="h190603" class="jumpnopagenotemplate" title="Configuring Internal Support" href="190602.htm" target="_self">Internal Support website</a>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">ExternalUrlLabel</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">The label of your <a id="h190603_2" class="jumpnopagenotemplate" title="Configuring Internal Support" href="190602.htm" target="_self">Internal Support website</a> displayed in the <em class="emphasis">user menu</em>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">Internal Support</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">NetItemsMax</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">When set to a number, disallows netting of more than that many cash flows in Settlement processing. If non-numeric or absent, no limit applies.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">ODataAuthorizePrompt</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">When set to <strong class="boldcharstyle">true</strong>, configures <span class="VariablesChcAGQ_S">Quantum</span> for use from Tableau<sup>®</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">false</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">PreventCsvInjection</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">Mitigates the possibility of CSV injection by adding a leading space to cells that begin with a dangerous character (such as, "<strong class="boldcharstyle">=</strong>", "<strong class="boldcharstyle">@</strong>", "<strong class="boldcharstyle">+</strong>", and "<strong class="boldcharstyle">-</strong>").</p>
+                                                    <p class="tablebodytext">See <a id="h181721" title="Exporting Grid Data" href="181720.htm" target="_self">Exporting Grid Data</a> for more information.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">true</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">UploadWhiteList</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="bodytext">The default list of permitted file extensions is: dat, doc, docx, xls, xlsm, xlsx, ppt, pptx, pdf, png, jpg, qxt, qid, txt, xml, jrg, csv, sft, out, dat.</p>
+                                                    <p class="tablebodytext">System administrators can add or remove file extensions from this list by editing the <strong class="boldcharstyle">UploadWhiteList</strong> key in the <strong class="boldcharstyle">Web.AppSettings.config</strong> file. However, there is a hard-coded blacklist of file extensions that can never be uploaded for security reasons - for example, <strong class="boldcharstyle">exe</strong> and <strong class="boldcharstyle">bat</strong>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">UploadWhiteListRegEx</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">Specifies a <a id="h183485" title="Regular Expression Functions" href="179701.htm" target="_self">Regular Expression pattern</a> for permitted <a id="h183490" title="Specifying Dynamic File Extensions for Import" href="183476.htm" target="_self">dynamic file name extensions</a> (for example, of files to be imported for processing via the <a id="h168602" title="Bank File Import Status page" href="utility_bankimportstatus.htm" target="_self">Bank Import Status page</a>).</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">UseSecurityProtocolTLS12</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablebodytext">Enforces the TLS 1.2 protocol for your Site.</p>
+                                                    <p class="tablebodytext">Set this key to <code class="monospace">false</code> to use the TLS 1.0 or TLS 1.1 protocols.</p>
+                                                    <p class="caution-level-1-body"><strong class="boldcharstyle">CAUTION</strong>: The TLS 1.0 and TLS 1.1 protocols are outdated and suffer from multiple cryptographic flaws. <span class="VariablesCompany_ShortName_No_Inc">FIS</span> does not recommend that you disable this key.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">true</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="216">
+                                                    <p class="tablebodytext"><code class="monospace">ValidClientRedirectUris</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="288">
+                                                    <p class="tablenote"><span class="notechar">NOTE:</span> Required for OAuth Authorization.</p>
+                                                    <p class="tablebodytext">Configures the valid client identifier and the endpoint to be used by external systems to access <span class="VariablesChcAGQ_S">Quantum</span>.</p>
+                                                    <p class="tablebodytext">This key accepts multiple identifier / endpoint values (delimited by a semicolon, "<strong class="boldcharstyle">;</strong>") and must be set in the following format:</p>
+                                                    <p class="tablebodytext"><code class="monospace">client1=redirecturi1;client2=redirecturi2;...</code>
+                                                    </p>
+                                                    <p class="tablebodytext">Where,</p>
+                                                    <p class="tablebodytext"><code class="monospace">client</code><em class="emphasis">n</em> matches the <strong class="boldcharstyle">client_id</strong> specified in the endpoint of incoming token or authorization-related requests.</p>
+                                                    <p class="tablebodytext"><code class="monospace">redirecturi</code><em class="emphasis">n</em> is the endpoint used by external systems to request access to Quantum for a user who is already logged in. This is required for OAuth Authorization which will utilize the <em class="emphasis">/OAuth/Authorize</em> endpoint.</p>
+                                                    <p class="tablebodytext">When the user accepts the request, they are redirected to the redirect endpoint. The access token is provided as part of the response header. Refer to the <strong class="boldcharstyle">OAuth Usage Guide</strong> for more information.</p>
+                                                    <p class="tablebodytext">&#160;</p>
+                                                    <p class="tablebodytext"><strong class="boldcharstyle">Example</strong>
+                                                    </p>
+                                                    <p class="tablebodytext"><code class="monospace">value="Test=http://localhost/apiconsumer/authcallback; Test1=http://localhost/apiconsumer1/authcallback"</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Data Importation Services</h2>
+                                        <p class="bodytext">The following keys control processing options for Quantum's <a id="h179675" title="Quantum Import Services and Utilities" href="179262.htm" target="_self">data importation services</a>.</p>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">TIP</strong>: Use the <a id="h183765" class="jumpnopagenotemplate" title="Configuring Data Importation Services" href="183763.htm" target="_self">Data Importation Services Configuration files</a> for configuring additional options for the data importation services.</p>
+                                        <table cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="210">
+                                                    <p class="tableheading">Key</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="294">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Default Value</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">BankFileImportcustomFileExtensions</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Use this key to specify <a id="h183489" title="Custom File Name Extensions (for Bank Import Service)" href="183475.htm" target="_self">custom file name extensions</a> of files to be imported for processing via the <a id="h168602_2" title="Bank File Import Status page" href="utility_bankimportstatus.htm" target="_self">Bank Import Status page</a>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">BankFileImportcustomFileExtensionRegex</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Specifies a <a id="h183485_2" title="Regular Expression Functions" href="179701.htm" target="_self">Regular Expression pattern</a> for <a id="h183490_2" title="Specifying Dynamic File Extensions for Import" href="183476.htm" target="_self">dynamic file name extensions</a> of files to be imported for processing via the <a id="h168602_3" title="Bank File Import Status page" href="utility_bankimportstatus.htm" target="_self">Bank Import Status page</a>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">N/A</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">UploadAllowNoExtension</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Set this key to <strong class="boldcharstyle">true</strong> to allow import of files with <a id="h183764" title="Import File Names (Bank Import Service)" href="183465.htm" target="_self">no filename extension</a> by the Bank Import service.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">false</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">UploadFileMaximumSize</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Use this key to increase the maximum size of files allowed to be imported through the applicable Service Health Import page.</p>
+                                                    <p class="tablenote"> <span class="notechar">NOTE:</span> To increase <code class="monospace">UploadFileMaximumSize</code> higher than the default, use IIS Manager to edit the IIS Request Filter setting <code class="monospace">MaxAllowedContentLength</code>. See <em class="emphasis">Changing&#160;IIS Request Filter Settings in IIS Manager</em> below.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">26214400 (25MB)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210"><span class="monospace">WorkflowMaximumRowsPerSource</span>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p width="294">To control the potential impact of large volumes of data, specify the maximum number of rows the system processes. The default, <span class="field">All </span> imports all data.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">&#160;</td>
+                                            </tr>
+                                        </table>
+                                        <h2>Reporting</h2>
+                                        <p class="bodytext">The following keys control the amount of data that can be retrieved for a browse or for a report.</p>
+                                        <table cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="210">
+                                                    <p class="tableheading">Key</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="294">
+                                                    <p class="tableheading">Description</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Default Value</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">BrowseGridMaximumCells</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Set the maximum number of cells (rows x columns) displayed in a browse list.<sup class="superscript">1</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">ALL</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">ReportingGridMaximumCells</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Set the maximum number of cells (rows x columns) displayed in the report grid.<sup class="superscript">1</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">ALL</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">PivotMaximumCellsPerPage</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">Set the maximum number of cells in each group of the Pivot View.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">8000</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">MaximumStategyRunKeeps</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">For private report runs <sup class="superscript">2</sup>.</p>
+                                                    <p class="tablebodytext">Defines the maximum number of report runs that can be entered as a strategy.<br />When this key is given a value, the <strong class="boldcharstyle">Keep all report runs</strong> option is not available in the <a id="h183966" title="Set an Expiry Strategy for Report Runs (Keep Reports)" href="183965.htm" target="_self">Expiry Strategy</a>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">MaximumStategyDayKeeps</code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">For private report runs <sup class="superscript">2</sup>.</p>
+                                                    <p class="tablebodytext">Defines the maximum number of report runs that can be entered as a strategy.<br />When this key is given a value, the <strong class="boldcharstyle">Keep all report runs</strong> option is not available in the <a id="h183966_2" title="Set an Expiry Strategy for Report Runs (Keep Reports)" href="183965.htm" target="_self">Expiry Strategy</a>.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210">
+                                                    <p class="tablebodytext"><code class="monospace">MaximumPrivateManualRunKeeps </code>
+                                                    </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p class="tablebodytext">For private report runs <sup class="superscript">2</sup>.</p>
+                                                    <p class="tablebodytext">Defines the maximum number of runs that can manually be kept.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">(blank)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="210"><span class="monospace">WorkflowMaximumRowsPerSource</span>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="294">
+                                                    <p width="294">To control the potential impact of large volumes of data, specify the maximum number of rows the system processes. The default, <span class="field">All </span> imports all data.</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p width="114">ALL</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext"><sup class="superscript">1</sup> You can increase the number of records (rows) retrieved in a grid by reducing the number of columns.<br /><sup class="superscript">2</sup> To make sure private report runs (that is, the reports generated by individual users) don't take up too much database space, you can define a quota for keeping private runs.</p>
+                                        <h2>Changing&#160;IIS Request Filter Settings in IIS Manager</h2>
+                                        <p class="bodytext">If you want to increase the <code class="monospace">UploadFileMaximumSize</code> key higher than the default, then you must use IIS Manager to edit the IIS Request Filter setting <code class="monospace">MaxAllowedContentLength</code>.&#160; The default for <code class="monospace">MaxAllowedContentLength</code> is 30000000 B (28.6MB).</p>
+                                        <p class="caution-level-1-body"><span class="cautionchar">CAUTION:</span> Increasing the upload size opens up a possible attack vector, so keep any increase in upload size to a realistic size.</p>
+                                        <p class="procedureheading">To use IIS Manager to edit settings</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Open IIS Manager.</li>
+                                            <li class="listnumber1" value="2">Select the website that is serving Quantum.</li>
+                                            <li class="listnumber1" value="3">At the bottom of the page, select the <strong class="boldcharstyle">Features View</strong> button.</li>
+                                            <li class="listnumber1" value="4">Select <strong class="boldcharstyle">Requests Filtering</strong> and double-click the icon to open. The Request Filtering window opens.</li>
+                                            <li class="listnumber1" value="5">In the Actions pane on the right, click <strong class="boldcharstyle">Edit Feature Settings...</strong> . The Edit Request Filtering Settings window opens.</li>
+                                            <li class="listnumber1" value="6">Enter the appropriate value in the field <strong class="boldcharstyle">Maximum allowed content length (Bytes)</strong>.</li>
+                                            <li class="listnumber1" value="7">Click <strong class="boldcharstyle">OK</strong>.</li>
+                                            <li class="listnumber1" value="8">Restart IIS Manager.</li>
+                                        </ol>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

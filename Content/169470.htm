@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reporting (Analytics)|Analytics Explorer|Analytics Queries">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Parametric VaR Reporting in Analytics</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Parametric VaR Reporting in Analytics</h1>
+                                        <p class="bodytext">The Parametric VaR of a portfolio is the volatility of the portfolio. It is calculated as the portfolio volatility multiplied by the current market value of the portfolio.</p>
+                                        <p class="bodytext">Advantages of Parametric VaR:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">It is easy to implement and understand.</li>
+                                            <li class="listbullet1" value="2">Riskmetrics data sets are easily accessible.</li>
+                                        </ul>
+                                        <p class="bodytext">Disadvantages of Parametric VaR:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Data sets are based on normal distribution.</li>
+                                            <li class="listbullet1" value="2">Parametric VaR does not handle option products (non-linear instruments) correctly and tends to underestimate the results.</li>
+                                        </ul>
+                                        <p class="bodytext">Use the <a id="h184364" title="Analytics Query" href="analytics_reporting.htm" target="_self">Analytics Query</a> page to create, maintain, and run Parametric VaR queries.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> To help users locate queries of each type, the names of queries can (and should) include an indication of the type. For example, Parametric VaR query names could include the word <strong class="alertsonly-bold">Parametric</strong> or the abbreviation <strong class="alertsonly-bold">PVaR</strong>, and so on. This also applies to folders that contain queries of only that type.</p>
+                                        <p class="procedureheading">To find an existing Parametric VaR query:</p>
+                                        <p class="bodytext">If you have adopted a naming convention as above, then:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">On the Queries browse page, search for the standard designation for Parametric VaR queries - for example <strong class="boldcharstyle">PVaR</strong>.</li>
+                                        </ul>
+                                        <p class="procedureheading">To create a new Parametric VaR query (from the Queries browse page):</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">Navigate to the folder (or root) level where you want to locate the new query.</li>
+                                            <li class="listnumber1" value="2">Click <strong class="boldcharstyle">New</strong> and in the drop down list select <strong class="boldcharstyle">Parametric VaR</strong>. (Or in the <em class="emphasis">page</em> menu, select <strong class="boldcharstyle">New Parametric VaR</strong>.)<p class="listcontinue">A new Query page will open for your new Parametric VaR query.</p></li>
+                                            <li class="listnumber1" value="3">Configure the required query parameter Defaults and Properties, including a unique <strong class="boldcharstyle">Name</strong>, the required <strong class="boldcharstyle">Definition</strong> elements and <strong class="boldcharstyle">Expiry Strategy</strong> settings; then click <strong class="boldcharstyle">Save</strong>.<p class="listcontinue">The query will be saved in the current location.</p></li>
+                                        </ol>
+                                        <p class="procedureheading">To create a new Parametric VaR query (from any Query page):</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">In the page menu, select <strong class="boldcharstyle">New Parametric VaR</strong>.<p class="listcontinue">A new Query page will open for your new Parametric VaR query.</p></li>
+                                            <li class="listnumber1" value="2">Configure the required query parameter Defaults and Properties, including a unique <strong class="boldcharstyle">Name</strong>, the required <strong class="boldcharstyle">Definition</strong> elements and <strong class="boldcharstyle">Expiry Strategy</strong> settings; then click <strong class="boldcharstyle">Save</strong>.<p class="listcontinue">The query will be saved in the same location as the query you started from (whatever its type).</p></li>
+                                        </ol>
+                                        <h2>Parametric VaR Formulas</h2>
+                                        <h3 class="h4internal">Portfolio with 2 assets (A,B)</h3>
+                                        <p class="bodytext">
+                                            <img id="f156603" src="Resources/Images/156603.png" class="embeddedolefiletemplate" alt="" height="145" width="407" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <h3 class="h4internal">Multi Asset Portfolio</h3>
+                                        <p class="bodytext">
+                                            <img id="f156604" src="Resources/Images/156604.png" class="embeddedolefiletemplate" alt="" height="159" width="413" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <h3 class="h4internal">Portfolio Variance</h3>
+                                        <table class="tableintopic" width="552" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">&#160;</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="102">
+                                                    <p class="tableheadingcentred">1</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="102">
+                                                    <p class="tableheadingcentred">2</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="108">
+                                                    <p class="tableheadingcentred">3</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="72">
+                                                    <p class="tableheadingcentred">...</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="108">
+                                                    <p class="tableheadingcentred">N</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">1</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">1</sub><sup class="superscript">2</sup>.σ<sub class="subscript">1</sub><sup class="superscript">2</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">1</sub>P<sub class="subscript">2</sub>.<sub class="subscript">1,2</sub>.ρ<sub class="subscript">1</sub>σ<sub class="subscript">2</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">1</sub>P<sub class="subscript">3</sub>.ρ<sub class="subscript">1,3</sub>.<sub class="subscript">1</sub>σ<sub class="subscript">3</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">1</sub>P<sub class="subscript">N</sub>.ρ<sub class="subscript">1,N</sub>.<sub class="subscript">1</sub>σ<sub class="subscript">N</sub></p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">2</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">2</sub>P<sub class="subscript">1</sub>.<sub class="subscript">2,1</sub>.ρ<sub class="subscript">2</sub>σ<sub class="subscript">1</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">2</sub><sup class="superscript">2</sup>.σ<sub class="subscript">2</sub><sup class="superscript">2</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">2</sub>P<sub class="subscript">3</sub>.ρ<sub class="subscript">2,3</sub>.<sub class="subscript">2</sub>σ<sub class="subscript">3</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">2</sub>P<sub class="subscript">N</sub>.ρ<sub class="subscript">2,N</sub>.<sub class="subscript">2</sub>σ<sub class="subscript">N</sub></p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">3</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">3</sub>P<sub class="subscript">1</sub>.<sub class="subscript">3,1</sub>.ρ<sub class="subscript">3</sub>σ<sub class="subscript">1</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">3</sub>P<sub class="subscript">2</sub>.<sub class="subscript">3,2</sub>.ρ<sub class="subscript">3</sub>σ<sub class="subscript">2</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">3</sub><sup class="superscript">2</sup>.σ<sub class="subscript">3</sub><sup class="superscript">2</sup></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">3</sub>P<sub class="subscript">N</sub>.ρ<sub class="subscript">3,N</sub>.<sub class="subscript">3</sub>σ<sub class="subscript">N</sub></p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">...</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="60">
+                                                    <p class="tableheadingcentred">N</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">N</sub>P<sub class="subscript">1</sub>.<sub class="subscript">N,1</sub>.ρ<sub class="subscript">N</sub>σ<sub class="subscript">1</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="102">
+                                                    <p class="bodytext">P<sub class="subscript">N</sub>P<sub class="subscript">2</sub>.<sub class="subscript">N,2</sub>.ρ<sub class="subscript">N</sub>σ<sub class="subscript">2</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">N</sub>P<sub class="subscript">3</sub>.ρ<sub class="subscript">N,3</sub>.<sub class="subscript">N</sub>σ<sub class="subscript">3</sub></p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="72">
+                                                    <p class="bodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="108">
+                                                    <p class="bodytext">P<sub class="subscript">N</sub><sup class="superscript">2</sup>.σ<sub class="subscript">N</sub><sup class="superscript">2</sup></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                            <h2>Parametric VaR Example</h2>
+                                            <h3 class="h4internal">FX Forward</h3>
+                                            <ul class="listbullet1">
+                                                <li class="listbullet1" value="1">Buy EUR 1,000,000 @ 0.85</li>
+                                                <li class="listbullet1" value="2">Sell USD 850,000</li>
+                                                <li class="listbullet1" value="3">Maturity = 90 Days</li>
+                                            </ul>
+                                            <p class="bodytext"><strong class="boldcharstyle">Portfolio</strong>
+                                            </p>
+                                            <table class="tableintopic" width="444" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                                <col style="width: 123px;" />
+                                                <col style="width: 137px;" />
+                                                <col style="width: 200px;" />
+                                                <tr align="left" valign="top">
+                                                    <th bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext">&#160;</p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Position</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Volatility (%)(95% Confidence)</strong>
+                                                        </p>
+                                                    </th>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">854,835.29</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">1.103496</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">854,835.29</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">0.009980</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">-834,720.89</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">0.011297</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="bodytext"><strong class="boldcharstyle">Undiversified Var</strong>
+                                            </p>
+                                            <table class="tableintopic" width="504" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                                <col style="width: 123px;" />
+                                                <col style="width: 137px;" />
+                                                <col style="width: 129px;" />
+                                                <col style="width: 125px;" />
+                                                <tr align="left" valign="top">
+                                                    <th bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext">&#160;</p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">VaR (USD)(95%)</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Calculation</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Standard Deviation</strong>
+                                                        </p>
+                                                    </th>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">9,433.07</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">854,835.29 * 1.103496 /100</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">5,717.01</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">85.31</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">854,835.29 * 0.009980 /100</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">51.70</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">94.3</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">-834,720.89 * 0.011297 /100</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">-57.15</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#80FFFF" style="border: 1px solid #010101;">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Total</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="middle" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">9,424.08</p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">&#160;</p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="bottom" style="border: 1px solid #010101;">
+                                                        <p class="tablebodyright-aligned">5,711.56</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="bodytext"><strong class="boldcharstyle">Correlation Matrix</strong>
+                                            </p>
+                                            <table class="tableintopic" width="516" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                                <tr align="left" valign="top">
+                                                    <th bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="126">
+                                                        <p class="tablebodytext">&#160;</p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="156">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </th>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="126">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">1.000000</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="156">
+                                                        <p class="tablebodyright-aligned">-0.166627</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">0.105832</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="126">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">-0.166627</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="156">
+                                                        <p class="tablebodyright-aligned">1.000000</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">0.092852</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="126">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">0.105832</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="156">
+                                                        <p class="tablebodyright-aligned">0.092852</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">1.000000</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="bodytext"><strong class="boldcharstyle">Portfolio Variance</strong>
+                                            </p>
+                                            <table class="tableintopic" width="558" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                                <tr align="left" valign="top">
+                                                    <th bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext">&#160;</p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="108">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </th>
+                                                    <th bgcolor="#C0C0C0" valign="middle" style="border: 1px solid #010101;" width="102">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">TOTAL</strong>
+                                                        </p>
+                                                    </th>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR FX</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">32,684,249.99</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">-49,254.25</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="108">
+                                                        <p class="tablebodyright-aligned">-34,578.55</p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="102">
+                                                        <p class="tablebodyright-aligned">&#160;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">EUR 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">-49,254.25</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">2,673.36</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="108">
+                                                        <p class="tablebodyright-aligned">-274.37</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="102">
+                                                        <p class="tablebodyright-aligned">&#160;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">USD 90D</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">-34,578.55</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">-274.37</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="108">
+                                                        <p class="tablebodyright-aligned">3,266.19</p>
+                                                    </td>
+                                                    <td valign="bottom" style="border: 1px solid #010101;" width="102">
+                                                        <p class="tablebodyright-aligned">&#160;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr align="left" valign="top">
+                                                    <td bgcolor="#80FFFF" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodytext"><strong class="boldcharstyle">Total</strong>
+                                                        </p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="middle" style="border: 1px solid #010101;" width="120">
+                                                        <p class="tablebodyright-aligned">32,600,417.20</p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="bottom" style="border: 1px solid #010101;" width="114">
+                                                        <p class="tablebodyright-aligned">-46,855.25</p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="bottom" style="border: 1px solid #010101;" width="108">
+                                                        <p class="tablebodyright-aligned">-31,586.73</p>
+                                                    </td>
+                                                    <td bgcolor="#80FFFF" valign="bottom" style="border: 1px solid #010101;" width="102">
+                                                        <p class="tablebodyright-aligned">32,521,975.21</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="bodytext"><strong class="boldcharstyle">Portfolio Standard Deviation = 5,702.80</strong>
+                                            </p>
+                                            <p class="bodytext"><strong class="boldcharstyle">Diversified VaR (95%) = 9,409.63</strong>
+                                            </p>
+                                        </p>
+                                        <h3 class="h4internal">See also:</h3>
+                                        <p class="bodytext"><a id="h184415" title="Group By Columns Unique to Parametric VaR Queries" href="169508.htm" target="_self">Parametric VaR Query (Group By Columns)</a>
+                                        </p>
+                                        <p class="bodytext"><a id="h184416" title="Point in Time Columns Unique to Parametric VaR Queries" href="167657.htm" target="_self">Parametric VaR Query (Point in Time Columns)</a>
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

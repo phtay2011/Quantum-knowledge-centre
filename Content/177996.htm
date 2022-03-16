@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Supported SWIFT Message Formats">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>For EFT Output</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>For EFT Output</h1>
+                                        <h2>Category 1 - Customer Payments and Cheques</h2>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Format</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472">
+                                                    <p class="tableheading">Used for...</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT101</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (<strong class="boldcharstyle">*</strong>batched or unbatched) when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The Payment Category for the Counterparty is <strong class="boldcharstyle">Standard Settlement Instructions</strong></li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Payment is NOT to a Financial Institution</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <p class="tablebodytext">The Counterparty is mapped to <strong class="boldcharstyle">MT101</strong> in the <strong class="boldcharstyle">SWIFT Mappings.csv </strong>file, or (if unspecified or no file) MT101 is the default.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-bottom: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Bank Account Transfers (<strong class="boldcharstyle">*</strong>batched or unbatched) between Financial Institutions when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">the Payment Category for the Counterparty is <strong class="boldcharstyle">Standard Settlement Instructions</strong>, and</li>
+                                                        <li class="tablelistbullet" value="2">the <strong class="boldcharstyle">SWIFT Message Type</strong> option for the Bank Account Transfer instrument is set to <strong class="boldcharstyle">MT101</strong>.</li>
+                                                        <li class="tablelistbullet" value="3">The message type is NOT overwritten by the use of <a id="h197307" title="EFT Message Defaults (External Method Source)" href="configuration_externalmethodsource_eftmessagedefaults.htm" target="_self">EFT Message Defaults</a> settings for the applicable External Method Source - namely, <strong class="alertsonly-bold">Non-Financial Transfer</strong> and/or <strong class="alertsonly-bold">Counterparty Mapping</strong>.</li>
+                                                    </ul>
+                                                    <p class="note-level-1-body"><strong class="boldcharstyle">*NOTE:</strong> Non-netted cashflows for the same deal on the same day, with the same settlement instructions (and no AdHoc instructions) are automatically batched into one MT101 message (up to ten cash flows per message).</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT103</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (unbatched)</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">When NOT all parties are Financial Institutions</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The Counterparty is mapped to <strong class="boldcharstyle">MT103 </strong>in the <strong class="boldcharstyle">SWIFT Mappings.csv </strong>file, or (if unspecified or no file) MT103 is the default.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-bottom: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Bank Account Transfers between Financial Institutions when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The SWIFT EFT run is started <em class="emphasis">without </em>the AT_DEFAULT=MT200 command line parameter specified.</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The SWIFT Message Type option for the Bank Account Transfer instrument is set to <strong class="boldcharstyle">MT103.</strong></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT103+</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (unbatched)</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">When NOT all parties are Financial Institutions</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The Counterparty is mapped to <strong class="boldcharstyle">MT103+ </strong>in the <strong class="boldcharstyle">SWIFT Mappings.csv</strong> file, or (if unspecified or no file) MT103+ is the default </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Category 2 - Financial Institution Transfers</h2>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Format</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472">
+                                                    <p class="tableheading">Used for...</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT200</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (unbatched) for Bank Account Transfers only when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">all parties are Financial Institutions, and</li>
+                                                        <li class="tablelistbullet" value="2">the SWIFT Message Type option for the Bank Account Transfer instrument is set to <strong class="boldcharstyle">MT200</strong>.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT202</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (unbatched)</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">When all parties are Financial Institutions</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1"><strong class="boldcharstyle">Batch Messages</strong> is set to <strong class="boldcharstyle">Receipts </strong>or <strong class="boldcharstyle">None</strong> (or does not apply)</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">The MT200 alternative (Bank Account Transfers only) does not apply - see above.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT203</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Payments (batched up to ten per message)</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">When all parties are Financial Institutions</li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Batch Messages is set to <strong class="boldcharstyle">Payments </strong>or <strong class="boldcharstyle">Both</strong></li>
+                                                    </ul>
+                                                    <p class="tablebodytext">-and-</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Payment Method is <em class="emphasis">not</em> for <strong class="boldcharstyle">TARGET</strong></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT210</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Advice-to-Receive messages (for cashflow amounts greater than zero):</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Un-batched (one advice per message) if Batch Messages is set to <strong class="boldcharstyle">Payments </strong>or <strong class="boldcharstyle">None</strong> (or does not apply)</li>
+                                                        <li class="tablelistbullet" value="2">Batched (up to ten advices per message) if Batch Messages is set to <strong class="boldcharstyle">Receipts </strong>or <strong class="boldcharstyle">Both</strong></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Category 5 - Securities Markets</h2>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Format</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472">
+                                                    <p class="tableheading">Used for...</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT540</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Advice messages for receipt of Securities (stock) free of payment - for example for:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Stock Account Transfers</li>
+                                                        <li class="tablelistbullet" value="2">Repo deals with underlying Money Market Instruments that have stock flows specified</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT541</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Advice messages for receipt of Securities (stock) against payment made</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">For Security deals based on Instruments with stock flows specified</li>
+                                                        <li class="tablelistbullet" value="2">Also covers Equity transaction types (Unit Deals, Unit Holdings)</li>
+                                                        <li class="tablelistbullet" value="3">Output includes the associated cash information (no separate cash payment message is output)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT542</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Advice messages for delivery of Securities (stock) free of payment - for example, for:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">Stock Account Transfers</li>
+                                                        <li class="tablelistbullet" value="2">Repo deals with underlying Money Market Instruments that have stock flows specified</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT543</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Advice messages for delivery of Securities (stock) against payment received</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">For Security deals based on Instruments with stock flows specified</li>
+                                                        <li class="tablelistbullet" value="2">Also covers Equity transaction types (Unit Deals, Unit Holdings)</li>
+                                                        <li class="tablelistbullet" value="3">Includes the associated cash information (no separate cash receipt advice message is output)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Category 6 - Treasury Markets - Commodities</h2>
+                                        <p class="note-level-1-body"> <span class="notechar">NOTE:</span> These message types are NOT supported for Commodity Swap deals.</p>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Format</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472">
+                                                    <p class="tableheading">Used for...</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT604</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">MT604 Commodity Transfer / Delivery Order</p>
+                                                    <p class="tablebodytext">Output <em class="emphasis">only</em> for Commodity currency types when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">an XML Template is specified for the <strong class="boldcharstyle">Payment Method</strong> (in <a id="h166532" title="External Method Source" href="165367.htm" target="_self">External Method Sources</a>)</li>
+                                                        <li class="tablelistbullet" value="2">the flow amount is positive</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT605</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Commodity Notice to Receive</p>
+                                                    <p class="tablebodytext">Output <em class="emphasis">only</em> for Commodity currency types when:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">an XML Template is specified for the <strong class="boldcharstyle">Payment Method</strong> (in <a id="h166532_2" title="External Method Source" href="165367.htm" target="_self">External Method Sources</a>)</li>
+                                                        <li class="tablelistbullet" value="2">the flow amount is negative</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Category 9 - Cash Management and Customer Status</h2>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114">
+                                                    <p class="tableheading">Format</p>
+                                                </td>
+                                                <td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472">
+                                                    <p class="tableheading">Used for...</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT900</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Confirmation of Direct Debit</p>
+                                                    <p class="tablebodytext">Applies for a debit to the Counterparty account, where the <strong class="boldcharstyle">Payment Category</strong> is set to <strong class="boldcharstyle">Debit / Credit Advice</strong>, as follows:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">In Settlements, if specified for the individual flow in Cparty Delivery Instructions (Adhoc Instructions or Third-Party Payments mode),<p class="tablelistcontinue">-otherwise-</p></li>
+                                                        <li class="tablelistbullet" value="2">In Counterparty Delivery Instructions, for the Counterparty bank account.</li>
+                                                    </ul>
+                                                    <p class="note-level-1-body"> <span class="notechar">NOTE:</span> The default is <strong class="alertsonly-bold">Standard Settlement Instructions</strong>, which outputs standard SWIFT messages (MT103, 103+, 200, 202, 203, and 210).</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p class="tablebodytext">MT910</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p class="tablebodytext">Confirmation of Direct Credit</p>
+                                                    <p class="tablebodytext">Applies for a debit to the Counterparty account, where the <strong class="boldcharstyle">Payment Category </strong>is set to <strong class="boldcharstyle">Debit / Credit Advice</strong>, as for MT900 (above).</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h2>Category n - Common Group Messages</h2>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">MT<em class="emphasis">n</em>92- Cancellation messages<p class="listcontinue">The MTn92 Cancellation message was updated in <a id="h197205" title="UETR for Cancellation messages" href="197199.htm" target="_self">v2019.4 (6.8.2)</a>.</p><table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;"><tr align="left" valign="top"><td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114"><p class="tableheading">Format</p></td><td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472"><p class="tableheading">Used for...</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT192</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Cancellation message for a previous MT103 or MT103+ message</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT292</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Cancellation message for a previous MT202, MT203, or MT210 message</p><p class="note-level-2-body"><span class="notechar">NOTE:</span> An MT292 may not request cancellation of an MT 200. Instead, the Sender must send a new message to the account with institution of the initial message, requesting a re-transfer of the funds.</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT692</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Cancellation message for a previous MT604, or MT605 message</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT992</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Cancellation message for a previous MT900 or MT910 message</p></td></tr></table></li>
+                                        </ul>
+                                        <p>
+                                        </p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">MT<em class="emphasis">n</em>99 - Free format EFT messages<table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;"><tr align="left" valign="top"><td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="114"><p class="tableheading">Format</p></td><td bgcolor="#F3F9FB" style="border: 1px solid #010101;" width="472"><p class="tableheading">Used for...</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT199</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Free format EFT message related to a Single Customer Credit transfer</p><p class="tablenote"><span class="notechar">NOTE:</span> Created manually using the <a id="h112532" title="Free Format  MTn99 (Messages - Processing)" href="174321.htm" target="_self">Free Format MTn99</a> page.</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT299</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Free format EFT message related to a Financial Institution transfer</p><p class="tablenote"><span class="notechar">NOTE:</span> Created manually using the <a id="h112532_2" title="Free Format  MTn99 (Messages - Processing)" href="174321.htm" target="_self">Free Format MTn99</a> page.</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT599</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Free format EFT message related to a Stock transfer</p><p class="tablenote"><span class="notechar">NOTE:</span> Created manually using the <a id="h112532_3" title="Free Format  MTn99 (Messages - Processing)" href="174321.htm" target="_self">Free Format MTn99</a> page.</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT699</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Free format EFT message related to a Commodity flow</p><p class="tablenote"><span class="notechar">NOTE:</span> Created manually using the <a id="h112532_4" title="Free Format  MTn99 (Messages - Processing)" href="174321.htm" target="_self">Free Format MTn99</a> page.</p></td></tr><tr align="left" valign="top"><td style="border: 1px solid #010101;" width="114"><p class="tablebodytext">MT999</p></td><td style="border: 1px solid #010101;" width="472"><p class="tablebodytext">Free format EFT message related to a Confirmation of Debit or Credit</p><p class="tablenote"><span class="notechar">NOTE:</span> Created manually using the <a id="h112532_5" title="Free Format  MTn99 (Messages - Processing)" href="174321.htm" target="_self">Free Format MTn99</a> page.</p></td></tr></table></li>
+                                        </ul>
+                                        <h2>ISO 20022 Messages</h2>
+                                        <h3>Payments Clearing and Settlement (pacs)</h3>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p width="114">pacs.008 </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p width="472" class="boldcharstyle">FIToFICustomerCreditTransfer 
+</p>
+                                                    <p width="472">The message is sent by the debtor agent to the creditor agent, directly or through other agents and/or a payment clearing and settlement system. It is used to move funds from a debtor account to a creditor.
+</p>
+                                                    <p width="472">MX-equivalent to the MT103.</p>
+                                                    <p>Unbatched message via File per EFT processing.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p width="114">pacs.009 (core)</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="472">
+                                                    <p width="472"><span class="boldcharstyle">FinancialInstitutionCreditTransfer
+</span>
+                                                    </p>
+                                                    <p width="472">The message is sent by a debtor financial institution to a creditor financial institution, directly or through other agents and/or a payment clearing and settlement system.
+It is used to move funds from a debtor account to a creditor, where both debtor and creditor are financial institutions.</p>
+                                                    <p width="472">MX-equivalent to the MT202 and MT200.</p>
+                                                    <p>Unbatched message via File per EFT processing.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3>Payments Initiation (pain)</h3>
+                                        <table class="tableintopic" width="586" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <col />
+                                            <col style="width: 520px;" />
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="114">
+                                                    <p width="114">pain.001 </p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;">
+                                                    <p width="472" class="boldcharstyle">CustomerCreditTransferInitiation Supported SWIFT Message Formats 
+</p>
+                                                    <p>The message is sent by the initiating party to the forwarding agent or debtor agent. It is used to request movement of funds from the debtor account to a creditor.</p>
+                                                    <p>MX-equivalent to the MT101</p>
+                                                    <p>Batched or Unbatched message via File per EFT,  Single File, or File per day processing.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

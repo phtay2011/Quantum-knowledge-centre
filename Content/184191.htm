@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Cash Management|Bank Reconciliation|Matching Cash Flows with Bank Flows|Automatic Matching Using Scripts|Detail Match Scripts">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Specifying Match Criteria, Detail Match Script </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Specifying Match Criteria, Detail Match Script </h1>
+                                        <p class="bodytext">Use the Criteria grid to set up individual field criteria for your currently selected pass. These field criteria must all be satisfied to achieve a successful match at the <strong class="boldcharstyle">Match Status</strong> level specified for the pass.</p>
+                                        <p class="bodytext">You can specify up to 25 grid entries for one pass.</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span> </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">If the <strong class="alertsonly-bold">Pass Type</strong> is <strong class="alertsonly-bold">Match</strong>, <strong class="alertsonly-bold">Match Status</strong> is <strong class="alertsonly-bold">Matched</strong>, and if the <strong class="alertsonly-bold">Allow flows to match</strong> Operational Setting is <strong class="alertsonly-bold">On same Value Date only</strong>, the Criteria grid will always include an exact match of <strong class="alertsonly-bold">Value Date Equal to Value Date</strong>, which you cannot remove. Otherwise (that Operational Setting is NOT <strong class="alertsonly-bold">On same Value Date only</strong>), you can optionally specify the <strong class="alertsonly-bold">Value Date</strong> field in the Criteria grid (as for any other field).</li>
+                                            <li class="note-level-1-bullet" value="2">The <strong class="alertsonly-bold">Bank Value Date</strong> is also avaiable for matching.</li>
+                                            <li class="note-level-1-bullet" value="3">For other Pass Types, only <strong class="alertsonly-bold">Extra Information</strong> and <strong class="alertsonly-bold">Generic</strong> bank flow fields are available.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Example</h3>
+                                        <p class="bodytext">Examples of simple criteria for a <strong class="boldcharstyle">Match</strong> pass follow.</p>
+                                        <table class="tableintopic" width="570" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="96">
+                                                    <p class="tableheading">Match Status</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="474">
+                                                    <p class="tableheading">Example Criteria</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="96">
+                                                    <p class="tablebodytext">Matched</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="474">
+                                                    <p class="tablebodytext">Identical cash flow and BANK flow dates, amounts, deal numbers, and cash flow types</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="96">
+                                                    <p class="tablebodytext">Probable</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="474">
+                                                    <p class="tablebodytext">Identical cash flow and bank flow dates, amounts, and deal numbers</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td style="border: 1px solid #010101;" width="96">
+                                                    <p class="tablebodytext">Possible</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="474">
+                                                    <p class="tablebodytext">Identical cash flow and bank flow deal numbers, and:</p>
+                                                    <ul class="tablelistbullet">
+                                                        <li class="tablelistbullet" value="1">dates within 2 days of each other, and</li>
+                                                        <li class="tablelistbullet" value="2">amounts within 0.1% of each other.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <h3 class="h4internal">Procedure Summaries</h3>
+                                        <p class="procedureheading">To add a Criteria entry</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">In the Criteria grid menu, select <strong class="boldcharstyle">New</strong>.</li>
+                                            <li class="listnumber1" value="2">In the dialog box:<ol class="listnumber2"><li value="1">select the <strong class="boldcharstyle">Bank Flows Field</strong> and <strong class="boldcharstyle">Match</strong> type (see <em class="emphasis">Field Descriptions</em> below);</li><li value="2">where applicable, enter the associated <strong class="boldcharstyle">Tolerance</strong>, <strong class="boldcharstyle">Percentage</strong>, <strong class="boldcharstyle">Cash Flows Field</strong>, or <strong class="boldcharstyle">Match To</strong> value; then</li><li value="3">click <strong class="boldcharstyle">OK</strong>.</li></ol></li>
+                                            <li class="listnumber1" value="3"><strong class="boldcharstyle">Save</strong> your changes.</li>
+                                        </ol>
+                                        <p class="procedureheading">To edit a Criteria entry</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">In the Criteria grid, click a data item in the entry row.</li>
+                                            <li class="listnumber1" value="2">In the Edit dialog box:<ol class="listnumber2"><li value="1">edit the criteria settings as required (see <em class="emphasis">Field Descriptions</em> below), then </li><li value="2">click <strong class="boldcharstyle">OK</strong>.</li></ol></li>
+                                            <li class="listnumber1" value="3"><strong class="boldcharstyle">Save</strong> your changes.</li>
+                                        </ol>
+                                        <p class="procedureheading">To delete a Criteria entry</p>
+                                        <ol class="listnumber1">
+                                            <li class="listnumber1" value="1">In the Criteria grid, select the entry row.</li>
+                                            <li class="listnumber1" value="2">In the grid menu, select <strong class="boldcharstyle">Delete</strong>.</li>
+                                            <li class="listnumber1" value="3">in the dialog box, click <strong class="boldcharstyle">OK</strong> to confirm.</li>
+                                            <li class="listnumber1" value="4"><strong class="boldcharstyle">Save</strong> your changes.</li>
+                                        </ol>
+                                        <h3 class="h3internal">Field Descriptions (in dialog boxes)</h3>
+                                        <p class="note-level-1-body"><em class="emphasis">Generic</em> bank flow fields here include <strong class="alertsonly-bold">Generic 1</strong> through <strong class="alertsonly-bold">Generic 10</strong> and <strong class="alertsonly-bold">Extra Information</strong>.</p>
+                                        <h3 class="h4internal">Bank Flows Field</h3>
+                                        <p class="bodytext">Select a bank flow field to be matched (or filtered on) for your currently selected pass.</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span>
+                                        </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">Other fields and selections will vary, depending on the field you select.</li>
+                                            <li class="note-level-1-bullet" value="2">Only Generic fields are available when <strong class="alertsonly-bold">Pass Type</strong> is <strong class="alertsonly-bold">Bankflow Only</strong>, <strong class="alertsonly-bold">Bulk Bankflow Only</strong>, or <strong class="alertsonly-bold">Zero Balancing</strong>.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Match</h3>
+                                        <p class="bodytext">Depending on the data type of your selected <strong class="boldcharstyle">Bank Flows Field</strong> (as indicated below), select one of the following (where available):</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Equal to*</strong> (all except Generic) - to require an exact match with the corresponding cash flow field (ignoring spaces before and after),</li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">Equal to Field*</strong> (Generic only) - to require an exact match with the specified <strong class="boldcharstyle">Cash Flows Field</strong> (ignoring spaces before and after),</li>
+                                            <li class="listbullet1" value="3"><strong class="boldcharstyle">Equal to Value</strong> (Generic only) - to require an exact match with the specified <strong class="boldcharstyle">Match To</strong> value (ignoring spaces before and after),</li>
+                                            <li class="listbullet1" value="4"><strong class="boldcharstyle">Contained in</strong> (all except dates and Generic) - to require an exact match with <em class="emphasis">part of</em> the corresponding cash flow field,</li>
+                                            <li class="listbullet1" value="5"><strong class="boldcharstyle">Contained in Field</strong> (Generic only) - to require an exact match with <em class="emphasis">part of</em> the specified <strong class="boldcharstyle">Cash Flows Field</strong> (for example, <strong class="boldcharstyle">ABC</strong> will match against <strong class="boldcharstyle">ABCD</strong>, <strong class="boldcharstyle">XABCYY</strong>, and so on),</li>
+                                            <li class="listbullet1" value="6"><strong class="boldcharstyle">Contained in Value</strong> (Generic only) - to require an exact match with the <em class="emphasis">part of</em> the specified <strong class="boldcharstyle">Match To</strong> value,</li>
+                                            <li class="listbullet1" value="7"><strong class="boldcharstyle">Within Percentage</strong> (amounts only) - to require the percentage difference in amounts to be <em class="emphasis">no more than</em> the specified <strong class="boldcharstyle">Percentage</strong> value,</li>
+                                            <li class="listbullet1" value="8"><strong class="boldcharstyle">Within Tolerance</strong> (amounts only) - to require the absolute difference in amounts to be <em class="emphasis">no more than</em> the specified <strong class="boldcharstyle">Tolerance</strong> value,</li>
+                                            <li class="listbullet1" value="9"><strong class="boldcharstyle">Within Business Days</strong> (dates only) - to require the difference in dates to be <em class="emphasis">no more than</em> the specified number of days, or</li>
+                                            <li class="listbullet1" value="10"><strong class="boldcharstyle">Within Calendar Month</strong> (dates only) - to require the dates to be in the same calendar month.</li>
+                                        </ul>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">*TIP:</strong> For matching to a cash flow Instrument, do not select <strong class="alertsonly-bold">Equal To</strong> (because Instrument names are unique across all transaction types, and while your bank flow Instruments may be <em class="emphasis">similarly</em> named, they cannot be identical to any cash flow Instrument names).</p>
+                                        <h3 class="h4internal">Cash Flows Field</h3>
+                                        <p class="bodytext">(Available only when <strong class="boldcharstyle">Bank Flows Field</strong> is a Generic field and <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Equal to Field </strong>or <strong class="boldcharstyle">Contained in Field</strong>; not supported for Bankflow Only or Bulk Bankflow Only passes.)</p>
+                                        <p class="bodytext">Select the cash flow field you want to match with the specified Generic <strong class="boldcharstyle">Bank Flows Field</strong>, either exactly (when <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Equal to Field</strong>) or in part (when <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Contained in Field</strong>).</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> Deal Analysis Codes will be included only when <strong class="alertsonly-bold">Show on cash flow detail during bank reconciliation</strong> is selected for those codes (on the <a id="h97940" title="Setting Up Analysis Codes" href="53199.htm" target="_self">Analysis Code</a> configuration page).</p>
+                                        <h3 class="h4internal">Match To</h3>
+                                        <p class="bodytext">(Available only when <strong class="boldcharstyle">Bank Flows Field</strong> is a <strong class="boldcharstyle">Generic</strong> field and <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Equal to Value</strong> or <strong class="boldcharstyle">Contained in Value</strong>.)</p>
+                                        <p class="bodytext">Enter the literal text value that, for the bank flow to be included, you require the specified Generic <strong class="boldcharstyle">Bank Flows Field</strong> to either be exactly equal to (when <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Equal to Value</strong>) or in part (when <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Contained in Value</strong>); ignoring spaces before and after.</p>
+                                        <h3 class="h4internal">Percentage</h3>
+                                        <p class="bodytext">(Available only when <strong class="boldcharstyle">Bank Flows Field</strong> is <strong class="boldcharstyle">Amount</strong> and <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Within Percentage</strong>.)</p>
+                                        <p class="bodytext">Enter the maximum percentage difference in the bank flow and cash flow amounts that will be allowed, for a match to occur.</p>
+                                        <p class="bodytext">If <strong class="boldcharstyle">Match Status</strong> is <strong class="boldcharstyle">Match</strong> or <strong class="boldcharstyle">Probable</strong>, an adjustment will automatically be made for the difference, and you must specify its type , related options, and details in the relevant fields that then appear - namely, <strong class="boldcharstyle">Adjust Using</strong>, <em class="emphasis">Set From Bankflow Record</em> and other options, and <em class="emphasis">Adjustment Detail</em> fields.</p>
+                                        <h3 class="h4internal">Tolerance</h3>
+                                        <p class="bodytext">(Available only when <strong class="boldcharstyle">Bank Flows Field</strong> is <strong class="boldcharstyle">Amount</strong> and <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Within Tolerance</strong>.)</p>
+                                        <p class="bodytext">Enter the maximum absolute difference in the bank flow and cash flow amounts that will be allowed, for a match to occur.</p>
+                                        <p class="bodytext">If <strong class="boldcharstyle">Match Status</strong> is <strong class="boldcharstyle">Match</strong> or <strong class="boldcharstyle">Probable</strong>, an adjustment will automatically be made for the difference, and you must specify its type, related options, and details (as for <em class="emphasis">Percentage</em>).</p>
+                                        <h3 class="h4internal">Within Business Days</h3>
+                                        <p class="bodytext">(Available only when <strong class="boldcharstyle">Bank Flows Field</strong> is <strong class="boldcharstyle">Value Date</strong> and <strong class="boldcharstyle">Match</strong> is <strong class="boldcharstyle">Within Business Days</strong>.)</p>
+                                        <p class="bodytext">Enter the maximum number of business days up to which in the bank flow and cash flow dates may differ, for a match to occur.</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> For details of matching bank flows processed on non business days, see <a id="h23497" title="Non Business Day cash flows and Bank Reconciliation" href="180767.htm" target="_self">Non Business Day Cash Flows and Bank Reconciliation</a>.</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

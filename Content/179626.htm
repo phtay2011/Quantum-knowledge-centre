@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Importing data into Quantum|Importing Deals using the Deal Import Service">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Importing Quotes and Quote updates</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Importing Quotes and Quote updates</h1>
+                                        <p class="bodytext">The Quotes Importer supports the following QID-format fields.</p>
+                                        <p class="note-level-1-body"><strong class="boldcharstyle">NOTE:</strong>
+                                        </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1"><strong class="alertsonly-bold">quotetype</strong> is required only when importing <em class="emphasis">new</em> quotes. It indicates the type of quote, as shown below in each case.</li>
+                                            <li class="note-level-1-bullet" value="2"><strong class="alertsonly-bold">deal_no</strong> is required only for updates to existing quotes and identifies the quote concerned.</li>
+                                            <li class="note-level-1-bullet" value="3">Bid fields in the shaded third columns are not required if <strong class="alertsonly-bold">bid_speed=NO BID</strong> for the bid row.</li>
+                                            <li class="note-level-1-bullet" value="4">If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that. No unique row reference is stored in the database.</li>
+                                        </ul>
+                                        <h2>For FX Deal Quotes</h2>
+                                        <table class="tableintopic" width="567" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="186">
+                                                    <p class="tablebodytext">quotetype<br />deal_no<br />bid_dt<br />bidclosedt<br />bid_time<br />sectype<br />dealer<br />entity<br />fx_ccy<br />fx_ccy2</p>
+                                                </td>
+                                                <td width="188">
+                                                    <p class="tablebodytext">fx_mature_dt<br />fx_fv<br />deal_comments<br />sscparty<br />location<br />bid_row<br />bid_cparty<br />bid_speed</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" width="193">
+                                                    <p class="tablebodytext">bid_accepted<br />bid_spot_rate<br />bid_contract_rate<br />bid_foward_points<br />bid_buy_ccy<br />bid_buy_amount<br />bid_sell_ccy<br />bid_sell_amount<br />bid_value_date<br />bid_far_rate<br />bid_tostart_date</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: <strong class="alertsonly-bold">quotetype=FX</strong> is required for <em class="emphasis">new </em>FX Deal Quotes.</p>
+                                        <h2>For FX Time Options</h2>
+                                        <table class="tableintopic" width="567" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="186">
+                                                    <p class="tablebodytext">quotetype<br />deal_no<br />bid_dt<br />bidclosedt<br />bid_time<br />sectype<br />dealer<br />entity<br />fx_ccy<br />fx_ccy2</p>
+                                                </td>
+                                                <td width="188">
+                                                    <p class="tablebodytext">fx_mature_dt<br />fx_tostart_dt<br />fx_fv<br />sscparty<br />deal_comments<br />location<br />bid_row<br />bid_cparty<br />bid_speed</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" width="193">
+                                                    <p class="tablebodytext">bid_accepted<br />bid_spot_rate<br />bid_contract_rate<br />bid_foward_points<br />bid_buy_ccy<br />bid_buy_amount<br />bid_sell_ccy<br />bid_sell_amount<br />bid_tostart_date<br />bid_value_date</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: <strong class="alertsonly-bold">quotetype=FXO</strong> is required for <em class="emphasis">new </em>FX Time Options.</p>
+                                        <h2>For FX Swap Quotes</h2>
+                                        <table class="tableintopic" width="567" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="186">
+                                                    <p class="tablebodytext">quotetype<br />bid_dt<br />bidclosedt<br />bid_time<br />sectype<br />dealer<br />entity<br />fx_ccy<br />fx_ccy2<br />fx_ccy3<br />fx_ccy4</p>
+                                                </td>
+                                                <td width="188">
+                                                    <p class="tablebodytext">fx_mature_dt<br />fx_far_dt<br />fx_fv<br />fx_fv4<br />deal_comments<br />sscparty<br />location<br />bid_row<br />bid_cparty<br />bid_speed</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" width="193">
+                                                    <p class="tablebodytext">bid_accepted<br />bid_contract_rate<br />bid_far_rate<br />bid_foward_points<br />bid_buy_ccy<br />bid_buy_amount<br />bid_sell_ccy</p>
+                                                    <p class="tablebodytext">bid_sell_amount<br />bid_tostart_date<br />bid_value_date</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: <strong class="alertsonly-bold">quotetype=FXS</strong> is required for <em class="emphasis">new </em>FX Swap Quotes.</p>
+                                        <h2>For Currency Option Quotes</h2>
+                                        <table class="tableintopic" width="567" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="186">
+                                                    <p class="tablebodytext">quotetype<br />ticket_no<br />bid_dt<br />bidclosedt<br />bid_time<br />sectype<br />dealer<br />entity<br />strategy<br />co_ccy<br />co_ccy2<br />co_premccy<br />co_buysell<br />co_callput</p>
+                                                </td>
+                                                <td width="188">
+                                                    <p class="tablebodytext">co_optstyle<br />co_expiry_dt<br />co_mature_dt<br />co_fv<br />co_fv2<br />co_strike_rate<br />co_premiumamt<br />deal_comments<br />location<br />sscparty<br />bid_row<br />bid_cparty<br />bid_speed</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" width="193">
+                                                    <p class="tablebodytext">bid_accepted<br />bid_deal_no<br />bid_call_ccy<br />bid_call_amount<br />bid_put_ccy<br />bid_put_amount<br />bid_strike_rate<br />bid_expiry_date<br />bid_premium_ccy<br />bid_premium_amount</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: <strong class="alertsonly-bold">quotetype=CO</strong> is required for <em class="emphasis">new</em> Currency Option Quotes.</p>
+                                        <h2>For Money Market Deal Quotes</h2>
+                                        <table class="tableintopic" width="567" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="186">
+                                                    <p class="tablebodytext">quotetype<br />ticket_no<br />bid_dt<br />bidclosedt<br />bid_time<br />sectype<br />dealer<br />entity<br />strategy<br />mm_ccy<br />mm_bor_invest</p>
+                                                </td>
+                                                <td width="188">
+                                                    <p class="tablebodytext">mm_buysell<br />mm_settle_dt<br />mm_mature_dt<br />mm_fv<br />mm_coupon_rate<br />deal_comments<br />sscparty<br />location<br />bid_row<br />bid_cparty<br />bid_speed</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" width="193">
+                                                    <p class="tablebodytext">bid_spot_rate<br />bid_contract_rate<br />bid_buy_ccy<br />bid_buy_amount<br />bid_sell_ccy<br />bid_sell_amount<br />bid_value_date</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: <strong class="alertsonly-bold">quotetype=SE</strong> is required for <em class="emphasis">new</em> Money Market Deal Deal Quotes.</p><a name="o179556"></a>
+                                        <h2>FX Deal Quotes, Import File Examples</h2>
+                                        <h3>Example 1</h3>
+                                        <p class="bodytext">Import an FX Deal Quote with no bids recorded.</p>
+                                        <p class="bodytext">(QID format)</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />quotetype=FX<br />bid_dt=10-Jul-2012<br />bidclosedt=10-Jul-2012<br />bid_time=10:00 am<br />sectype=CM FX Forward<br />dealer=baseline<br />entity=Owner Exclusive 1<br />fx_ccy=GBP<br />fx_ccy2=USD<br />fx_mature_dt=30-Sep-2012<br />fx_fv=1,000,000.00<br />sscparty=ADV Counterparty2|Deal,ADV Counterparty3|Deal,ADV Counterparty4|Deal,<br />bid_row=1<br />bid_cparty=ADV Counterparty2<br />bid_speed=NO BID<br />bid_row=2<br />bid_cparty=ADV Counterparty3<br />bid_speed=NO BID<br />bid_row=3<br />bid_cparty=ADV Counterparty4<br />bid_speed=NO BID<br />$DoMenu=mfinsert</p>
+                                        <p class="bodytext">(QXT format)</p>
+                                        <p class="couriercode">@QuoteDeal<br />*DealNumber=6360<br />$NEW<br />TicketNumber=marcus test<br />QuoteType=FX Deals<br />BidDate=30-Apr-2015<br />BidCloseDate=30-Apr-2015<br />BidTime=1200<br />Instrument=FX Spot<br />Entity=Transactor - Level 2<br />Currency=USD<br />BuyAmount=100000.0000<br />SellAmount=120000.0000<br />OtherCurrency=NZD<br />ValueDate=26-Jul-2012<br />DealComments=comment<br />Dealer=baseline<br />Strategy=Strategy1<br />Comments=comment<br />Location=Belgium,Brazil,Brisbane<br />$$BIDSRECEIVED 1|Yes|ANZ||0.75|0.76|0.01|USD|100000.0000|NZD|120000.0000|26-Jul-2012<br />$INSERT</p>
+                                        <h3>Example 2</h3>
+                                        <p class="bodytext">Update an FX Deal Quote with three received bids</p>
+                                        <p class="bodytext">(QID Format)</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><strong class="alertsonly-bold">$DoMenu=mfModify</strong> specifies an update and the <strong class="alertsonly-bold">deal_no</strong> value identifies the existing deal.</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />deal_no=2692<br />bid_row=1<br />bid_speed=FAST<br />bid_spot_rate=1.61000000<br />bid_contract_rate=1.62000000<br />bid_row=2<br />bid_speed=FAST<br />bid_spot_rate=1.63000000<br />bid_contract_rate=1.65000000<br />bid_row=3<br />bid_speed=FAST<br />bid_spot_rate=1.64000000<br />bid_contract_rate=1.67000000<br />$DoMenu=mfModify</p>
+                                        <p class="bodytext">(QXT format)</p>
+                                        <p class="couriercode">@QuoteDeal<br />*DealNumber=6360<br />$NEW<br />TicketNumber=marcus test<br />QuoteType=FX Deals<br />BidDate=2015-04-30<br />BidCloseDate=2015-04-30<br />BidTime=1200<br />Instrument=FX Spot<br />Entity=Transactor Level 2<br />Currency=USD<br />BuyAmount=100000.0000<br />SellAmount=120000.0000<br />OtherCurrency=NZD<br />ValueDate=2012-07-26<br />DealComments=comment<br />Dealer=baseline<br />Strategy=Strategy1<br />Comments=comment<br />$$ANALYSIS Mirror#Mirror<br />Location=Belgium,Brazil,Brisbane<br />$$BIDSRECEIVED 3|No|ANZ||0.86|0.87|0.01|USD|104400.0000|NZD|120000.0000|2012-07-26|Yes||2012-07-26|2016-06-08|1899-12-30|0|FAST|0<br />$$BIDSRECEIVED 4|No|ANZ||0.86|0.87|0.01|USD|104400.0000|NZD|120000.0000|2012-07-26|Yes||2012-07-26|2016-06-08|1899-12-30|0|FAST|0<br />$$BIDSRECEIVED 5|No|ANZ||0.86|0.87|0.01|USD|104400.0000|NZD|120000.0000|2012-07-26|Yes||2012-07-26|2016-06-08|1899-12-30|0|FAST|0<br />$INSERT</p>
+                                        <p class="note-level-1-body"> <span class="notechar">NOTE</span>: If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that.</p><a name="o179557"></a>
+                                        <h2>FX Time Options, Import File Examples</h2>
+                                        <h3>Example 1</h3>
+                                        <p class="bodytext">Import an FX Time Option Quote with no bids recorded (QID Format)</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />quotetype=FXO<br />bid_dt=12-Jul-2012<br />bidclosedt=12-Jul-2012<br />bid_time=12:00 pm<br />sectype=FX Forward - Time Option<br />dealer=baseline<br />entity=Owner Exclusive 1<br />fx_ccy=AUD<br />fx_ccy2=USD<br />fx_mature_dt=16-Sep-2012<br />fx_tostart_dt=31-Aug-2012<br />fx_fv=1,000,000.00<br />sscparty=ADV Counterparty1|Deal,ADV Counterparty2|Deal,ADV Counterparty3|Deal,ADV Counterparty4|Deal,<br />location=Sydney<br />bid_row=1<br />bid_cparty=ADV Counterparty1<br />bid_speed=NO BID<br />bid_row=2<br />bid_cparty=ADV Counterparty2<br />bid_speed=NO BID<br />bid_row=3<br />bid_cparty=ADV Counterparty3<br />bid_speed=NO BID<br />bid_row=4<br />bid_cparty=ADV Counterparty4<br />bid_speed=NO BID<br />$DoMenu=mfinsert</p>
+                                        <h3>Example 2</h3>
+                                        <p class="bodytext">Update an FX Time Option Quote with one received bid (QID Format)</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><strong class="alertsonly-bold">$DoMenu=mfModify</strong> specifies an update and the <strong class="alertsonly-bold">deal_no</strong> value identifies the existing deal.</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />deal_no=2657<br />bid_row=1<br />bid_cparty=ADV Counterparty1<br />bid_speed=OK<br />bid_spot_rate=10.00000000<br />bid_contract_rate=0.91666667<br />bid_foward_points=-90833.33330000<br />bid_buy_ccy=AUD<br />bid_buy_amount=11,000,000.00<br />bid_sell_ccy=NZD<br />bid_sell_amount=12,000,000.00<br />bid_tostart_date=20-Aug-2012<br />bid_value_date=20-Jul-2012<br />$DoMenu=mfModify</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that.</p><a name="o179558"></a>
+                                        <h2>FX Swaps, Import File Examples</h2>
+                                        <h3>Example 1</h3>
+                                        <p class="bodytext">Import an FX Swap Quote with four bids recorded (QID Format)</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />quotetype=FXS<br />bid_dt=12-Jul-2012<br />bidclosedt=12-Jul-2012<br />bid_time=02:00 pm<br />sectype=CM FX Forward<br />dealer=baseline<br />entity=Owner Exclusive 1<br />fx_ccy=GBP<br />fx_ccy2=USD<br />fx_ccy3=USD<br />fx_ccy4=GBP<br />fx_mature_dt=16-Jul-2012<br />fx_far_dt=16-Jul-2013<br />fx_fv=1,000,000.00<br />fx_fv4=1,000,000.00<br />deal_comments=Test deal<br />sscparty=ADV Counterparty4|Deal,ADV Counterparty1|Deal,ADV Counterparty3|Deal,ADV Counterparty2|Deal,<br />location=Sydney<br />bid_row=1<br />bid_cparty=ADV Counterparty4bid_speed=SLOW<br />bid_contract_rate=1.63500000<br />bid_far_rate=1.62000000<br />bid_foward_points=-150<br />bid_buy_ccy=GBP<br />bid_buy_amount=1,000,000.00<br />bid_sell_ccy=USD<br />bid_sell_amount=1,635,000.00<br />bid_tostart_date=16-Jul-2013<br />bid_value_date=16-Jul-2012<br />bid_row=2<br />bid_cparty=ADV Counterparty1<br />bid_speed=FAST<br />bid_contract_rate=1.61000000<br />bid_far_rate=1.63000000<br />bid_foward_points=200<br />bid_buy_ccy=GBP<br />bid_buy_amount=1,000,000.00<br />bid_sell_ccy=USD<br />bid_sell_amount=1,610,000.00<br />bid_tostart_date=16-Jul-2013<br />bid_value_date=16-Jul-2012<br />bid_row=3<br />bid_cparty=ADV Counterparty3<br />bid_speed=SLOW<br />bid_spot_rate=1.52000000<br />bid_contract_rate=1.53000000<br />bid_far_rate=1.55000000<br />bid_foward_points=200<br />bid_buy_ccy=GBP<br />bid_buy_amount=1,000,000.00<br />bid_sell_ccy=USD<br />bid_sell_amount=1,530,000.00<br />bid_tostart_date=16-Jul-2013<br />bid_value_date=16-Jul-2012<br />bid_row=4<br />bid_cparty=ADV Counterparty2<br />bid_speed=V FAST<br />bid_contract_rate=1.64000000<br />bid_far_rate=1.68000000<br />bid_foward_points=400<br />bid_buy_ccy=GBP<br />bid_buy_amount=1,000,000.00<br />bid_sell_ccy=USD<br />bid_sell_amount=1,640,000.00<br />bid_tostart_date=16-Jul-2013<br />bid_value_date=16-Jul-2012<br />$DoMenu=mfinsert</p>
+                                        <h3>Example 2</h3>
+                                        <p class="bodytext">Update the bid speed and rates of an existing FX Swap Quote bid (QID Format)</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><strong class="alertsonly-bold">$DoMenu=mfModify</strong> specifies an update and the <strong class="alertsonly-bold">deal_no</strong> value identifies the existing deal.</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />deal_no=2693<br />bid_row=1<br />bid_speed=SLOW<br />bid_contract_rate=1.635000000<br />bid_far_rate=1.62000000<br />$DoMenu=mfModify</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that.</p><a name="o179559"></a>
+                                        <h2>Currency Option Quotes, Import File Examples</h2>
+                                        <h3>Example 1</h3>
+                                        <p class="bodytext">Import a Currency Option Quote with no bids recorded (QID Format)</p>
+                                        <p class="couriercode">$DoMenu=mfnew<br />quotetype=CO<br />bid_dt=02-Jul-2012<br />bidclosedt=02-Aug-2012<br />bid_time=10:00 am<br />ticket_no=kfc_10Jul_04<br />sectype=American<br />dealer=baseline<br />entity=Owner - Level 3<br />strategy=D24657<br />co_ccy=USD<br />co_ccy2=GBP<br />co_premccy=USD<br />co_buysell=BUY<br />co_callput=CALL<br />co_optstyle=AMERICAN<br />co_expiry_dt=02-Oct-2012<br />co_mature_dt=04-Oct-2012<br />co_strikerate=0.57000000<br />co_premiumamt=22.00<br />deal_comments=some deal comments.<br />sscparty=XYZ Bank|Deal,Bank of Erewhon|Deal,<br />location=Adelaide,Canberra<br />bid_row=1<br />bid_cparty=XYZ Bank<br />bid_speed=NO BID<br />bid_row=2<br />bid_cparty=Bank of Erewhon<br />bid_speed=NO BID<br />$DoMenu=mfinsert</p>
+                                        <h3>Example 2</h3>
+                                        <p class="bodytext">Update an existing Currency Option Quote with an accepted bid (QID Format)</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><strong class="alertsonly-bold">$DoMenu=mfModify</strong> specifies an update and the <strong class="alertsonly-bold">deal_no</strong> value identifies the existing deal.</p>
+                                        <p class="couriercode">EXENAME=QUOTES<br />$DoMenu=mfnew<br />deal_no=584<br />bid_row=1<br />bid_accepted=1<br />bid_cparty=XYZ Bank<br />bid_deal_no=585<br />bid_speed=FAST<br />bid_call_ccy=AUD<br />bid_call_amount=1,000,000.00<br />bid_put_ccy=USD<br />bid_put_amount=550,000.00<br />bid_strike_rate=0.55000000<br />bid_expiry_date=15-Dec-2008<br />bid_premium_ccy=USD<br />bid_premium_amount=20.00<br />$DoMenu=mfModify</p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTE</span>: If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that.</p><a name="o179560"></a>
+                                        <h2>Money Market Deal Quotes, Import File Examples</h2>
+                                        <h3>Example 1</h3>
+                                        <p class="bodytext">Import a Money Market Deal Quote with no bids recorded (QID Format)</p>
+                                        <p class="couriercode">&lt;pre_start&gt;<br />$DoMenu=mfnew<br />quotetype=SE<br />ticket_no=pqr_10Jun_12<br />bid_dt=01-May-2012<br />bidclosedt=08-Jun-2012<br />bid_time=02:00 pm<br />sectype=AGF Bond Periodic<br />dealer=baseline<br />entity=Owner - Level 3<br />strategy=Strategy1<br />mm_ccy=AUD<br />mm_bor_invest=INVESTMENT<br />mm_buysell=BUY<br />mm_settle_dt=10-Jul-2012<br />mm_mature_dt=10-Jul-2014<br />mm_fv=12,000,000.00<br />mm_coupon_rate=12.00000000<br />deal_comments=Some test comment<br />sscparty=CZA|Broker,EFGBANK|Deal,LMN Bank|Deal,Tiger|Deal,<br />bid_row=1<br />bid_broker=CZA<br />bid_speed=NO BID<br />bid_row=2<br />bid_cparty=EFGBANK<br />bid_speed=NO BID<br />bid_row=3<br />bid_cparty=LMN Bank<br />bid_speed=NO BID<br />bid_row=4<br />bid_cparty=Tiger<br />bid_speed=NO BID<br />$DoMenu=mfinsert<br />&lt;pre_end&gt;</p>
+                                        <h3>Example 2</h3>
+                                        <p class="bodytext">Update an existing Money Market Deal Quote with an accepted bid (QID Format)</p>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span><strong class="alertsonly-bold">$DoMenu=mfModify</strong> specifies an update and the <strong class="alertsonly-bold">deal_no</strong> value identifies the existing deal.</p>
+                                        <p class="couriercode">&lt;pre_start&gt;<br />EXENAME=QUOTES<br />$DoMenu=mfnew<br />deal_no=1676<br />bid_row=1<br />bid_cparty=ADV Counterparty1<br />bid_broker=CZA<br />bid_speed=OK<br />bid_value=5,000.00<br />bid_mature_date=10-Jul-2014<br />bid_price_rate=5.20000000<br />bid_margin=0.10000000<br />$DoMenu=mfModify<br />&lt;pre_end&gt;</p>
+                                        <p class="note-level-1-body"> <span class="notechar">NOTE</span>: If you want to import updated bids for an existing quote, you should re-import <em class="emphasis">all</em> bid details, because resaving the quote may have changed the bid row order and Quantum cannot detect that.</p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

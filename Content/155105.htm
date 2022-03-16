@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="General System Information|Analytics Revaluations|Analytics Consistent Pricing Models|Hull and White (HW) model">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Building HW Trees - changing Timestep</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Building HW Trees - changing Timestep</h1>
+                                        <p class="bodytext">Trinomial trees that are constructed with a constant timestep often do not contain a branch in the tree that coincides with all of the cash flow dates of the underlying instrument. For example, the tree might be built to value a callable bond that pays a semi-annual coupon, with payments that could potentially continue for a ten year period.</p>
+                                        <p class="bodytext">The tree construction process would be based on splitting the entire period into a large-enough number of timesteps so that the resulting bond value is "sufficiently" accurate. Even if a very large number of steps is chosen, it is unlikely that each coupon payment date will fall exactly on the dates represented by the branches in the tree. There are a number of alternative ways to deal with this problem:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Discount the cash flow back to the next earliest node. To demonstrate the procedure, suppose that a coupon payment occurs at a date denoted by <img id="f155288" src="Resources/Images/155288.png" class="embeddedolefiletemplate" alt="" height="15" width="13" vspace="0" hspace="0" align="bottom" border="0" />, which falls between two nodal dates, <em class="emphasis">t</em><sub class="subscript">i</sub> and <em class="emphasis">t</em><sub class="subscript">i+1</sub>. The cash flow could be discounted back to time <em class="emphasis">t</em><sub class="subscript">i</sub> at the appropriate <img id="f155291" src="Resources/Images/155291.png" class="embeddedolefiletemplate" alt="" height="19" width="36" vspace="0" hspace="0" align="bottom" border="0" /> rates prevailing at all of the nodes at time <em class="emphasis">t</em><sub class="subscript">i</sub>. Unfortunately, these rates are not directly included in the tree, and must be estimated separately.</li>
+                                            <li class="listbullet1" value="2">Apportion the cash flow between the adjacent nodes. This approach assumes that a proportion of the cashflow occurs at time <em class="emphasis">t</em><sub class="subscript">i</sub> with the remainder paid at time <em class="emphasis">t</em><sub class="subscript">i+1</sub>.</li>
+                                            <li class="listbullet1" value="3">Change the length of the timestep so that a tree branch always coincides exactly with the coupon payment dates.</li>
+                                        </ul>
+                                        <p class="bodytext">While the last method does provide the most complete solution, it also requires that the tree building procedure described in the previous section is slightly amended. A brief outline of the new procedure is given below.</p>
+                                        <p class="bodytext">Consider a time period between time 0 and time <em class="emphasis">T</em> that is divided into a set of finite times denoted as <em class="emphasis">t</em><sub class="subscript">0</sub>, <em class="emphasis">t</em><sub class="subscript">1</sub>, <em class="emphasis">t</em><sub class="subscript">2</sub>,..., <em class="emphasis">t</em><sub class="subscript">n</sub>, where <em class="emphasis">t</em><sub class="subscript">0</sub>, = 0 and <em class="emphasis">t</em><sub class="subscript">n</sub>, = <em class="emphasis">T</em>. Also define <img id="f155292" src="Resources/Images/155292.png" class="embeddedolefiletemplate" alt="" height="16" width="15" vspace="0" hspace="0" align="bottom" border="0" /><img id="f155289" src="Resources/Images/155289.png" class="embeddedolefiletemplate" alt="" height="19" width="13" vspace="0" hspace="0" align="bottom" border="0" />= <em class="emphasis">t</em><sub class="subscript">i+1</sub> - <em class="emphasis">t</em><sub class="subscript">i</sub> as the length of the period beginning at time <em class="emphasis">t</em><sub class="subscript">i</sub>. Now when the initial tree is constructed, the state step also becomes time-dependent and is calculated as:</p>
+                                        <table class="tableintopic" width="420" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                            <tr align="left" valign="top">
+                                                <td width="18">
+                                                    <p class="tablebodytext">&#160;</p>
+                                                </td>
+                                                <td width="360">
+                                                    <p class="tablebodytext">
+                                                        <img id="f155313" src="Resources/Images/155313.png" class="embeddedolefiletemplate" alt="" height="24" width="100" vspace="0" hspace="0" align="bottom" border="0" />
+                                                    </p>
+                                                </td>
+                                                <td width="42">
+                                                    <p class="tablebodyright-aligned">(1.34)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="bodytext">The tree branching also differs from the constant timestep case. Rather than determine which of the three alternative branching methods are used as a function of the current position in the tree, we now choose the position of the central node as that closest to the expected value of the short rate at the end of the period. The branching at all positions in the tree can therefore be depicted as:</p>
+                                        <p class="bodytextindent">
+                                            <img id="f155314" src="Resources/Images/dg-agi-tscpmbranching1.png" class="linkedgraphic-risk" alt="Linked Graphic Parent Template Risk" height="246" width="381" vspace="0" hspace="0" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">The state subscript <em class="emphasis">k</em> is now a parameter to be chosen. Other than that, the tree construction follows the same general steps that are detailed in the previous section. At each node (<em class="emphasis">i</em>,<em class="emphasis">j</em>):</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Determine the value of <em class="emphasis">k</em> such that the central node emanating from the initial node corresponds to a rate equal to the expected value of <img id="f155315" src="Resources/Images/155315.png" class="embeddedolefiletemplate" alt="" height="23" width="173" vspace="0" hspace="0" align="bottom" border="0" />. This is computed as the closest integer to <img id="f155316" src="Resources/Images/155316.png" class="embeddedolefiletemplate" alt="" height="23" width="89" vspace="0" hspace="0" align="bottom" border="0" />.</li>
+                                            <li class="listbullet1" value="2">Compute the probabilities for the top, middle, and bottom branches in the tree. These are determined so that the constructed tree is consistent with the conditional mean and variance of the interest rate process. By also restricting the probabilities to sum to 1, Brigo and Mercurio (2001) show that the probabilities are calculated as follows:<table class="tableintopic" width="420" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;"><tr align="left" valign="top"><td width="18"><p class="tablebodytext">&#160;</p></td><td width="360"><p class="tablebodytext"><img id="f155317" src="Resources/Images/155317.png" class="embeddedolefiletemplate" alt="" height="52" width="173" vspace="0" hspace="0" align="bottom" border="0" /></p><p class="tablebodytext"><img id="f155318" src="Resources/Images/155318.png" class="embeddedolefiletemplate" alt="" height="51" width="111" vspace="0" hspace="0" align="bottom" border="0" /></p><p class="tablebodytext"><img id="f155319" src="Resources/Images/155319.png" class="embeddedolefiletemplate" alt="" height="52" width="173" vspace="0" hspace="0" align="bottom" border="0" /></p><p class="tablebodytext">Where:</p><p class="tablebodytext"><img id="f155320" src="Resources/Images/155320.png" class="embeddedolefiletemplate" alt="" height="23" width="153" vspace="0" hspace="0" align="bottom" border="0" /></p><p class="tablebodytext"><img id="f155321" src="Resources/Images/155321.png" class="embeddedolefiletemplate" alt="" height="27" width="100" vspace="0" hspace="0" align="bottom" border="0" /></p></td><td width="42"><p class="tablebodyright-aligned">(1.35)</p></td></tr></table></li>
+                                            <li class="listbullet1" value="3">Apply stage two of the tree-building process in exactly the same way as for the constant timestep model.</li>
+                                        </ul>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

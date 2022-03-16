@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-nz" xml:lang="en-nz" class="_Skins_HTML5_Left_FIS" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Release History|Version 6.4.0|Major New Features in this Release">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Message Queues and Data Integration</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1150px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-dropdown" style="display:none;" id="#centralSmallScreen"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="166520.htm" title="FIS" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <div class="central-dropdown" style="display:none;" id="#centralTop"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="central-dropdown" style="display:none;"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_bodytext_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="   &gt;   " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Message Queues and Data Integration</h1>
+                                        <p class="bodytext">In order to improve Quantum integration with external systems, you can now configure the import and export of data in Quantum using message queues.</p>
+                                        <p class="bodytext">Additionally:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Importation Services such as Deal Import, Static Data Import, and Confirmation Matching can now read from message queues;</li>
+                                            <li class="listbullet1" value="2">outgoing information such as Scheduler, AGCommandLineSupport, and Paper Confirmations can now write to message queues;</li>
+                                            <li class="listbullet1" value="3">outgoing information can be signed and incoming information can be verified using digital certificates; and..</li>
+                                            <li class="listbullet1" value="4">outgoing information can be encrypted and incoming information can be decrypted using XML Encryption.</li>
+                                        </ul>
+                                        <h3 class="h3internal">Implementation</h3>
+                                        <p class="bodytext">A new Data Transfer Location page has been added to the Configuration menu. Use this page to configure data streams into and out of Quantum as queues and files at various integration points. Also supports data from the Quantum API. </p>
+                                        <p class="bodytext">
+                                            <img id="f187674" src="Resources/Images/q6xmsgqueueeg1.png" class="linkedgraphic-agq" alt="Q6xMsgQueueEg1.png" height="589" width="815" vspace="2" hspace="2" align="bottom" border="0" />
+                                        </p>
+                                        <p class="bodytext">This page includes the following key fields.</p>
+                                        <h3 class="h4internal">Details</h3>
+                                        <p class="bodytext"><strong class="boldcharstyle">Purpose</strong> - Select one of the following incoming or outgoing data types.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Incoming</strong> data<strong class="boldcharstyle">*</strong>:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">BankImportation</strong> - Bank Statement items (account balances and transaction flows),</li><li class="listbullet1" value="2"><strong class="boldcharstyle">Confirmation</strong> - Confirmation Matching messages returned by the external matching service,</li><li class="listbullet1" value="3"><strong class="boldcharstyle">DealImportation</strong> - deal details,</li><li class="listbullet1" value="4"><strong class="boldcharstyle">StaticImportation</strong> - Static Data, or</li><li class="listbullet1" value="5"><strong class="boldcharstyle">WorkflowIn</strong> (only when <strong class="boldcharstyle">Location Type</strong> is <strong class="boldcharstyle">FILE</strong>) - a input text file that will be parsed by the specified System <strong class="boldcharstyle">Parser</strong> (if any are installed) into a Data Source.</li></ul></li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">Outgoing</strong> data:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">ConfirmationDelivery</strong> - Confirmation messages output from the Confirmations Processing page,</li><li class="listbullet1" value="2"><strong class="boldcharstyle">Eft</strong> - EFT messages output from the EFTs Processing page OR EFTs Reprocessing Utility page (where the External Method Source for the specified Payment method has <strong class="boldcharstyle">Type Export</strong> set to <strong class="boldcharstyle">Create File</strong>),</li><li class="listbullet1" value="3"><strong class="boldcharstyle">GLInterface</strong> - General Ledger entries exported from the G/L Interface page,</li><li class="listbullet1" value="4"><strong class="boldcharstyle">Scheduler</strong> (only when <strong class="boldcharstyle">Location Type</strong> is <strong class="boldcharstyle">QUEUE</strong>) - required for Scheduler tasks wanting to use the Message Queue defined in this DTL record to output Quantum data , or</li><li class="listbullet1" value="5"><strong class="boldcharstyle">WorkflowOut</strong> - an output text file formatted as defined in the specified Workflow <strong class="boldcharstyle">Template</strong>.</li></ul></li>
+                                        </ul>
+                                        <p class="tip-level-1-body"><span class="tipchar">TIP:</span> An <strong class="alertsonly-bold">Incoming</strong> or <strong class="alertsonly-bold">Outgoing</strong> badge displays at the top right to show the direction of your selected data type.</p>
+                                        <h3 class="h4internal">Location</h3>
+                                        <p class="bodytext"><strong class="boldcharstyle">Location Type</strong> - Select <strong class="boldcharstyle">FILE</strong> to transfer data using the file-based interface; select <strong class="boldcharstyle">QUEUE</strong> to transfer data using the MQ-based interface; or select <strong class="boldcharstyle">WEB API</strong> to transfer data using the Quantum API.</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">Queue Connection</strong> - (Available only when <strong class="boldcharstyle">Location Type</strong> is <strong class="boldcharstyle">QUEUE</strong> or <strong class="boldcharstyle">WEB API</strong>.)</p>
+                                        <p class="bodytext">Select the queue connection.</p>
+                                        <p class="bodytext">Queue connections are controlled via the <strong class="boldcharstyle">MessageQueueSettings.config</strong> file, located in the <strong class="boldcharstyle">\config</strong> directory of the Site folder. Queue connections are established using Apache.NMS.</p>
+                                        <h3 class="h4internal">Digital Signature</h3>
+                                        <p class="bodytext">Digital certificates bind together the public and private keys required for asymmetric encryption and signing of digital content. Quantum utilizes certificates based on either X.509 standards (for XML encryption) or PGPKeyRing (for PGP). Contact your <span class="VariablesConsultant_Name">FIS Consultant</span> for more information.</p>
+                                        <p class="bodytext">Configure these settings as required to apply digital signatures to transferred data.</p>
+                                        <p class="bodytext"><strong class="boldcharstyle">Certificate Store</strong> - The location of the Certificate store in the Registry. The available settings depend on the selected <strong class="boldcharstyle">Signature Type</strong> as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">for PGP - <strong class="boldcharstyle">PGP Ring</strong> is the only available setting, or...</li>
+                                            <li class="listbullet1" value="2">for CMS - select <strong class="boldcharstyle">Local Machine</strong> or <strong class="boldcharstyle">Current User</strong>.<br /></li>
+                                        </ul>
+                                        <p class="bodytext"><strong class="boldcharstyle">Certificate Criteria</strong> - Enter the criteria, based on the selected <strong class="boldcharstyle">Signature Type</strong>:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">for CMS - enter the Certificate file name (without the file extension), or...</li>
+                                            <li class="listbullet1" value="2">for PGP - enter the PGP Key ID.</li>
+                                        </ul>
+                                        <p class="bodytext"><strong class="boldcharstyle">Certificate Criteria Type</strong> - Select a <strong class="boldcharstyle">Find By</strong> option for locating the Certificate file to apply. The available settings depend on the selected <strong class="boldcharstyle">Signature Type</strong> as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">for PGP - <strong class="boldcharstyle">Find By Subject Key Identifier</strong>, is the only valid setting; or...</li>
+                                            <li class="listbullet1" value="2">for CMS - select one of the following:<ul class="listbullet1"><li class="listbullet1" value="1"><strong class="boldcharstyle">Find By Application Policy</strong>,</li><li class="listbullet1" value="2"><strong class="boldcharstyle">Find By Certificate Policy</strong>,</li><li class="listbullet1" value="3"><strong class="boldcharstyle">Find By Serial Number</strong>,</li><li class="listbullet1" value="4"><strong class="boldcharstyle">Find By Subject Distinguished Name</strong>,</li><li class="listbullet1" value="5"><strong class="boldcharstyle">Find By Subject Key Identifier</strong>,</li><li class="listbullet1" value="6"><strong class="boldcharstyle">Find By Subject Name</strong>, or</li><li class="listbullet1" value="7"><strong class="boldcharstyle">Find By Thumbprint</strong>.<br /></li></ul><p class="listcontinue"><img id="f187675" src="Resources/Images/q6xmsgqueueeg2.png" class="linkedgraphic-agq" alt="Q6xMsgQueueEg2.png" height="163" width="208" vspace="2" hspace="2" align="bottom" border="0" /></p></li>
+                                        </ul>
+                                        <p class="bodytext"><strong class="boldcharstyle">Detach digital signature</strong> - (Available only when a S<strong class="boldcharstyle">ignature Type</strong> is specified, and only for <em class="emphasis">outgoing</em> data - that is, when Purpose is <strong class="boldcharstyle">Eft</strong>, <strong class="boldcharstyle">ConfirmationDelivery</strong>, or <strong class="boldcharstyle">GLInterface</strong>.)</p>
+                                        <p class="bodytext">Select this option to generate the digital signature as a separate file, OR clear the option to include the digital signature in the output file.<br /></p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span> </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">No Digital Signature will be applied if <strong class="alertsonly-bold">Certificate Store</strong> or <strong class="alertsonly-bold">Certificate Criteria Type</strong> is blank or none.</li>
+                                            <li class="note-level-1-bullet" value="2">Certificates used for encryption must be available to each Quantum Application Server.</li>
+                                            <li class="note-level-1-bullet" value="3">When signing or encryption is required for binary output the content is first base64 encoded and then converted to XML within an <code class="monospace">&lt;encoded&gt;</code> element.</li>
+                                        </ul>
+                                        <h3 class="h3internal">Configuration</h3>
+                                        <p class="bodytext">Queue connections are controlled via <strong class="boldcharstyle"><a id="h187719" title="Configuring Message Queues" href="187718.htm" target="_self">MessageQueueSettings.config</a></strong>, located in the <em class="emphasis">\config</em> directory of the Site folder. Queue connections are established using Apache.NMS.</p>
+                                        <p class="bodytext">Quantum supports the following NMS implementations:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">ActiveMQ</li>
+                                            <li class="listbullet1" value="2">MSMQ</li>
+                                            <li class="listbullet1" value="3">IBM WebSphere</li>
+                                        </ul>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span> </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">The full list of MSMQ options can be found here: <a class="jumpnopagenotemplate" title="" href="https://msdn.microsoft.com/en-us/library/ch1d814t(v=vs.110).aspx" target="_self">https://msdn.microsoft.com/en-us/library/ch1d814t(v=vs.110).aspx</a>.</li>
+                                            <li class="note-level-1-bullet" value="2">MSMQ has a size limitation of 4MB per message, which may not be suitable for all message outputs.</li>
+                                            <li class="note-level-1-bullet" value="3">ActiveMQ is not installed with the core Quantum product, and clients are required to configure this themselves.<br />Refer to the ActiveMQ setup documentation here: <a class="jumpnopagenotemplate" title="" href="http://activemq.apache.org/version-5-getting-started.html#Version5GettingStarted-StartingActiveMQStartingActiveMQ." target="_self">http://activemq.apache.org/version-5-getting-started.html#Version5GettingStarted-StartingActiveMQStartingActiveMQ.</a></li>
+                                        </ul>
+                                        <h3 class="h3internal">Implementation Notes</h3>
+                                        <h3 class="h4internal">Digital Signature and Encryption</h3>
+                                        <p class="bodytext">Outgoing information can be encrypted and incoming information decrypted using XML Encryption. Both security features can be applied to file-based and MQ-based interfaces. XML Encryption is a standards-based, interoperable way to encrypt all or part of an XML document or any arbitrary data. The .NET Framework XML encryption classes implement the World Wide Web Consortium (W3C) specification for XML encryption - see http://www.w3.org/TR/xmlenc-core/.</p>
+                                        <p class="bodytext">The XML document encryption uses an X.509 certificate. Internally a symmetric session key is used to encrypt the document and then the X.509 certificate is used to embed an encrypted version of the session key into the XML document.</p>
+                                        <p class="bodytext">Incoming messages can be decrypted as part of importation process. Decryption will be done automatically based on the content of the message. Certificate information must be included in the incoming XML message.</p>
+                                        <h3 class="h4internal">Incoming Services</h3>
+                                        <p class="bodytext">Data from importation services such as Deal Import, Static Data Import, and Confirmation Matching can be read from queues.</p>
+                                        <p class="bodytext">When using an incoming queue, the content will still be written to the <em class="emphasis">\Processed</em> directory, and any failed records will still be written to the error directory. In case of an MQ deal import failure, the context of the MQ import message can be saved in a file and import process could be completed via file-based interface.</p>
+                                        <p class="tip-level-1-body"><strong class="boldcharstyle">TIP</strong>: Incoming files can also be decrypted and verified against embedded digital signatures.</p>
+                                        <p>
+                                        </p>
+                                        <p class="note-level-1-body"><span class="notechar">NOTES:</span> </p>
+                                        <ul class="note-level-1-bullet">
+                                            <li class="note-level-1-bullet" value="1">While the initial content will be moved through to the processed directory, any items in the <em class="emphasis">\Error</em> directory will be in decrypted form.</li>
+                                            <li class="note-level-1-bullet" value="2">Deal, Static Data and Bank Transaction Import queue messages require a header in the form of <code class="monospace">[</code><code class="monospace">&lt;extension&gt;</code><code class="monospace">]</code>, followed by the import program name (for example, <code class="monospace">[qxt]FXDeal</code>).</li>
+                                        </ul>
+                                        <p class="h5internal">Writing to the Queues</p>
+                                        <p class="bodytext">The key points to note are as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">The easiest way for external .NET applications to write to the queues is to use Apache.NMS.</li>
+                                            <li class="listbullet1" value="2">All incoming services except queue content is text-based.</li>
+                                            <li class="listbullet1" value="3">For MSMQ, text-based content should be in UTF32 format.</li>
+                                            <li class="listbullet1" value="4">For ActiveMQ, since there are multiple formats which could also be in compressed form, NMS/JMS is recommended.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Outgoing Services</h3>
+                                        <p class="bodytext">Outgoing information such as Scheduler, AGCommandLineSupport, EFTs, and Paper Confirmations can write to message queues. The key points to note are as follows.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">Queues should only contain one type of content: either text-based or binary.</li>
+                                            <li class="listbullet1" value="2">Scheduler, AGCommandLineSupport, and Paper Confirmations write Binary based content.</li>
+                                        </ul>
+                                        <p class="h5internal">When binary content is to be signed or encrypted, it will be converted into a base64 string and saved as Text content.Reading from Queues</p>
+                                        <p class="bodytext">The key points to note are as follows:</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1">The easiest way for external .NET applications to retrieve from the queues is to use Apache.NMS.</li>
+                                            <li class="listbullet1" value="2">For direct access to MSMQ:<ul class="listbullet1"><li class="listbullet1" value="1">Content is accessible from the <code class="monospace">BodyStream</code>.</li><li class="listbullet1" value="2">Text-based content will be in UTF32 format.<p class="note-level-3-body"><span class="notechar">NOTE</span>: Use <code class="monospace">System.Text.Encoding.UTF32.GetString</code> to convert the content.</p></li></ul></li>
+                                            <li class="listbullet1" value="3">For ActiveMQ, since there are multiple formats which could also be in compressed form, NMS/JMS is recommended.</li>
+                                        </ul>
+                                        <h3 class="h4internal">Message Header Handling</h3>
+                                        <p class="bodytext">For certain MQ services there is a different approach for handling and location of the header of the message.</p>
+                                        <ul class="listbullet1">
+                                            <li class="listbullet1" value="1"><strong class="boldcharstyle">Microsoft Message Queuing or MSMQ</strong> - The information is stored in the <code class="monospace">System.Messaging. Message.Extension</code> property (which is a byte[] and is a serialized hashtable) with a key <code class="monospace">Header</code>.</li>
+                                            <li class="listbullet1" value="2"><strong class="boldcharstyle">Apache ActiveMQ</strong> - The information is serialized into the message body. However the only way to drive ActiveMQ is via the NMS provider so you can directly use <code class="monospace">message.Properties["header"]</code> to specify the content.</li>
+                                        </ul>
+                                        <p class="h5internal">Consumption of <code class="monospace">Header</code> in Quantum</p>
+                                        <table class="tableintopic" width="612" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Application</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Header used to determine</p>
+                                                </td>
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Examples</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Deal/Static Importer</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">[File Format]Program to Import</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">[QXT]FXDeal, [QID]MMDeal, and so on.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Confirmation Match Service</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">File Format</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">SWIFT, MISYS (for Finastra)</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Scheduler/CommandLine</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">File Format</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">PDF, XML, DATASET, and so on.</p>
+                                                </td>
+                                            </tr>
+                                            <tr align="left" valign="top">
+                                                <td bgcolor="#C0C0C0" style="border: 1px solid #010101;" width="204">
+                                                    <p class="tableheading">Other Outgoing Application</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">Application Name</p>
+                                                </td>
+                                                <td style="border: 1px solid #010101;" width="204">
+                                                    <p class="tablebodytext">General Ledger Interface, AGConfirmation Delivery Service, and so on.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                        </p>
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
